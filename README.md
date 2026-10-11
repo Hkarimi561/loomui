@@ -10,8 +10,8 @@ Accessible, beautifully designed **Angular** components — standalone, signal-b
 
 ```bash
 # copy components into your project (you own the code)
-npx loomui init
-npx loomui add button dialog data-table
+npx @loomui-ng/cli init
+npx @loomui-ng/cli add button dialog data-table
 
 # or use the package
 npm install @loomui-ng/ui lucide

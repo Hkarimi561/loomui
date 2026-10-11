@@ -4,7 +4,7 @@ Lucide icons as an Angular component (`<ui-icon>`) and as a directive on a real 
 
 ```ts
 import { Search } from 'lucide';
-import { UiIcon } from '@loomui-ng/ui/icon';   // or: npx loomui add icon
+import { UiIcon } from '@loomui-ng/ui/icon';   // or: npx @loomui-ng/cli add icon
 ```
 
 ```html

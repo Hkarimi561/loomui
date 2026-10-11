@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // Loom UI — copy-in CLI: add accessible Angular components to your project and own the code.
-//   npx loomui init                 write loomui.json, copy the theme CSS + utils
-//   npx loomui add button dialog    copy components (and their dependencies) into your project
-//   npx loomui add --all
-//   npx loomui list
+//   npx @loomui-ng/cli init                 write loomui.json, copy the theme CSS + utils
+//   npx @loomui-ng/cli add button dialog    copy components (and their dependencies) into your project
+//   npx @loomui-ng/cli add --all
+//   npx @loomui-ng/cli list
 // Options: --dir <path> (default src/app/ui)  --css <path> (default src/styles.css)  --overwrite  --install  --yes
 //          --registry <dir|url>  (or env LOOMUI_REGISTRY)
 import fs from 'node:fs';
@@ -120,12 +120,12 @@ async function init() {
 
   await add(['utils'], cfg, { quiet: true });
   install(theme.dependencies);
-  console.log('\nNext: ' + c(36, 'npx loomui add button') + '   (see `npx loomui list`)');
+  console.log('\nNext: ' + c(36, 'npx @loomui-ng/cli add button') + '   (see `npx @loomui-ng/cli list`)');
 }
 
 async function add(requested, cfgIn, opts = {}) {
   const cfg = cfgIn ?? readConfig();
-  if (!cfg) fail(`No ${CONFIG} found. Run \`npx loomui init\` first.`);
+  if (!cfg) fail(`No ${CONFIG} found. Run \`npx @loomui-ng/cli init\` first.`);
   const uiDir = path.join(cwd, cfg.uiDir);
 
   let wanted = requested;

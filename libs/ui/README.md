@@ -8,8 +8,8 @@ Import per component: `import { UiButton } from '@loomui-ng/ui/button'` (path al
 
 **Option A — copy-in CLI (you own the code):**
 ```bash
-npx loomui init
-npx loomui add button dialog data-table
+npx @loomui-ng/cli init
+npx @loomui-ng/cli add button dialog data-table
 ```
 See `packages/loomui-cli/README.md`. All 64 components were verified to compile standalone (`ngc`, strict templates) after being copied this way.
 
@@ -34,7 +34,7 @@ Optional peers: `embla-carousel` (Carousel), `chart.js` (Chart), `@tanstack/angu
 Every directive also exists as a custom element: `<button uiButton>` → `<ui-button>`, `<div uiDialogContent>` → `<ui-dialog-content>`, `<table uiTable>` → `<ui-table>` (a hyphen is required for custom elements, so it is `ui-` and not `<Button>`). Directives are unchanged and can be mixed freely. Native controls get wrapper elements (`<ui-input>`, `<ui-textarea>`, `<ui-native-select>`, …) that work with `ngModel`/reactive forms. A shared host directive restores roles, tab stops, Enter/Space activation and `disabled` on the elements. Spec: `docs/behavior-specs/custom-elements.md`. Limits: `<ui-button>` does not submit a `<form>` (use `(click)`).
 
 ## Icons
-Lucide icons: `<ui-icon [icon]="Search" />` or `<svg uiIcon [icon]="Search">` (`npx loomui add icon`, peer dependency `lucide`). See `libs/ui/icon/README.md`; browse and copy at the showcase's **/icons** page.
+Lucide icons: `<ui-icon [icon]="Search" />` or `<svg uiIcon [icon]="Search">` (`npx @loomui-ng/cli add icon`, peer dependency `lucide`). See `libs/ui/icon/README.md`; browse and copy at the showcase's **/icons** page.
 
 ## Conventions
 - Every directive accepts `class`, merged with `tailwind-merge` (`cn()`); the directive owns the whole `class` attribute, so avoid `[class.x]` bindings on the same element.

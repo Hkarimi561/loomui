@@ -3,10 +3,10 @@
 **Copy-in** CLI for [Loom UI](../../README.md). Components are copied into *your* project, so you own and edit them.
 
 ```bash
-npx loomui init                      # loomui.json, theme CSS, utils
-npx loomui add button dialog         # components + their dependencies
-npx loomui add --all
-npx loomui list
+npx @loomui-ng/cli init                      # loomui.json, theme CSS, utils
+npx @loomui-ng/cli add button dialog         # components + their dependencies
+npx @loomui-ng/cli add --all
+npx @loomui-ng/cli list
 ```
 
 Options: `--dir src/app/ui` · `--css src/styles.css` · `--overwrite` · `--install` (runs `npm install` for the required packages) · `--registry <dir|url>` (or `LOOMUI_REGISTRY`).

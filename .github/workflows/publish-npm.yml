@@ -1,6 +1,6 @@
 name: Publish to npm
 
-# Publishes @loomui-ng/ui (Angular library) and loomui (copy-in CLI) when a GitHub Release is published.
+# Publishes @loomui-ng/ui (Angular library) and @loomui-ng/cli (copy-in CLI) when a GitHub Release is published.
 # The release tag must match the version, e.g. tag "v0.1.0" for version 0.1.0.
 # Needs the repository secret NPM_TOKEN (an npm automation token with publish rights to the @loomui-ng scope).
 on:
@@ -51,7 +51,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish loomui CLI
+      - name: Publish @loomui-ng/cli
         working-directory: packages/loomui-cli
         run: npm publish --access public --provenance ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}
         env:

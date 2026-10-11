@@ -68,7 +68,7 @@ Per component: `docs/behavior-specs/<c>.md`, `libs/ui/<c>/` (+ `README.md`), `do
 - **Not verified:** the skeleton-while-loading overlay (needs a slow network), sounds/vibration audibly, Firefox/Safari, screen readers.
 
 ## Naming
-- Project name: **Loom UI**. npm: library `@loomui-ng/ui` (scope `@loomui-ng` must be created on npm), CLI `loomui` (`npx loomui add button`), theme file `loomui.css`, config `loomui.json`. Checked free on npm on 2026-10-11: `loomui`, `loomui-cli`, `@loomui-ng/ui`. Domain and GitHub org were not checked.
+- Project name: **Loom UI**. npm: library `@loomui-ng/ui` (scope `@loomui-ng` must be created on npm), CLI `@loomui-ng/cli` (binary `loomui`; `npx @loomui-ng/cli add button`; the unscoped name `loomui` was rejected by npm as too similar to `loom-ui`), theme file `loomui.css`, config `loomui.json`. Checked free on npm on 2026-10-11: `loomui`, `loomui-cli`, `@loomui-ng/ui`. Domain and GitHub org were not checked.
 - Branding: no "shadcn" in names, package metadata, keywords or marketing copy. Attribution lives in README, NOTICE.md and the showcase footer ("independent project inspired by shadcn/ui, not affiliated"); source comments keep factual provenance notes about where class strings came from.
 - Kept: the `ui-` custom-element prefix and `Ui*` class names (generic, but short). A branded prefix would be a one-line change in `tools/add-elements.mjs`.
 - Browser storage keys changed from `rea-*` to `loom-*` (saved theme/accent/direction reset once).

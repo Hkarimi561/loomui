@@ -354,7 +354,7 @@ export class IconsPage {
       },
       { label: 'Register', file: 'main.ts', code: `import { ${P} } from 'lucide';\nimport { registerIcons } from '@loomui-ng/ui/icon';\n\nregisterIcons({ ${P} });\n// then anywhere:  <ui-icon name="${name}" />` },
       { label: 'SVG', file: `${name}.svg`, code: this.svgCode() },
-      { label: 'Install', file: 'terminal', code: `# icons come from the lucide package\nnpm install lucide\n\n# the <ui-icon> component\nnpx loomui add icon` },
+      { label: 'Install', file: 'terminal', code: `# icons come from the lucide package\nnpm install lucide\n\n# the <ui-icon> component\nnpx @loomui-ng/cli add icon` },
     ];
   });
 

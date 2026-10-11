@@ -340,7 +340,7 @@ export class ComponentsLayout {
     tabs.push({
       label: 'Install',
       file: 'terminal',
-      code: `# copy the source into your project (you own the code)\nnpx loomui add ${slug}\n\n# or use the package\nnpm install @loomui-ng/ui`,
+      code: `# copy the source into your project (you own the code)\nnpx @loomui-ng/cli add ${slug}\n\n# or use the package\nnpm install @loomui-ng/ui`,
     });
     return tabs;
   });
