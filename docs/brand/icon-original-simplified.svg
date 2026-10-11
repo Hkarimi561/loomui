@@ -1,0 +1,23 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with Gradient -->
+  <rect width="1024" height="1024" rx="220" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Weave Pattern (Simplified for vector rendering) -->
+  <g id="weave-pattern">
+    <!-- Horizontal Bars (Light Blue) -->
+    <rect x="256" y="320" width="512" height="80" rx="40" fill="#BFD0FF"/>
+    <rect x="256" y="472" width="512" height="80" rx="40" fill="#BFD0FF"/>
+    <rect x="256" y="624" width="512" height="80" rx="40" fill="#BFD0FF"/>
+
+    <!-- Vertical Bars (White) -->
+    <rect x="320" y="256" width="80" height="512" rx="40" fill="white"/>
+    <rect x="472" y="256" width="80" height="512" rx="40" fill="white"/>
+    <rect x="624" y="256" width="80" height="512" rx="40" fill="white"/>
+  </g>
+</svg>

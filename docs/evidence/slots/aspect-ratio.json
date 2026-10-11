@@ -1,0 +1,14 @@
+{
+ "aspect-ratio": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "rounded-lg bg-muted"
+  },
+  "sets": {
+   "": [
+    "rounded-lg bg-muted"
+   ]
+  }
+ }
+}

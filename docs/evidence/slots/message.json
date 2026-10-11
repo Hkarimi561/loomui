@@ -1,0 +1,84 @@
+{
+ "message": {
+  "tag": "div",
+  "attrs": {
+   "data-align": [
+    "end",
+    "start"
+   ]
+  },
+  "variants": {
+   "data-align=end": "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse",
+   "data-align=start": "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse"
+  },
+  "sets": {
+   "data-align=end": [
+    "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse"
+   ],
+   "data-align=start": [
+    "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse"
+   ]
+  }
+ },
+ "message-avatar": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex w-fit min-w-8 shrink-0 items-center justify-center self-end overflow-hidden rounded-full bg-muted group-has-data-[slot=message-footer]/message:-translate-y-8"
+  },
+  "sets": {
+   "": [
+    "flex w-fit min-w-8 shrink-0 items-center justify-center self-end overflow-hidden rounded-full bg-muted group-has-data-[slot=message-footer]/message:-translate-y-8"
+   ]
+  }
+ },
+ "message-content": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex w-full min-w-0 flex-col gap-2.5 wrap-break-word group-data-[align=end]/message:*:data-slot:self-end"
+  },
+  "sets": {
+   "": [
+    "flex w-full min-w-0 flex-col gap-2.5 wrap-break-word group-data-[align=end]/message:*:data-slot:self-end"
+   ]
+  }
+ },
+ "message-footer": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0 group-data-[align=end]/message:justify-end gap-2"
+  },
+  "sets": {
+   "": [
+    "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0 group-data-[align=end]/message:justify-end",
+    "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0 group-data-[align=end]/message:justify-end gap-2"
+   ]
+  }
+ },
+ "message-group": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex min-w-0 flex-col gap-2"
+  },
+  "sets": {
+   "": [
+    "flex min-w-0 flex-col gap-2"
+   ]
+  }
+ },
+ "message-header": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0"
+  },
+  "sets": {
+   "": [
+    "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0"
+   ]
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "loomui-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "build:lib": "ng build ui",
+    "registry": "node tools/build-theme-css.mjs && node tools/gen-showcase-docs.mjs && node tools/build-registry.mjs",
+    "docs": "node tools/gen-docs.mjs && node tools/gen-showcase-docs.mjs",
+    "brand": "node tools/gen-logo.mjs && node tools/gen-icons.mjs"
+  },
+  "packageManager": "npm@11.12.1",
+  "dependencies": {
+    "@angular/cdk": "^22.2.2",
+    "@angular/common": "^22.2.0",
+    "@angular/compiler": "^22.2.0",
+    "@angular/core": "^22.2.0",
+    "@angular/forms": "^22.2.0",
+    "@angular/platform-browser": "^22.2.0",
+    "@angular/router": "^22.2.0",
+    "@tanstack/angular-table": "^9.2.8",
+    "chart.js": "^4.5.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "embla-carousel": "^8.6.0",
+    "lucide": "^1.55.0",
+    "lucide-static": "^1.55.0",
+    "rxjs": "~7.8.0",
+    "tailwind-merge": "^3.7.0",
+    "tslib": "^2.3.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.2.2",
+    "@angular/cli": "^22.2.2",
+    "@angular/compiler-cli": "^22.2.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/postcss": "^4.3.3",
+    "jsdom": "^30.0.0",
+    "ng-packagr": "^22.2.0",
+    "postcss": "^8.5.29",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vitest": "^5.0.0"
+  }
+}

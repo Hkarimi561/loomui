@@ -1,0 +1,139 @@
+{
+ "slider": {
+  "tag": "span",
+  "attrs": {
+   "dir": [
+    "ltr",
+    "rtl"
+   ],
+   "data-orientation": [
+    "horizontal",
+    "vertical"
+   ],
+   "aria-disabled": [
+    "false",
+    "true"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=horizontal": "relative flex touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col mx-auto w-full max-w-xs",
+   "data-orientation=vertical": "relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col h-40"
+  },
+  "sets": {
+   "data-orientation=horizontal": [
+    "relative flex touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col mx-auto w-full max-w-xs",
+    "relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col"
+   ],
+   "data-orientation=vertical": [
+    "relative flex w-full touch-none items-center select-none data-disabled:opacity-50 data-vertical:h-full data-vertical:min-h-40 data-vertical:w-auto data-vertical:flex-col h-40"
+   ]
+  }
+ },
+ "slider-track": {
+  "tag": "span",
+  "attrs": {
+   "data-orientation": [
+    "horizontal",
+    "vertical"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=horizontal": "relative grow overflow-hidden rounded-full bg-muted data-horizontal:h-1 data-horizontal:w-full data-vertical:h-full data-vertical:w-1",
+   "data-orientation=vertical": "relative grow overflow-hidden rounded-full bg-muted data-horizontal:h-1 data-horizontal:w-full data-vertical:h-full data-vertical:w-1"
+  },
+  "sets": {
+   "data-orientation=horizontal": [
+    "relative grow overflow-hidden rounded-full bg-muted data-horizontal:h-1 data-horizontal:w-full data-vertical:h-full data-vertical:w-1"
+   ],
+   "data-orientation=vertical": [
+    "relative grow overflow-hidden rounded-full bg-muted data-horizontal:h-1 data-horizontal:w-full data-vertical:h-full data-vertical:w-1"
+   ]
+  }
+ },
+ "slider-range": {
+  "tag": "span",
+  "attrs": {
+   "data-orientation": [
+    "horizontal",
+    "vertical"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=horizontal": "absolute bg-primary select-none data-horizontal:h-full data-vertical:w-full",
+   "data-orientation=vertical": "absolute bg-primary select-none data-horizontal:h-full data-vertical:w-full"
+  },
+  "sets": {
+   "data-orientation=horizontal": [
+    "absolute bg-primary select-none data-horizontal:h-full data-vertical:w-full"
+   ],
+   "data-orientation=vertical": [
+    "absolute bg-primary select-none data-horizontal:h-full data-vertical:w-full"
+   ]
+  }
+ },
+ "slider-thumb": {
+  "tag": "span",
+  "attrs": {
+   "role": [
+    "slider"
+   ],
+   "aria-valuemin": [
+    "0"
+   ],
+   "aria-valuemax": [
+    "100",
+    "1"
+   ],
+   "aria-orientation": [
+    "horizontal",
+    "vertical"
+   ],
+   "data-orientation": [
+    "horizontal",
+    "vertical"
+   ],
+   "tabindex": [
+    "0"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ],
+   "aria-valuenow": [
+    "75",
+    "25",
+    "50",
+    "10"
+   ],
+   "aria-label": [
+    "Minimum",
+    "Maximum",
+    "Value 1 of 3",
+    "Value 2 of 3"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=horizontal": "relative block size-3 shrink-0 rounded-full border border-ring bg-white ring-ring/50 transition-[color,box-shadow] select-none after:absolute after:-inset-2 hover:ring-3 focus-visible:ring-3 focus-visible:outline-hidden active:ring-3 disabled:pointer-events-none disabled:opacity-50",
+   "data-orientation=vertical": "relative block size-3 shrink-0 rounded-full border border-ring bg-white ring-ring/50 transition-[color,box-shadow] select-none after:absolute after:-inset-2 hover:ring-3 focus-visible:ring-3 focus-visible:outline-hidden active:ring-3 disabled:pointer-events-none disabled:opacity-50"
+  },
+  "sets": {
+   "data-orientation=horizontal": [
+    "relative block size-3 shrink-0 rounded-full border border-ring bg-white ring-ring/50 transition-[color,box-shadow] select-none after:absolute after:-inset-2 hover:ring-3 focus-visible:ring-3 focus-visible:outline-hidden active:ring-3 disabled:pointer-events-none disabled:opacity-50"
+   ],
+   "data-orientation=vertical": [
+    "relative block size-3 shrink-0 rounded-full border border-ring bg-white ring-ring/50 transition-[color,box-shadow] select-none after:absolute after:-inset-2 hover:ring-3 focus-visible:ring-3 focus-visible:outline-hidden active:ring-3 disabled:pointer-events-none disabled:opacity-50"
+   ]
+  }
+ }
+}

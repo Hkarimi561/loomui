@@ -1,0 +1,25 @@
+{
+ "skeleton": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "animate-pulse rounded-md bg-muted aspect-video w-full"
+  },
+  "sets": {
+   "": [
+    "animate-pulse bg-muted h-12 w-12 rounded-full",
+    "animate-pulse rounded-md bg-muted h-4 w-[250px]",
+    "animate-pulse rounded-md bg-muted h-4 w-[200px]",
+    "animate-pulse bg-muted size-10 shrink-0 rounded-full",
+    "animate-pulse rounded-md bg-muted h-4 w-[150px]",
+    "animate-pulse rounded-md bg-muted h-4 w-[100px]",
+    "animate-pulse rounded-md bg-muted h-4 w-2/3",
+    "animate-pulse rounded-md bg-muted h-4 w-1/2",
+    "animate-pulse rounded-md bg-muted aspect-video w-full",
+    "animate-pulse rounded-md bg-muted h-4 w-full",
+    "animate-pulse rounded-md bg-muted h-4 w-3/4",
+    "animate-pulse rounded-md bg-muted h-4 w-20"
+   ]
+  }
+ }
+}

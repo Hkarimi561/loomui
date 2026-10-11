@@ -1,0 +1,225 @@
+{
+ "menubar": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menubar"
+   ],
+   "tabindex": [
+    "0"
+   ],
+   "data-orientation": [
+    "horizontal"
+   ]
+  },
+  "variants": {
+   "data-orientation=horizontal": "flex h-8 items-center gap-0.5 rounded-lg border p-[3px] w-72"
+  },
+  "sets": {
+   "data-orientation=horizontal": [
+    "flex h-8 items-center gap-0.5 rounded-lg border p-[3px] w-72"
+   ]
+  }
+ },
+ "menubar-trigger": {
+  "tag": "button",
+  "attrs": {
+   "type": [
+    "button"
+   ],
+   "role": [
+    "menuitem"
+   ],
+   "aria-haspopup": [
+    "menu"
+   ],
+   "aria-expanded": [
+    "true",
+    "false"
+   ],
+   "data-state": [
+    "open",
+    "closed"
+   ],
+   "tabindex": [
+    "0",
+    "-1"
+   ],
+   "data-orientation": [
+    "horizontal"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=horizontal": "flex items-center rounded-sm px-1.5 py-[2px] text-sm font-medium outline-hidden select-none hover:bg-muted aria-expanded:bg-muted"
+  },
+  "sets": {
+   "data-orientation=horizontal": [
+    "flex items-center rounded-sm px-1.5 py-[2px] text-sm font-medium outline-hidden select-none hover:bg-muted aria-expanded:bg-muted"
+   ]
+  }
+ },
+ "menubar-content": {
+  "tag": "div",
+  "attrs": {
+   "data-side": [
+    "bottom"
+   ],
+   "data-align": [
+    "start"
+   ],
+   "role": [
+    "menu"
+   ],
+   "aria-orientation": [
+    "vertical"
+   ],
+   "data-state": [
+    "open"
+   ],
+   "data-radix-menu-content": [
+    ""
+   ],
+   "dir": [
+    "ltr"
+   ],
+   "data-radix-menubar-content": [
+    ""
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical|data-align=start|data-side=bottom": "cn-menu-target cn-menu-translucent z-50 min-w-36 origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95"
+  },
+  "sets": {
+   "data-orientation=vertical|data-align=start|data-side=bottom": [
+    "cn-menu-target cn-menu-translucent z-50 min-w-36 origin-(--radix-menubar-content-transform-origin) overflow-hidden rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95"
+   ]
+  }
+ },
+ "menubar-group": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "group"
+   ]
+  },
+  "variants": {
+   "": ""
+  },
+  "sets": {
+   "": [
+    ""
+   ]
+  }
+ },
+ "menubar-item": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menuitem"
+   ],
+   "data-variant": [
+    "default"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ],
+   "aria-disabled": [
+    "true"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-variant=default|data-orientation=vertical": "group/menubar-item relative flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground not-data-[variant=destructive]:focus:**:text-accent-foreground data-inset:pl-7 data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 data-[variant=destructive]:focus:text-destructive dark:data-[variant=destructive]:focus:bg-destructive/20 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 data-[variant=destructive]:*:[svg]:text-destructive!"
+  },
+  "sets": {
+   "data-variant=default|data-orientation=vertical": [
+    "group/menubar-item relative flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground not-data-[variant=destructive]:focus:**:text-accent-foreground data-inset:pl-7 data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 data-[variant=destructive]:focus:text-destructive dark:data-[variant=destructive]:focus:bg-destructive/20 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 data-[variant=destructive]:*:[svg]:text-destructive!"
+   ]
+  }
+ },
+ "menubar-shortcut": {
+  "tag": "span",
+  "attrs": {},
+  "variants": {
+   "": "ml-auto text-xs tracking-widest text-muted-foreground group-focus/menubar-item:text-accent-foreground"
+  },
+  "sets": {
+   "": [
+    "ml-auto text-xs tracking-widest text-muted-foreground group-focus/menubar-item:text-accent-foreground"
+   ]
+  }
+ },
+ "menubar-separator": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "separator"
+   ],
+   "aria-orientation": [
+    "horizontal"
+   ]
+  },
+  "variants": {
+   "": "-mx-1 my-1 h-px bg-border"
+  },
+  "sets": {
+   "": [
+    "-mx-1 my-1 h-px bg-border"
+   ]
+  }
+ },
+ "menubar-sub-trigger": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menuitem"
+   ],
+   "aria-haspopup": [
+    "menu"
+   ],
+   "aria-expanded": [
+    "false"
+   ],
+   "data-state": [
+    "closed"
+   ],
+   "data-radix-menubar-subtrigger": [
+    ""
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-none select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-open:bg-accent data-open:text-accent-foreground [&_svg:not([class*='size-'])]:size-4"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-none select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-open:bg-accent data-open:text-accent-foreground [&_svg:not([class*='size-'])]:size-4"
+   ]
+  }
+ }
+}

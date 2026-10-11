@@ -1,0 +1,78 @@
+// slug -> lazy loader for the demo page of that component. Add one line per new component.
+type Loader = () => Promise<unknown>;
+const from = (importer: () => Promise<Record<string, any>>, cmp: string): Loader => () => importer().then((m) => m[cmp]);
+
+const demos = () => import('./demos');
+const overlay = () => import('./overlay-demos');
+const demos2 = () => import('./demos2');
+const demos3 = () => import('./demos3');
+const demos4 = () => import('./demos4');
+const demos5 = () => import('./demos5');
+const demos6 = () => import('./demos6');
+
+export const PAGE_LOADERS: Record<string, Loader> = {
+  button: () => import('./button-page').then((m) => m.ButtonPage),
+  badge: from(demos, 'BadgePage'),
+  input: from(demos, 'InputPage'),
+  label: from(demos, 'LabelPage'),
+  card: from(demos, 'CardPage'),
+  separator: from(demos, 'SeparatorPage'),
+  checkbox: from(demos, 'CheckboxPage'),
+  switch: from(demos, 'SwitchPage'),
+  tabs: from(demos, 'TabsPage'),
+  dialog: from(overlay, 'DialogPage'),
+  popover: from(overlay, 'PopoverPage'),
+  tooltip: from(overlay, 'TooltipPage'),
+  'dropdown-menu': from(overlay, 'DropdownMenuPage'),
+  select: from(overlay, 'SelectPage'),
+  command: from(overlay, 'CommandPage'),
+  sheet: from(overlay, 'SheetPage'),
+  toast: from(overlay, 'ToastPage'),
+  alert: from(demos2, 'AlertPage'),
+  avatar: from(demos2, 'AvatarPage'),
+  breadcrumb: from(demos2, 'BreadcrumbPage'),
+  'button-group': from(demos2, 'ButtonGroupPage'),
+  empty: from(demos2, 'EmptyPage'),
+  field: from(demos2, 'FieldPage'),
+  'input-group': from(demos2, 'InputGroupPage'),
+  item: from(demos2, 'ItemPage'),
+  kbd: from(demos2, 'KbdPage'),
+  'native-select': from(demos2, 'NativeSelectPage'),
+  skeleton: from(demos2, 'SkeletonPage'),
+  spinner: from(demos2, 'SpinnerPage'),
+  textarea: from(demos2, 'TextareaPage'),
+  table: from(demos2, 'TablePage'),
+  progress: from(demos2, 'ProgressPage'),
+  pagination: from(demos2, 'PaginationPage'),
+  accordion: from(demos3, 'AccordionPage'),
+  collapsible: from(demos3, 'CollapsiblePage'),
+  toggle: from(demos3, 'TogglePage'),
+  'toggle-group': from(demos3, 'ToggleGroupPage'),
+  'radio-group': from(demos3, 'RadioGroupPage'),
+  slider: from(demos3, 'SliderPage'),
+  'aspect-ratio': from(demos4, 'AspectRatioPage'),
+  'input-otp': from(demos4, 'InputOtpPage'),
+  'scroll-area': from(demos4, 'ScrollAreaPage'),
+  resizable: from(demos4, 'ResizablePage'),
+  'alert-dialog': from(demos5, 'AlertDialogPage'),
+  'context-menu': from(demos5, 'ContextMenuPage'),
+  menubar: from(demos5, 'MenubarPage'),
+  drawer: from(demos5, 'DrawerPage'),
+  'hover-card': from(demos5, 'HoverCardPage'),
+  'navigation-menu': from(demos5, 'NavigationMenuPage'),
+  combobox: from(demos5, 'ComboboxPage'),
+  bubble: from(demos6, 'BubblePage'),
+  marker: from(demos6, 'MarkerPage'),
+  message: from(demos6, 'MessagePage'),
+  attachment: from(demos6, 'AttachmentPage'),
+  'message-scroller': from(demos6, 'MessageScrollerPage'),
+  questionnaire: from(demos6, 'QuestionnairePage'),
+  calendar: from(demos6, 'CalendarPage'),
+  typography: () => import('./demos8').then((m) => m.TypographyPage),
+  direction: () => import('./demos8').then((m) => m.DirectionPage),
+  carousel:() => import('./demos7').then((m) => m.CarouselPage),
+  'date-picker': () => import('./demos7').then((m) => m.DatePickerPage),
+  chart: () => import('./demos7').then((m) => m.ChartPage),
+  sidebar: () => import('./demos7').then((m) => m.SidebarPage),
+  'data-table':() => import('./data-table-page').then((m) => m.DataTablePage),
+};

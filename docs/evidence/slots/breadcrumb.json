@@ -1,0 +1,117 @@
+{
+ "breadcrumb": {
+  "tag": "nav",
+  "attrs": {
+   "aria-label": [
+    "breadcrumb"
+   ],
+   "dir": [
+    "rtl"
+   ]
+  },
+  "variants": {
+   "": ""
+  },
+  "sets": {
+   "": [
+    ""
+   ]
+  }
+ },
+ "breadcrumb-list": {
+  "tag": "ol",
+  "attrs": {},
+  "variants": {
+   "": "flex flex-wrap items-center gap-1.5 text-sm wrap-break-word text-muted-foreground"
+  },
+  "sets": {
+   "": [
+    "flex flex-wrap items-center gap-1.5 text-sm wrap-break-word text-muted-foreground"
+   ]
+  }
+ },
+ "breadcrumb-item": {
+  "tag": "li",
+  "attrs": {},
+  "variants": {
+   "": "inline-flex items-center gap-1"
+  },
+  "sets": {
+   "": [
+    "inline-flex items-center gap-1"
+   ]
+  }
+ },
+ "breadcrumb-link": {
+  "tag": "a",
+  "attrs": {},
+  "variants": {
+   "": "transition-colors hover:text-foreground"
+  },
+  "sets": {
+   "": [
+    "transition-colors hover:text-foreground"
+   ]
+  }
+ },
+ "breadcrumb-separator": {
+  "tag": "li",
+  "attrs": {
+   "role": [
+    "presentation"
+   ],
+   "aria-hidden": [
+    "true"
+   ]
+  },
+  "variants": {
+   "": "[&>svg]:size-3.5"
+  },
+  "sets": {
+   "": [
+    "[&>svg]:size-3.5"
+   ]
+  }
+ },
+ "breadcrumb-ellipsis": {
+  "tag": "span",
+  "attrs": {
+   "role": [
+    "presentation"
+   ],
+   "aria-hidden": [
+    "true"
+   ]
+  },
+  "variants": {
+   "": "flex size-5 items-center justify-center [&>svg]:size-4"
+  },
+  "sets": {
+   "": [
+    "flex size-5 items-center justify-center [&>svg]:size-4"
+   ]
+  }
+ },
+ "breadcrumb-page": {
+  "tag": "span",
+  "attrs": {
+   "role": [
+    "link"
+   ],
+   "aria-disabled": [
+    "true"
+   ],
+   "aria-current": [
+    "page"
+   ]
+  },
+  "variants": {
+   "": "font-normal text-foreground"
+  },
+  "sets": {
+   "": [
+    "font-normal text-foreground"
+   ]
+  }
+ }
+}

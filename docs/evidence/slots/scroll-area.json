@@ -1,0 +1,36 @@
+{
+ "scroll-area": {
+  "tag": "div",
+  "attrs": {
+   "dir": [
+    "ltr",
+    "rtl"
+   ]
+  },
+  "variants": {
+   "": "relative w-96 rounded-md border whitespace-nowrap"
+  },
+  "sets": {
+   "": [
+    "relative h-72 w-48 rounded-md border",
+    "relative w-96 rounded-md border whitespace-nowrap"
+   ]
+  }
+ },
+ "scroll-area-viewport": {
+  "tag": "div",
+  "attrs": {
+   "data-radix-scroll-area-viewport": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1"
+  },
+  "sets": {
+   "": [
+    "size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1"
+   ]
+  }
+ }
+}

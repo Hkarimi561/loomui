@@ -1,0 +1,268 @@
+{
+ "context-menu-trigger": {
+  "tag": "span",
+  "attrs": {
+   "data-state": [
+    "open",
+    "closed"
+   ]
+  },
+  "variants": {
+   "": "select-none flex aspect-video w-full max-w-xs items-center justify-center rounded-xl border border-dashed text-sm"
+  },
+  "sets": {
+   "": [
+    "select-none flex aspect-video w-full max-w-xs items-center justify-center rounded-xl border border-dashed text-sm"
+   ]
+  }
+ },
+ "context-menu-content": {
+  "tag": "div",
+  "attrs": {
+   "data-side": [
+    "right"
+   ],
+   "data-align": [
+    "start"
+   ],
+   "role": [
+    "menu"
+   ],
+   "aria-orientation": [
+    "vertical"
+   ],
+   "data-state": [
+    "open"
+   ],
+   "data-radix-menu-content": [
+    ""
+   ],
+   "dir": [
+    "ltr"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical|data-align=start|data-side=right": "cn-menu-target cn-menu-translucent z-50 max-h-(--radix-context-menu-content-available-height) min-w-36 origin-(--radix-context-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 w-48"
+  },
+  "sets": {
+   "data-orientation=vertical|data-align=start|data-side=right": [
+    "cn-menu-target cn-menu-translucent z-50 max-h-(--radix-context-menu-content-available-height) min-w-36 origin-(--radix-context-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95 w-48"
+   ]
+  }
+ },
+ "context-menu-group": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "group"
+   ]
+  },
+  "variants": {
+   "": ""
+  },
+  "sets": {
+   "": [
+    ""
+   ]
+  }
+ },
+ "context-menu-item": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menuitem"
+   ],
+   "data-variant": [
+    "default"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ],
+   "aria-disabled": [
+    "true"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-variant=default|data-orientation=vertical": "group/context-menu-item relative flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 data-[variant=destructive]:focus:text-destructive dark:data-[variant=destructive]:focus:bg-destructive/20 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 focus:*:[svg]:text-accent-foreground data-[variant=destructive]:*:[svg]:text-destructive"
+  },
+  "sets": {
+   "data-variant=default|data-orientation=vertical": [
+    "group/context-menu-item relative flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 data-[variant=destructive]:focus:text-destructive dark:data-[variant=destructive]:focus:bg-destructive/20 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 focus:*:[svg]:text-accent-foreground data-[variant=destructive]:*:[svg]:text-destructive"
+   ]
+  }
+ },
+ "context-menu-shortcut": {
+  "tag": "span",
+  "attrs": {},
+  "variants": {
+   "": "ml-auto text-xs tracking-widest text-muted-foreground group-focus/context-menu-item:text-accent-foreground"
+  },
+  "sets": {
+   "": [
+    "ml-auto text-xs tracking-widest text-muted-foreground group-focus/context-menu-item:text-accent-foreground"
+   ]
+  }
+ },
+ "context-menu-sub-trigger": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menuitem"
+   ],
+   "aria-haspopup": [
+    "menu"
+   ],
+   "aria-expanded": [
+    "false"
+   ],
+   "data-state": [
+    "closed"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-open:bg-accent data-open:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "flex cursor-default items-center gap-1.5 rounded-md px-1.5 py-1 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-open:bg-accent data-open:text-accent-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+   ]
+  }
+ },
+ "context-menu-separator": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "separator"
+   ],
+   "aria-orientation": [
+    "horizontal"
+   ]
+  },
+  "variants": {
+   "": "-mx-1 my-1 h-px bg-border"
+  },
+  "sets": {
+   "": [
+    "-mx-1 my-1 h-px bg-border"
+   ]
+  }
+ },
+ "context-menu-checkbox-item": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menuitemcheckbox"
+   ],
+   "aria-checked": [
+    "true",
+    "false"
+   ],
+   "data-state": [
+    "checked",
+    "unchecked"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "relative flex cursor-default items-center gap-1.5 rounded-md py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "relative flex cursor-default items-center gap-1.5 rounded-md py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+   ]
+  }
+ },
+ "context-menu-radio-group": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "group"
+   ]
+  },
+  "variants": {
+   "": ""
+  },
+  "sets": {
+   "": [
+    ""
+   ]
+  }
+ },
+ "context-menu-label": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "px-1.5 py-1 text-xs font-medium text-muted-foreground data-inset:pl-7"
+  },
+  "sets": {
+   "": [
+    "px-1.5 py-1 text-xs font-medium text-muted-foreground data-inset:pl-7"
+   ]
+  }
+ },
+ "context-menu-radio-item": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "menuitemradio"
+   ],
+   "aria-checked": [
+    "true",
+    "false"
+   ],
+   "data-state": [
+    "checked",
+    "unchecked"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "relative flex cursor-default items-center gap-1.5 rounded-md py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "relative flex cursor-default items-center gap-1.5 rounded-md py-1 pr-8 pl-1.5 text-sm outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-inset:pl-7 data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+   ]
+  }
+ }
+}

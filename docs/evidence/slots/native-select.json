@@ -1,0 +1,118 @@
+{
+ "native-select-wrapper": {
+  "tag": "div",
+  "attrs": {
+   "data-size": [
+    "default"
+   ]
+  },
+  "variants": {
+   "data-size=default": "group/native-select relative w-fit has-[select:disabled]:opacity-50"
+  },
+  "sets": {
+   "data-size=default": [
+    "group/native-select relative w-fit has-[select:disabled]:opacity-50"
+   ]
+  }
+ },
+ "native-select": {
+  "tag": "select",
+  "attrs": {
+   "data-size": [
+    "default"
+   ],
+   "disabled": [
+    ""
+   ],
+   "aria-invalid": [
+    "true"
+   ],
+   "dir": [
+    "rtl"
+   ]
+  },
+  "variants": {
+   "data-size=default": "h-8 w-full min-w-0 appearance-none rounded-lg border border-input bg-transparent py-1 pr-8 pl-2.5 text-sm transition-colors outline-none select-none selection:bg-primary selection:text-primary-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-[size=sm]:py-0.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40"
+  },
+  "sets": {
+   "data-size=default": [
+    "h-8 w-full min-w-0 appearance-none rounded-lg border border-input bg-transparent py-1 pr-8 pl-2.5 text-sm transition-colors outline-none select-none selection:bg-primary selection:text-primary-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-[size=sm]:py-0.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40",
+    "h-8 w-full min-w-0 appearance-none rounded-lg border border-input bg-transparent py-1 ps-2.5 pe-8 text-sm transition-colors outline-none select-none selection:bg-primary selection:text-primary-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-[size=sm]:py-0.5 dark:bg-input/30 dark:hover:bg-input/50 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40"
+   ]
+  }
+ },
+ "native-select-option": {
+  "tag": "option",
+  "attrs": {},
+  "variants": {
+   "": "bg-[Canvas] text-[CanvasText]"
+  },
+  "sets": {
+   "": [
+    "bg-[Canvas] text-[CanvasText]"
+   ]
+  }
+ },
+ "native-select-icon": {
+  "tag": "svg",
+  "attrs": {
+   "xmlns": [
+    "http://www.w3.org/2000/svg"
+   ],
+   "width": [
+    "24"
+   ],
+   "height": [
+    "24"
+   ],
+   "viewBox": [
+    "0 0 24 24"
+   ],
+   "fill": [
+    "none"
+   ],
+   "stroke": [
+    "currentColor"
+   ],
+   "stroke-width": [
+    "2"
+   ],
+   "stroke-linecap": [
+    "round"
+   ],
+   "stroke-linejoin": [
+    "round"
+   ],
+   "aria-hidden": [
+    "true"
+   ]
+  },
+  "variants": {
+   "": "lucide lucide-chevron-down pointer-events-none absolute top-1/2 right-2.5 size-4 -translate-y-1/2 text-muted-foreground select-none"
+  },
+  "sets": {
+   "": [
+    "lucide lucide-chevron-down pointer-events-none absolute top-1/2 right-2.5 size-4 -translate-y-1/2 text-muted-foreground select-none",
+    "lucide lucide-chevron-down pointer-events-none absolute end-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground select-none"
+   ]
+  }
+ },
+ "native-select-optgroup": {
+  "tag": "optgroup",
+  "attrs": {
+   "label": [
+    "Engineering",
+    "Sales",
+    "Operations"
+   ]
+  },
+  "variants": {
+   "": "bg-[Canvas] text-[CanvasText]"
+  },
+  "sets": {
+   "": [
+    "bg-[Canvas] text-[CanvasText]"
+   ]
+  }
+ }
+}

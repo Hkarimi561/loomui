@@ -1,0 +1,35 @@
+{
+  "name": "loomui",
+  "version": "0.1.0",
+  "description": "Copy-in CLI for Loom UI: add accessible Angular components to your project and own the code.",
+  "type": "module",
+  "bin": {
+    "loomui": "bin/loomui.mjs"
+  },
+  "files": [
+    "bin",
+    "registry",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "ui",
+    "cli",
+    "components",
+    "tailwind",
+    "design-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hkarimi561/loomui.git",
+    "directory": "packages/loomui-cli"
+  },
+  "homepage": "https://hkarimi561.github.io/loomui/",
+  "bugs": {
+    "url": "https://github.com/Hkarimi561/loomui/issues"
+  }
+}

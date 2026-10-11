@@ -1,0 +1,91 @@
+{
+ "empty": {
+  "tag": "div",
+  "attrs": {
+   "dir": [
+    "rtl"
+   ]
+  },
+  "variants": {
+   "": "flex w-full min-w-0 flex-1 flex-col items-center justify-center gap-4 rounded-xl border-dashed p-6 text-center text-balance h-full bg-muted/30"
+  },
+  "sets": {
+   "": [
+    "flex w-full min-w-0 flex-1 flex-col items-center justify-center gap-4 rounded-xl border-dashed p-6 text-center text-balance",
+    "flex w-full min-w-0 flex-1 flex-col items-center justify-center gap-4 rounded-xl p-6 text-center text-balance border border-dashed",
+    "flex w-full min-w-0 flex-1 flex-col items-center justify-center gap-4 rounded-xl border-dashed p-6 text-center text-balance h-full bg-muted/30"
+   ]
+  }
+ },
+ "empty-header": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex max-w-sm flex-col items-center gap-2"
+  },
+  "sets": {
+   "": [
+    "flex max-w-sm flex-col items-center gap-2"
+   ]
+  }
+ },
+ "empty-icon": {
+  "tag": "div",
+  "attrs": {
+   "data-variant": [
+    "icon",
+    "default"
+   ]
+  },
+  "variants": {
+   "data-variant=icon": "mb-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 flex size-8 shrink-0 items-center justify-center rounded-lg bg-muted text-foreground [&_svg:not([class*='size-'])]:size-4",
+   "data-variant=default": "mb-2 flex shrink-0 items-center justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent"
+  },
+  "sets": {
+   "data-variant=icon": [
+    "mb-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 flex size-8 shrink-0 items-center justify-center rounded-lg bg-muted text-foreground [&_svg:not([class*='size-'])]:size-4"
+   ],
+   "data-variant=default": [
+    "mb-2 flex shrink-0 items-center justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent"
+   ]
+  }
+ },
+ "empty-title": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "cn-font-heading text-sm font-medium tracking-tight"
+  },
+  "sets": {
+   "": [
+    "cn-font-heading text-sm font-medium tracking-tight"
+   ]
+  }
+ },
+ "empty-description": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "text-sm/relaxed text-muted-foreground [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary max-w-xs text-pretty"
+  },
+  "sets": {
+   "": [
+    "text-sm/relaxed text-muted-foreground [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
+    "text-sm/relaxed text-muted-foreground [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary max-w-xs text-pretty"
+   ]
+  }
+ },
+ "empty-content": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex w-full max-w-sm min-w-0 items-center text-sm text-balance flex-row justify-center gap-2"
+  },
+  "sets": {
+   "": [
+    "flex w-full max-w-sm min-w-0 items-center text-sm text-balance flex-row justify-center gap-2",
+    "flex w-full max-w-sm min-w-0 flex-col items-center gap-2.5 text-sm text-balance"
+   ]
+  }
+ }
+}

@@ -1,0 +1,47 @@
+name: Deploy showcase
+
+# Publishes the showcase to GitHub Pages: https://hkarimi561.github.io/loomui/
+# One-time setup: repo Settings → Pages → Source: "GitHub Actions".
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build showcase
+        run: npx ng build playground --base-href /loomui/
+      - name: SPA fallback (deep links on GitHub Pages)
+        run: |
+          cp dist/playground/browser/index.html dist/playground/browser/404.html
+          touch dist/playground/browser/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/playground/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

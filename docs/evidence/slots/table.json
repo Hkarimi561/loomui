@@ -1,0 +1,128 @@
+{
+ "table-container": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "relative w-full overflow-x-auto"
+  },
+  "sets": {
+   "": [
+    "relative w-full overflow-x-auto"
+   ]
+  }
+ },
+ "table": {
+  "tag": "table",
+  "attrs": {
+   "dir": [
+    "rtl"
+   ]
+  },
+  "variants": {
+   "": "w-full caption-bottom text-sm"
+  },
+  "sets": {
+   "": [
+    "w-full caption-bottom text-sm"
+   ]
+  }
+ },
+ "table-caption": {
+  "tag": "caption",
+  "attrs": {},
+  "variants": {
+   "": "mt-4 text-sm text-muted-foreground"
+  },
+  "sets": {
+   "": [
+    "mt-4 text-sm text-muted-foreground"
+   ]
+  }
+ },
+ "table-header": {
+  "tag": "thead",
+  "attrs": {},
+  "variants": {
+   "": "[&_tr]:border-b"
+  },
+  "sets": {
+   "": [
+    "[&_tr]:border-b"
+   ]
+  }
+ },
+ "table-row": {
+  "tag": "tr",
+  "attrs": {},
+  "variants": {
+   "": "border-b transition-colors hover:bg-muted/50 has-aria-expanded:bg-muted/50 data-[state=selected]:bg-muted"
+  },
+  "sets": {
+   "": [
+    "border-b transition-colors hover:bg-muted/50 has-aria-expanded:bg-muted/50 data-[state=selected]:bg-muted"
+   ]
+  }
+ },
+ "table-head": {
+  "tag": "th",
+  "attrs": {},
+  "variants": {
+   "": "h-10 px-2 text-start align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pe-0 w-[100px]"
+  },
+  "sets": {
+   "": [
+    "h-10 px-2 text-left align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pr-0 w-[100px]",
+    "h-10 px-2 text-left align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pr-0",
+    "h-10 px-2 align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pr-0 text-right",
+    "h-10 px-2 text-start align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pe-0 w-[100px]",
+    "h-10 px-2 text-start align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pe-0",
+    "h-10 px-2 align-middle font-medium whitespace-nowrap text-foreground [&:has([role=checkbox])]:pe-0 text-right"
+   ]
+  }
+ },
+ "table-body": {
+  "tag": "tbody",
+  "attrs": {},
+  "variants": {
+   "": "[&_tr:last-child]:border-0"
+  },
+  "sets": {
+   "": [
+    "[&_tr:last-child]:border-0"
+   ]
+  }
+ },
+ "table-cell": {
+  "tag": "td",
+  "attrs": {
+   "colspan": [
+    "3"
+   ]
+  },
+  "variants": {
+   "": "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 font-medium"
+  },
+  "sets": {
+   "": [
+    "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 font-medium",
+    "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0",
+    "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 text-right",
+    "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pe-0 font-medium",
+    "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pe-0",
+    "p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pe-0 text-right"
+   ]
+  }
+ },
+ "table-footer": {
+  "tag": "tfoot",
+  "attrs": {},
+  "variants": {
+   "": "border-t bg-muted/50 font-medium [&>tr]:last:border-b-0"
+  },
+  "sets": {
+   "": [
+    "border-t bg-muted/50 font-medium [&>tr]:last:border-b-0"
+   ]
+  }
+ }
+}

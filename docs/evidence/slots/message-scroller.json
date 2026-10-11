@@ -1,0 +1,173 @@
+{
+ "message-scroller": {
+  "tag": "div",
+  "attrs": {
+   "data-scrollable": [
+    "start",
+    "start end",
+    "end"
+   ]
+  },
+  "variants": {
+   "": "group/message-scroller relative flex size-full min-h-0 flex-col overflow-hidden"
+  },
+  "sets": {
+   "": [
+    "group/message-scroller relative flex size-full min-h-0 flex-col overflow-hidden"
+   ]
+  }
+ },
+ "message-scroller-viewport": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "region"
+   ],
+   "aria-label": [
+    "Messages"
+   ],
+   "tabindex": [
+    "0"
+   ],
+   "data-scrollable": [
+    "start",
+    "start end",
+    "end"
+   ]
+  },
+  "variants": {
+   "": "size-full min-h-0 min-w-0 scroll-fade-b scrollbar-thin scrollbar-gutter-stable overflow-y-auto overscroll-contain contain-content data-autoscrolling:scrollbar-thumb-transparent data-autoscrolling:scrollbar-track-transparent data-pending-scroll:invisible"
+  },
+  "sets": {
+   "": [
+    "size-full min-h-0 min-w-0 scroll-fade-b scrollbar-thin scrollbar-gutter-stable overflow-y-auto overscroll-contain contain-content data-autoscrolling:scrollbar-thumb-transparent data-autoscrolling:scrollbar-track-transparent data-pending-scroll:invisible"
+   ]
+  }
+ },
+ "message-scroller-content": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "log"
+   ],
+   "aria-relevant": [
+    "additions"
+   ],
+   "aria-busy": [
+    "false"
+   ]
+  },
+  "variants": {
+   "": "flex h-max min-h-full flex-col gap-8 p-(--card-spacing)"
+  },
+  "sets": {
+   "": [
+    "flex h-max min-h-full flex-col gap-8 p-(--card-spacing)",
+    "flex h-max min-h-full flex-col gap-4 p-(--card-spacing)"
+   ]
+  }
+ },
+ "message-scroller-item": {
+  "tag": "div",
+  "attrs": {
+   "data-message-id": [
+    "group-1",
+    "group-2",
+    "group-3",
+    "msg-1"
+   ],
+   "data-scroll-anchor": [
+    "false",
+    "true"
+   ]
+  },
+  "variants": {
+   "": "min-w-0 shrink-0 [contain-intrinsic-size:auto_10rem] [content-visibility:auto]"
+  },
+  "sets": {
+   "": [
+    "min-w-0 shrink-0 [contain-intrinsic-size:auto_10rem] [content-visibility:auto]"
+   ]
+  }
+ },
+ "message": {
+  "tag": "div",
+  "attrs": {
+   "data-align": [
+    "end",
+    "start"
+   ]
+  },
+  "variants": {
+   "data-align=end": "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse",
+   "data-align=start": "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse"
+  },
+  "sets": {
+   "data-align=end": [
+    "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse"
+   ],
+   "data-align=start": [
+    "group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse"
+   ]
+  }
+ },
+ "message-content": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex w-full min-w-0 flex-col gap-2.5 wrap-break-word group-data-[align=end]/message:*:data-slot:self-end"
+  },
+  "sets": {
+   "": [
+    "flex w-full min-w-0 flex-col gap-2.5 wrap-break-word group-data-[align=end]/message:*:data-slot:self-end"
+   ]
+  }
+ },
+ "message-header": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0"
+  },
+  "sets": {
+   "": [
+    "flex max-w-full min-w-0 items-center px-3 text-xs font-medium text-muted-foreground group-has-data-[variant=ghost]/message:px-0"
+   ]
+  }
+ },
+ "message-scroller-button": {
+  "tag": "button",
+  "attrs": {
+   "data-variant": [
+    "secondary"
+   ],
+   "data-size": [
+    "icon-sm"
+   ],
+   "data-active": [
+    "false",
+    "true"
+   ],
+   "data-direction": [
+    "end"
+   ],
+   "type": [
+    "button"
+   ],
+   "inert": [
+    ""
+   ],
+   "tabindex": [
+    "-1"
+   ]
+  },
+  "variants": {
+   "data-variant=secondary|data-size=icon-sm": "group/button inline-flex shrink-0 items-center justify-center rounded-2xl border bg-clip-padding text-sm font-medium whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground size-7 absolute inset-s-1/2 -translate-x-1/2 border-border bg-background text-foreground transition-[translate,scale,opacity] duration-200 hover:bg-muted hover:text-foreground data-[active=false]:pointer-events-none data-[active=false]:scale-95 data-[active=false]:opacity-0 data-[active=false]:duration-400 data-[active=false]:ease-[cubic-bezier(0.7,0,0.84,0)] data-[active=true]:translate-y-0 data-[active=true]:scale-100 data-[active=true]:opacity-100 data-[active=true]:ease-[cubic-bezier(0.23,1,0.32,1)] data-[direction=end]:bottom-4 data-[direction=end]:data-[active=false]:translate-y-full data-[direction=start]:top-4 data-[direction=start]:data-[active=false]:-translate-y-full rtl:translate-x-1/2 data-[direction=start]:[&_svg]:rotate-180"
+  },
+  "sets": {
+   "data-variant=secondary|data-size=icon-sm": [
+    "group/button inline-flex shrink-0 items-center justify-center rounded-2xl border bg-clip-padding text-sm font-medium whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground size-7 absolute inset-s-1/2 -translate-x-1/2 border-border bg-background text-foreground transition-[translate,scale,opacity] duration-200 hover:bg-muted hover:text-foreground data-[active=false]:pointer-events-none data-[active=false]:scale-95 data-[active=false]:opacity-0 data-[active=false]:duration-400 data-[active=false]:ease-[cubic-bezier(0.7,0,0.84,0)] data-[active=true]:translate-y-0 data-[active=true]:scale-100 data-[active=true]:opacity-100 data-[active=true]:ease-[cubic-bezier(0.23,1,0.32,1)] data-[direction=end]:bottom-4 data-[direction=end]:data-[active=false]:translate-y-full data-[direction=start]:top-4 data-[direction=start]:data-[active=false]:-translate-y-full rtl:translate-x-1/2 data-[direction=start]:[&_svg]:rotate-180"
+   ]
+  }
+ }
+}

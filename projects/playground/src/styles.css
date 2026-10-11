@@ -1,0 +1,672 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@angular/cdk/overlay-prebuilt.css';
+@import '../../../libs/ui/toast/toast.css';
+
+@source '../../../libs/ui';
+@source not './app/docs.generated.ts';
+@source not '../../../packages';
+@source not '../../../dist';
+@source not '../../../docs';
+
+/* .force-light re-lights a subtree inside a dark page (used for light|dark comparisons and theme previews). */
+@custom-variant dark (&:is(.dark *):not(:is(.force-light *)));
+/* shadcn's current styles use data-open:/data-closed: next to Radix's data-state. Map both. */
+@custom-variant data-open (&:where([data-state="open"], [data-open]));
+@custom-variant data-closed (&:where([data-state="closed"], [data-closed]));
+@custom-variant data-checked (&:where([data-state="checked"], [data-checked]));
+@custom-variant data-unchecked (&:where([data-state="unchecked"], [data-unchecked]));
+@custom-variant data-active (&:where([data-state="active"], [data-active]));
+@custom-variant data-inactive (&:where([data-state="inactive"], [data-inactive]));
+@custom-variant data-horizontal (&:where([data-orientation="horizontal"], [data-horizontal]));
+@custom-variant data-vertical (&:where([data-orientation="vertical"], [data-vertical]));
+
+:root,
+.force-light {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.809 0.105 251.813);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.546 0.245 262.881);
+  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-5: oklch(0.424 0.199 265.638);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.809 0.105 251.813);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.546 0.245 262.881);
+  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-5: oklch(0.424 0.199 265.638);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* Native <select> popups are drawn by the browser: a transparent/tinted select would get a white list with light text.
+     Give options an explicit surface so they are readable in light and dark. */
+  select option,
+  select optgroup {
+    background-color: var(--popover);
+    color: var(--popover-foreground);
+  }
+}
+
+/* CDK overlay backdrop: shadcn animates the backdrop with tw-animate-css, so neutralise the CDK opacity fade. */
+.cdk-overlay-backdrop[data-slot] {
+  opacity: 1;
+  transition: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* input-otp fake caret */
+@theme inline {
+  --animate-caret-blink: caret-blink 1.25s ease-out infinite;
+}
+@keyframes caret-blink {
+  0%,
+  70%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ---------- Showcase polish ---------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: color-mix(in oklab, var(--primary) 22%, transparent);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--muted-foreground) 35%, transparent) transparent;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Hero backdrop: faint grid fading out + a soft color glow */
+.hero-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
+}
+.hero-glow {
+  background:
+    radial-gradient(40% 50% at 30% 20%, color-mix(in oklab, oklch(0.62 0.21 275) 30%, transparent), transparent 70%),
+    radial-gradient(35% 45% at 75% 10%, color-mix(in oklab, oklch(0.7 0.17 200) 26%, transparent), transparent 70%);
+}
+.gradient-text {
+  background-image: linear-gradient(120deg, oklch(0.55 0.22 275), oklch(0.62 0.19 230) 55%, oklch(0.7 0.16 190));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.dark .gradient-text {
+  background-image: linear-gradient(120deg, oklch(0.78 0.14 280), oklch(0.8 0.12 230) 55%, oklch(0.85 0.12 190));
+}
+
+/* Demo pages: consistent title + spec line without touching every page */
+.demo-stage h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+.demo-stage h1 + p {
+  font-size: 0.8125rem;
+  margin-bottom: 1.75rem !important;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px dashed var(--border);
+}
+.demo-stage h2 {
+  scroll-margin-top: 5rem;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+/* ---------- Accent presets (class on <html>, combine with .dark) ---------- */
+.theme-blue { --primary: oklch(0.546 0.245 262.881); --primary-foreground: oklch(0.985 0 0); --ring: oklch(0.623 0.214 259.815); --sidebar-primary: var(--primary); }
+.dark.theme-blue { --primary: oklch(0.623 0.214 259.815); --ring: oklch(0.546 0.245 262.881); }
+.theme-rose { --primary: oklch(0.586 0.253 17.585); --primary-foreground: oklch(0.985 0 0); --ring: oklch(0.645 0.246 16.439); --sidebar-primary: var(--primary); }
+.dark.theme-rose { --primary: oklch(0.645 0.246 16.439); --ring: oklch(0.586 0.253 17.585); }
+.theme-green { --primary: oklch(0.627 0.194 149.214); --primary-foreground: oklch(0.985 0 0); --ring: oklch(0.723 0.219 149.579); --sidebar-primary: var(--primary); }
+.dark.theme-green { --primary: oklch(0.696 0.17 162.48); --primary-foreground: oklch(0.205 0 0); --ring: oklch(0.627 0.194 149.214); }
+.theme-orange { --primary: oklch(0.646 0.222 41.116); --primary-foreground: oklch(0.985 0 0); --ring: oklch(0.705 0.213 47.604); --sidebar-primary: var(--primary); }
+.dark.theme-orange { --primary: oklch(0.705 0.213 47.604); --primary-foreground: oklch(0.205 0 0); --ring: oklch(0.646 0.222 41.116); }
+.theme-violet { --primary: oklch(0.541 0.281 293.009); --primary-foreground: oklch(0.985 0 0); --ring: oklch(0.606 0.25 292.717); --sidebar-primary: var(--primary); }
+.dark.theme-violet { --primary: oklch(0.606 0.25 292.717); --ring: oklch(0.541 0.281 293.009); }
+:is(.theme-blue, .theme-rose, .theme-green, .theme-orange, .theme-violet) {
+  --chart-1: color-mix(in oklab, var(--primary) 55%, white);
+  --chart-2: color-mix(in oklab, var(--primary) 80%, white);
+  --chart-3: var(--primary);
+  --chart-4: color-mix(in oklab, var(--primary) 78%, black);
+  --chart-5: color-mix(in oklab, var(--primary) 58%, black);
+}
+
+/* ---------- Animated theme / direction switches (View Transitions API) ---------- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+html[data-vt='theme']::view-transition-new(root) {
+  z-index: 2;
+  animation: vt-reveal 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+html[data-vt='theme']::view-transition-old(root) {
+  z-index: 1;
+}
+@keyframes vt-reveal {
+  from {
+    clip-path: circle(0 at var(--vt-x, 50%) var(--vt-y, 0));
+  }
+  to {
+    clip-path: circle(var(--vt-r, 150vmax) at var(--vt-x, 50%) var(--vt-y, 0));
+  }
+}
+html[data-vt='dir']::view-transition-old(root) {
+  animation: vt-out 0.35s ease-in both;
+}
+html[data-vt='dir']::view-transition-new(root) {
+  animation: vt-in 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes vt-out {
+  to {
+    opacity: 0;
+    transform: translateX(calc(var(--vt-dir, 1) * -28px)) scale(0.99);
+  }
+}
+@keyframes vt-in {
+  from {
+    opacity: 0;
+    transform: translateX(calc(var(--vt-dir, 1) * 28px)) scale(0.99);
+  }
+}
+html[dir='rtl'] {
+  --vt-dir: -1;
+}
+/* Fallback for browsers without View Transitions: quick color cross-fade */
+html.vt-fallback *,
+html.vt-fallback *::before,
+html.vt-fallback *::after {
+  transition: background-color 0.35s, color 0.35s, border-color 0.35s, fill 0.35s, stroke 0.35s !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* ======================= Showcase UI layer (not part of the library theme) ======================= */
+
+/* Deep blue-black dark mode: softer than neutral black, with a hint of hue so cards separate from the page. */
+.dark {
+  --background: oklch(0.16 0.025 268);
+  --card: oklch(0.2 0.027 268);
+  --popover: oklch(0.2 0.027 268);
+  --secondary: oklch(0.27 0.03 268);
+  --muted: oklch(0.25 0.028 268);
+  --accent: oklch(0.28 0.03 268);
+  --border: oklch(0.85 0.03 268 / 11%);
+  --input: oklch(0.85 0.03 268 / 16%);
+  --muted-foreground: oklch(0.73 0.02 268);
+  --sidebar: oklch(0.18 0.026 268);
+}
+.dark .glow-card {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--primary) 14%, transparent), 0 18px 50px -28px color-mix(in oklab, var(--primary) 55%, transparent);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Cursor-following hero light */
+.hero-spot {
+  width: 640px;
+  height: 640px;
+  margin: -320px 0 0 -320px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in oklab, var(--primary) 16%, transparent), transparent);
+  transform: translate3d(50vw, 220px, 0);
+  will-change: transform;
+}
+
+/* Floating hero cards */
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.floaty {
+  animation: floaty 7s ease-in-out infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .floaty {
+    animation: none;
+  }
+}
+
+/* Component marquee (always LTR so the loop math works in RTL too) */
+.marquee {
+  direction: ltr;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 9%, #000 91%, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: marquee 55s linear infinite;
+}
+.marquee.rev .marquee-track {
+  animation-direction: reverse;
+  animation-duration: 65s;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* Tilt cards with a glare that follows the pointer */
+.tilt {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease-out, box-shadow 0.25s, border-color 0.25s;
+  will-change: transform;
+}
+.tilt::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+  background: radial-gradient(240px circle at var(--gx, 50%) var(--gy, 50%), color-mix(in oklab, var(--foreground) 9%, transparent), transparent 65%);
+}
+.tilt:hover::after {
+  opacity: 1;
+}
+
+/* Copy feedback: check pop + confetti burst */
+@keyframes pop {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pop {
+  animation: pop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+}
+@keyframes confetti {
+  from {
+    transform: translate(0, 0) scale(1) rotate(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(var(--dx), var(--dy)) scale(0.4) rotate(var(--rot));
+    opacity: 0;
+  }
+}
+.confetti {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px;
+  border-radius: 2px;
+  pointer-events: none;
+  animation: confetti 0.7s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pop,
+  .confetti {
+    animation: none;
+  }
+  .confetti {
+    display: none;
+  }
+}
+
+/* Header scroll progress */
+.scroll-progress {
+  transform-origin: left;
+  transform: scaleX(0);
+  will-change: transform;
+}
+html[dir='rtl'] .scroll-progress {
+  transform-origin: right;
+}
+
+/* NEW badge shimmer */
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.badge-new {
+  background-image: linear-gradient(110deg, oklch(0.62 0.21 275), oklch(0.7 0.17 200), oklch(0.62 0.21 275));
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .badge-new {
+    animation: none;
+  }
+}
+
+/* Anchor links injected into demo headings */
+.anchor-link {
+  margin-inline-start: 0.5rem;
+  color: var(--muted-foreground);
+  opacity: 0;
+  text-decoration: none;
+  font-weight: 400;
+  transition: opacity 0.15s;
+}
+.group:hover > .anchor-link,
+.anchor-link:focus-visible {
+  opacity: 1;
+}
+
+/* Anchor links injected into demo headings */
+.anchor-link {
+  margin-inline-start: 0.5rem;
+  color: var(--muted-foreground);
+  opacity: 0;
+  text-decoration: none;
+  font-weight: 400;
+  transition: opacity 0.15s;
+}
+.group:hover > .anchor-link,
+.anchor-link:focus-visible {
+  opacity: 1;
+}
+
+/* Skip layout/paint of off-screen sections until they are near the viewport */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
+/* ---------- Visual ideas layer ---------- */
+
+/* 1) Animated gradient mesh (transform-only: GPU composited, no filters) */
+.mesh-blob {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  will-change: transform;
+  opacity: 0.5;
+}
+.dark .mesh-blob {
+  opacity: 0.65;
+}
+.mesh-1 {
+  width: 52rem;
+  height: 52rem;
+  left: -12rem;
+  top: -22rem;
+  background: radial-gradient(closest-side, oklch(0.62 0.21 275 / 0.55), transparent);
+  animation: mesh-a 26s ease-in-out infinite alternate;
+}
+.mesh-2 {
+  width: 46rem;
+  height: 46rem;
+  right: -10rem;
+  top: -18rem;
+  background: radial-gradient(closest-side, oklch(0.72 0.16 200 / 0.5), transparent);
+  animation: mesh-b 32s ease-in-out infinite alternate;
+}
+.mesh-3 {
+  width: 40rem;
+  height: 40rem;
+  left: 30%;
+  top: -10rem;
+  background: radial-gradient(closest-side, color-mix(in oklab, var(--primary) 45%, transparent), transparent);
+  animation: mesh-c 38s ease-in-out infinite alternate;
+}
+@keyframes mesh-a {
+  to {
+    transform: translate3d(16rem, 7rem, 0) scale(1.18);
+  }
+}
+@keyframes mesh-b {
+  to {
+    transform: translate3d(-14rem, 9rem, 0) scale(0.9);
+  }
+}
+@keyframes mesh-c {
+  to {
+    transform: translate3d(-8rem, 12rem, 0) scale(1.25);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob {
+    animation: none;
+  }
+}
+
+/* 4) Typed code */
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-inline-start: 1px;
+  vertical-align: text-bottom;
+  background: currentColor;
+  animation: caret-blink 1s steps(1) infinite;
+}
+.reveal-step {
+  opacity: 0.08;
+  transform: translateY(8px) scale(0.98);
+  filter: saturate(0.4);
+  transition: opacity 0.5s, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.5s;
+}
+.reveal-step.on {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* 6) 3D layered stack */
+.stack3d {
+  perspective: 1400px;
+}
+.stack3d-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(9deg) rotateY(-20deg) rotateZ(2deg);
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.stack3d:hover .stack3d-inner,
+.stack3d:focus-within .stack3d-inner {
+  transform: rotateX(5deg) rotateY(-10deg) rotateZ(1deg);
+}
+.stack3d-card {
+  position: absolute;
+  inset: 0;
+  transform: translate3d(calc(var(--i) * 22px), calc(var(--i) * -26px), calc(var(--i) * -70px));
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backface-visibility: hidden;
+}
+.stack3d:hover .stack3d-card,
+.stack3d:focus-within .stack3d-card {
+  transform: translate3d(calc(var(--i) * 84px), calc(var(--i) * -84px), calc(var(--i) * -34px));
+}
+html[dir='rtl'] .stack3d-inner {
+  transform: rotateX(9deg) rotateY(20deg) rotateZ(-2deg);
+}
+html[dir='rtl'] .stack3d-card {
+  transform: translate3d(calc(var(--i) * -22px), calc(var(--i) * -26px), calc(var(--i) * -70px));
+}
+html[dir='rtl'] .stack3d:hover .stack3d-card,
+html[dir='rtl'] .stack3d:focus-within .stack3d-card {
+  transform: translate3d(calc(var(--i) * -84px), calc(var(--i) * -84px), calc(var(--i) * -34px));
+}
+@media (prefers-reduced-motion: reduce) {
+  .stack3d-inner,
+  .stack3d-card {
+    transition: none;
+  }
+}

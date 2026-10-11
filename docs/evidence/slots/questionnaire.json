@@ -1,0 +1,631 @@
+{
+ "questionnaire": {
+  "tag": "form",
+  "attrs": {
+   "data-current": [
+    "1",
+    "2"
+   ],
+   "data-first": [
+    ""
+   ],
+   "data-total": [
+    "3",
+    "1",
+    "2",
+    "4"
+   ],
+   "data-shortcuts": [
+    "letters",
+    "numbers"
+   ],
+   "novalidate": [
+    ""
+   ],
+   "data-last": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "flex w-full min-w-0 flex-col gap-4 mx-auto max-w-md"
+  },
+  "sets": {
+   "": [
+    "flex w-full min-w-0 flex-col gap-4 mx-auto max-w-md",
+    "flex w-full min-w-0 flex-col gap-4 mt-auto"
+   ]
+  }
+ },
+ "questionnaire-progress": {
+  "tag": "div",
+  "attrs": {
+   "data-current": [
+    "1",
+    "2"
+   ],
+   "data-first": [
+    ""
+   ],
+   "data-total": [
+    "3",
+    "2",
+    "4"
+   ],
+   "aria-label": [
+    "Questionnaire progress"
+   ],
+   "aria-live": [
+    "polite"
+   ],
+   "aria-valuemax": [
+    "3",
+    "2",
+    "4"
+   ],
+   "aria-valuemin": [
+    "1"
+   ],
+   "aria-valuenow": [
+    "1",
+    "2"
+   ],
+   "aria-valuetext": [
+    "Question 1 of 3",
+    "Question 1 of 2",
+    "Question 2 of 3",
+    "Question 1 of 4"
+   ],
+   "role": [
+    "progressbar"
+   ]
+  },
+  "variants": {
+   "": "min-h-[1lh] min-w-[14ch] text-xs font-medium text-muted-foreground tabular-nums w-full"
+  },
+  "sets": {
+   "": [
+    "min-h-[1lh] w-fit min-w-[14ch] text-xs font-medium text-muted-foreground tabular-nums",
+    "min-h-[1lh] w-fit text-xs font-medium text-muted-foreground tabular-nums min-w-0",
+    "min-h-[1lh] min-w-[14ch] text-xs font-medium text-muted-foreground tabular-nums w-full"
+   ]
+  }
+ },
+ "questionnaire-item": {
+  "tag": "fieldset",
+  "attrs": {
+   "data-active": [
+    ""
+   ],
+   "data-required": [
+    ""
+   ],
+   "data-status": [
+    "unanswered",
+    "answered"
+   ],
+   "aria-keyshortcuts": [
+    "Meta+Enter Control+Enter ArrowUp ArrowDown",
+    "Meta+Enter Control+Enter ArrowUp ArrowDown ArrowLeft ArrowRight",
+    "Meta+Enter Control+Enter ArrowUp ArrowDown ArrowRight"
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "data-multiple": [
+    ""
+   ],
+   "hidden": [
+    ""
+   ],
+   "inert": [
+    ""
+   ],
+   "data-disabled": [
+    ""
+   ],
+   "disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "flex min-w-0 flex-col gap-4 border-0 p-0 outline-none data-active:animate-in data-active:fade-in-0 data-active:slide-in-from-bottom-2 data-active:duration-300 motion-reduce:animate-none"
+  },
+  "sets": {
+   "": [
+    "flex min-w-0 flex-col gap-4 border-0 p-0 outline-none",
+    "flex min-w-0 flex-col gap-4 border-0 p-0 outline-none data-active:animate-in data-active:fade-in-0 data-active:slide-in-from-bottom-2 data-active:duration-300 motion-reduce:animate-none"
+   ]
+  }
+ },
+ "questionnaire-title": {
+  "tag": "legend",
+  "attrs": {},
+  "variants": {
+   "": "cn-font-heading group-data-[size=sm]/card:text-sm cn-font-heading text-base leading-snug font-medium text-pretty [&:not(:has(~[data-slot=questionnaire-description]))]:mb-4"
+  },
+  "sets": {
+   "": [
+    "cn-font-heading text-base leading-snug font-medium text-pretty [&:not(:has(~[data-slot=questionnaire-description]))]:mb-4",
+    "cn-font-heading group-data-[size=sm]/card:text-sm cn-font-heading text-base leading-snug font-medium text-pretty [&:not(:has(~[data-slot=questionnaire-description]))]:mb-4"
+   ]
+  }
+ },
+ "questionnaire-description": {
+  "tag": "p",
+  "attrs": {},
+  "variants": {
+   "": "text-sm text-pretty text-muted-foreground"
+  },
+  "sets": {
+   "": [
+    "text-sm text-pretty text-muted-foreground"
+   ]
+  }
+ },
+ "questionnaire-choices": {
+  "tag": "div",
+  "attrs": {
+   "data-shortcuts": [
+    "letters",
+    "numbers"
+   ]
+  },
+  "variants": {
+   "": "group/questionnaire-choices grid min-w-0 gap-2"
+  },
+  "sets": {
+   "": [
+    "group/questionnaire-choices grid min-w-0 gap-2"
+   ]
+  }
+ },
+ "questionnaire-choice": {
+  "tag": "label",
+  "attrs": {
+   "data-unchecked": [
+    ""
+   ],
+   "data-shortcut": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "data-type": [
+    "radio",
+    "checkbox"
+   ],
+   "data-checked": [
+    ""
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "group/questionnaire-choice relative flex min-h-11 cursor-pointer items-start gap-2.5 rounded-lg border border-input bg-transparent px-3 py-2.5 text-start text-sm transition-colors outline-none select-none hover:bg-muted/50 has-[>input:focus-visible]:border-ring has-[>input:focus-visible]:ring-3 has-[>input:focus-visible]:ring-ring/50 data-invalid:border-destructive dark:bg-input/20 data-checked:border-primary/40 data-checked:bg-muted dark:data-checked:bg-muted data-disabled:pointer-events-none data-disabled:cursor-not-allowed data-disabled:opacity-50"
+  },
+  "sets": {
+   "": [
+    "group/questionnaire-choice relative flex min-h-11 cursor-pointer items-start gap-2.5 rounded-lg border border-input bg-transparent px-3 py-2.5 text-start text-sm transition-colors outline-none select-none hover:bg-muted/50 has-[>input:focus-visible]:border-ring has-[>input:focus-visible]:ring-3 has-[>input:focus-visible]:ring-ring/50 data-invalid:border-destructive dark:bg-input/20 data-checked:border-primary/40 data-checked:bg-muted dark:data-checked:bg-muted data-disabled:pointer-events-none data-disabled:cursor-not-allowed data-disabled:opacity-50"
+   ]
+  }
+ },
+ "questionnaire-choice-input": {
+  "tag": "input",
+  "attrs": {
+   "data-unchecked": [
+    ""
+   ],
+   "data-shortcut": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "data-type": [
+    "radio",
+    "checkbox"
+   ],
+   "aria-keyshortcuts": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "type": [
+    "radio",
+    "checkbox"
+   ],
+   "required": [
+    ""
+   ],
+   "data-checked": [
+    ""
+   ],
+   "checked": [
+    ""
+   ],
+   "data-disabled": [
+    ""
+   ],
+   "disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "absolute inset-0 z-10 size-full cursor-pointer opacity-0"
+  },
+  "sets": {
+   "": [
+    "absolute inset-0 z-10 size-full cursor-pointer opacity-0"
+   ]
+  }
+ },
+ "questionnaire-choice-indicator": {
+  "tag": "span",
+  "attrs": {
+   "aria-hidden": [
+    "true"
+   ]
+  },
+  "variants": {
+   "": "pointer-events-none relative flex size-4 shrink-0 translate-y-[--spacing(0.45)] items-center justify-center rounded-[4px] border border-input group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5 group-data-[type=radio]/questionnaire-choice:rounded-full group-data-checked/questionnaire-choice:border-primary group-data-checked/questionnaire-choice:bg-primary group-data-checked/questionnaire-choice:text-primary-foreground dark:bg-input/30 dark:group-data-checked/questionnaire-choice:bg-primary"
+  },
+  "sets": {
+   "": [
+    "pointer-events-none relative flex size-4 shrink-0 translate-y-[--spacing(0.45)] items-center justify-center rounded-[4px] border border-input group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5 group-data-[type=radio]/questionnaire-choice:rounded-full group-data-checked/questionnaire-choice:border-primary group-data-checked/questionnaire-choice:bg-primary group-data-checked/questionnaire-choice:text-primary-foreground dark:bg-input/30 dark:group-data-checked/questionnaire-choice:bg-primary"
+   ]
+  }
+ },
+ "questionnaire-choice-indicator-dot": {
+  "tag": "span",
+  "attrs": {},
+  "variants": {
+   "": "hidden size-2 rounded-full bg-primary-foreground group-data-[type=checkbox]/questionnaire-choice:hidden group-data-checked/questionnaire-choice:block"
+  },
+  "sets": {
+   "": [
+    "hidden size-2 rounded-full bg-primary-foreground group-data-[type=checkbox]/questionnaire-choice:hidden group-data-checked/questionnaire-choice:block"
+   ]
+  }
+ },
+ "questionnaire-choice-indicator-check": {
+  "tag": "svg",
+  "attrs": {
+   "xmlns": [
+    "http://www.w3.org/2000/svg"
+   ],
+   "width": [
+    "24"
+   ],
+   "height": [
+    "24"
+   ],
+   "viewBox": [
+    "0 0 24 24"
+   ],
+   "fill": [
+    "none"
+   ],
+   "stroke": [
+    "currentColor"
+   ],
+   "stroke-width": [
+    "2"
+   ],
+   "stroke-linecap": [
+    "round"
+   ],
+   "stroke-linejoin": [
+    "round"
+   ]
+  },
+  "variants": {
+   "": "lucide lucide-check hidden size-3.5 group-data-[type=radio]/questionnaire-choice:hidden group-data-checked/questionnaire-choice:block"
+  },
+  "sets": {
+   "": [
+    "lucide lucide-check hidden size-3.5 group-data-[type=radio]/questionnaire-choice:hidden group-data-checked/questionnaire-choice:block"
+   ]
+  }
+ },
+ "questionnaire-choice-label": {
+  "tag": "span",
+  "attrs": {},
+  "variants": {
+   "": "flex min-w-0 flex-1 flex-col gap-0.5 leading-snug"
+  },
+  "sets": {
+   "": [
+    "flex min-w-0 flex-1 flex-col gap-0.5 leading-snug"
+   ]
+  }
+ },
+ "questionnaire-choice-shortcut": {
+  "tag": "span",
+  "attrs": {
+   "data-shortcut": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "aria-hidden": [
+    "true"
+   ],
+   "hidden": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "pointer-events-none ms-auto hidden size-5 shrink-0 translate-y-[--spacing(0.45)] items-center justify-center rounded-md border border-input bg-background font-mono text-[0.625rem] leading-none font-medium text-muted-foreground group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5 group-data-[shortcut]/questionnaire-choice:inline-flex"
+  },
+  "sets": {
+   "": [
+    "pointer-events-none ms-auto hidden size-5 shrink-0 translate-y-[--spacing(0.45)] items-center justify-center rounded-md border border-input bg-background font-mono text-[0.625rem] leading-none font-medium text-muted-foreground group-has-data-[slot=questionnaire-choice-description]/questionnaire-choice:translate-y-0.5 group-data-[shortcut]/questionnaire-choice:inline-flex"
+   ]
+  }
+ },
+ "questionnaire-input-wrapper": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "group/questionnaire-input relative w-full min-w-0"
+  },
+  "sets": {
+   "": [
+    "group/questionnaire-input relative w-full min-w-0"
+   ]
+  }
+ },
+ "questionnaire-input": {
+  "tag": "input",
+  "attrs": {
+   "data-empty": [
+    ""
+   ],
+   "form": [
+    ""
+   ],
+   "type": [
+    "text"
+   ],
+   "aria-label": [
+    "Another agent feature",
+    "Another refactoring approach",
+    "Another implementation constraint",
+    "Saved migration note"
+   ],
+   "data-filled": [
+    ""
+   ],
+   "aria-keyshortcuts": [
+    "Enter"
+   ]
+  },
+  "variants": {
+   "": "h-8 min-h-11 w-full min-w-0 rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-[color,box-shadow,background-color] outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 sm:min-h-0 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 selection:bg-primary selection:text-primary-foreground placeholder:text-muted-foreground"
+  },
+  "sets": {
+   "": [
+    "h-8 min-h-11 w-full min-w-0 rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-[color,box-shadow,background-color] outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 sm:min-h-0 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 selection:bg-primary selection:text-primary-foreground placeholder:text-muted-foreground"
+   ]
+  }
+ },
+ "questionnaire-error": {
+  "tag": "p",
+  "attrs": {
+   "hidden": [
+    ""
+   ]
+  },
+  "variants": {
+   "": "mt-2 text-sm text-destructive"
+  },
+  "sets": {
+   "": [
+    "mt-2 text-sm text-destructive"
+   ]
+  }
+ },
+ "questionnaire-actions": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "grid min-h-11 w-full grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-2 sm:min-h-8"
+  },
+  "sets": {
+   "": [
+    "grid min-h-11 w-full grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-2 sm:min-h-8",
+    "grid min-h-11 grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-2 sm:min-h-8 w-full"
+   ]
+  }
+ },
+ "questionnaire-previous": {
+  "tag": "button",
+  "attrs": {
+   "data-status": [
+    "unanswered",
+    "answered"
+   ],
+   "data-hidden": [
+    ""
+   ],
+   "aria-hidden": [
+    "true"
+   ],
+   "hidden": [
+    ""
+   ],
+   "inert": [
+    ""
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "type": [
+    "button"
+   ],
+   "data-size": [
+    "default"
+   ],
+   "data-variant": [
+    "outline"
+   ],
+   "data-visible": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-variant=outline|data-size=default": "group/button inline-flex shrink-0 items-center justify-center rounded-lg border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-1 row-start-1 min-h-11 justify-self-start sm:min-h-0"
+  },
+  "sets": {
+   "data-variant=outline|data-size=default": [
+    "group/button inline-flex shrink-0 items-center justify-center rounded-lg border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-1 row-start-1 min-h-11 justify-self-start sm:min-h-0"
+   ]
+  }
+ },
+ "questionnaire-skip": {
+  "tag": "button",
+  "attrs": {
+   "data-status": [
+    "unanswered"
+   ],
+   "data-hidden": [
+    ""
+   ],
+   "aria-hidden": [
+    "true"
+   ],
+   "hidden": [
+    ""
+   ],
+   "inert": [
+    ""
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "type": [
+    "button"
+   ],
+   "data-size": [
+    "default"
+   ],
+   "data-variant": [
+    "outline"
+   ]
+  },
+  "variants": {
+   "data-variant=outline|data-size=default": "group/button inline-flex shrink-0 items-center justify-center rounded-lg border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-2 row-start-1 min-h-11 justify-self-end sm:min-h-0"
+  },
+  "sets": {
+   "data-variant=outline|data-size=default": [
+    "group/button inline-flex shrink-0 items-center justify-center rounded-lg border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-2 row-start-1 min-h-11 justify-self-end sm:min-h-0"
+   ]
+  }
+ },
+ "questionnaire-next": {
+  "tag": "button",
+  "attrs": {
+   "data-shortcut": [
+    "Enter"
+   ],
+   "data-status": [
+    "unanswered",
+    "answered"
+   ],
+   "data-visible": [
+    ""
+   ],
+   "aria-keyshortcuts": [
+    "Enter"
+   ],
+   "type": [
+    "button"
+   ],
+   "data-size": [
+    "default"
+   ],
+   "data-variant": [
+    "default",
+    "secondary"
+   ],
+   "data-disabled": [
+    ""
+   ],
+   "disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-variant=default|data-size=default": "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0",
+   "data-variant=secondary|data-size=default": "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0 data-[status=unanswered]:opacity-50"
+  },
+  "sets": {
+   "data-variant=default|data-size=default": [
+    "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0"
+   ],
+   "data-variant=secondary|data-size=default": [
+    "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0 data-[status=unanswered]:opacity-50"
+   ]
+  }
+ },
+ "questionnaire-submit": {
+  "tag": "button",
+  "attrs": {
+   "data-status": [
+    "unanswered",
+    "answered"
+   ],
+   "data-hidden": [
+    ""
+   ],
+   "aria-hidden": [
+    "true"
+   ],
+   "hidden": [
+    ""
+   ],
+   "inert": [
+    ""
+   ],
+   "tabindex": [
+    "-1"
+   ],
+   "type": [
+    "submit"
+   ],
+   "data-size": [
+    "default"
+   ],
+   "data-variant": [
+    "default"
+   ],
+   "data-shortcut": [
+    "Enter"
+   ],
+   "data-visible": [
+    ""
+   ],
+   "aria-keyshortcuts": [
+    "Enter"
+   ],
+   "data-disabled": [
+    ""
+   ],
+   "disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-variant=default|data-size=default": "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0"
+  },
+  "sets": {
+   "data-variant=default|data-size=default": [
+    "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 bg-primary text-primary-foreground hover:bg-primary/80 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 col-start-3 row-start-1 min-h-11 justify-self-end sm:min-h-0"
+   ]
+  }
+ }
+}

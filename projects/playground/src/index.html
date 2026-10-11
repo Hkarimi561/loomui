@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Loom UI</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Loom UI: accessible Angular components, woven your way. Directives and custom elements built on the CDK and Tailwind." />
+    <meta name="theme-color" content="#6366F1" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Loom UI" />
+    <meta property="og:description" content="Accessible Angular components, woven your way." />
+    <meta property="og:image" content="og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Loom UI" />
+    <meta name="twitter:description" content="Accessible Angular components, woven your way." />
+    <meta name="twitter:image" content="og-image.png" />
+    <script>
+      (function () {
+        try {
+          var d = document.documentElement, g = function (k) { return localStorage.getItem(k); };
+          var t = g('loom-theme');
+          var dark = t ? t === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+          d.classList.toggle('dark', dark);
+          d.style.colorScheme = dark ? 'dark' : 'light';
+          var a = g('loom-accent');
+          if (a && a !== 'zinc') d.classList.add('theme-' + a);
+          if (g('loom-dir') === 'rtl') d.dir = 'rtl';
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+</html>

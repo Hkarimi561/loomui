@@ -1,0 +1,161 @@
+{
+ "item": {
+  "tag": "div",
+  "attrs": {
+   "data-variant": [
+    "outline",
+    "default",
+    "muted"
+   ],
+   "data-size": [
+    "default",
+    "sm",
+    "xs"
+   ],
+   "role": [
+    "listitem"
+   ],
+   "target": [
+    "_blank"
+   ],
+   "rel": [
+    "noopener noreferrer"
+   ],
+   "dir": [
+    "rtl"
+   ]
+  },
+  "variants": {
+   "data-variant=outline|data-size=default": "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-border gap-2.5 px-3 py-2.5",
+   "data-variant=outline|data-size=sm": "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-border gap-2.5 px-3 py-2.5",
+   "data-variant=default|data-size=default": "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-transparent gap-2.5 px-3 py-2.5",
+   "data-variant=muted|data-size=default": "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-transparent bg-muted/50 gap-2.5 px-3 py-2.5",
+   "data-variant=outline|data-size=xs": "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-border gap-2 px-2.5 py-2 in-data-[slot=dropdown-menu-content]:p-0"
+  },
+  "sets": {
+   "data-variant=outline|data-size=default": [
+    "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-border gap-2.5 px-3 py-2.5"
+   ],
+   "data-variant=outline|data-size=sm": [
+    "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-border gap-2.5 px-3 py-2.5"
+   ],
+   "data-variant=default|data-size=default": [
+    "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-transparent gap-2.5 px-3 py-2.5"
+   ],
+   "data-variant=muted|data-size=default": [
+    "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-transparent bg-muted/50 gap-2.5 px-3 py-2.5"
+   ],
+   "data-variant=outline|data-size=xs": [
+    "group/item flex w-full flex-wrap items-center rounded-lg border text-sm transition-colors duration-100 outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 [a]:transition-colors [a]:hover:bg-muted border-border gap-2 px-2.5 py-2 in-data-[slot=dropdown-menu-content]:p-0"
+   ]
+  }
+ },
+ "item-content": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex flex-col gap-1 group-data-[size=xs]/item:gap-0 [&+[data-slot=item-content]]:flex-none flex-none text-center"
+  },
+  "sets": {
+   "": [
+    "flex flex-1 flex-col gap-1 group-data-[size=xs]/item:gap-0 [&+[data-slot=item-content]]:flex-none",
+    "flex flex-col gap-1 group-data-[size=xs]/item:gap-0 [&+[data-slot=item-content]]:flex-none flex-none text-center",
+    "flex flex-1 flex-col group-data-[size=xs]/item:gap-0 [&+[data-slot=item-content]]:flex-none gap-1"
+   ]
+  }
+ },
+ "item-title": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "line-clamp-1 flex w-fit items-center gap-2 text-sm leading-snug font-medium underline-offset-4"
+  },
+  "sets": {
+   "": [
+    "line-clamp-1 flex w-fit items-center gap-2 text-sm leading-snug font-medium underline-offset-4",
+    "w-fit items-center gap-2 text-sm leading-snug font-medium underline-offset-4 line-clamp-1"
+   ]
+  }
+ },
+ "item-description": {
+  "tag": "p",
+  "attrs": {},
+  "variants": {
+   "": "line-clamp-2 text-start text-sm leading-normal font-normal text-muted-foreground group-data-[size=xs]/item:text-xs [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary"
+  },
+  "sets": {
+   "": [
+    "line-clamp-2 text-left text-sm leading-normal font-normal text-muted-foreground group-data-[size=xs]/item:text-xs [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
+    "line-clamp-2 text-start text-sm leading-normal font-normal text-muted-foreground group-data-[size=xs]/item:text-xs [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary"
+   ]
+  }
+ },
+ "item-actions": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex items-center gap-2"
+  },
+  "sets": {
+   "": [
+    "flex items-center gap-2"
+   ]
+  }
+ },
+ "item-media": {
+  "tag": "div",
+  "attrs": {
+   "data-variant": [
+    "default",
+    "icon",
+    "image"
+   ]
+  },
+  "variants": {
+   "data-variant=default": "flex shrink-0 items-center justify-center gap-2 group-has-data-[slot=item-description]/item:translate-y-0.5 group-has-data-[slot=item-description]/item:self-start [&_svg]:pointer-events-none bg-transparent",
+   "data-variant=icon": "flex shrink-0 items-center justify-center gap-2 group-has-data-[slot=item-description]/item:translate-y-0.5 group-has-data-[slot=item-description]/item:self-start [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4",
+   "data-variant=image": "flex shrink-0 items-center justify-center gap-2 group-has-data-[slot=item-description]/item:translate-y-0.5 group-has-data-[slot=item-description]/item:self-start [&_svg]:pointer-events-none size-10 overflow-hidden rounded-sm group-data-[size=sm]/item:size-8 group-data-[size=xs]/item:size-6 [&_img]:size-full [&_img]:object-cover"
+  },
+  "sets": {
+   "data-variant=default": [
+    "flex shrink-0 items-center justify-center gap-2 group-has-data-[slot=item-description]/item:translate-y-0.5 group-has-data-[slot=item-description]/item:self-start [&_svg]:pointer-events-none bg-transparent"
+   ],
+   "data-variant=icon": [
+    "flex shrink-0 items-center justify-center gap-2 group-has-data-[slot=item-description]/item:translate-y-0.5 group-has-data-[slot=item-description]/item:self-start [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4"
+   ],
+   "data-variant=image": [
+    "flex shrink-0 items-center justify-center gap-2 group-has-data-[slot=item-description]/item:translate-y-0.5 group-has-data-[slot=item-description]/item:self-start [&_svg]:pointer-events-none size-10 overflow-hidden rounded-sm group-data-[size=sm]/item:size-8 group-data-[size=xs]/item:size-6 [&_img]:size-full [&_img]:object-cover"
+   ]
+  }
+ },
+ "item-group": {
+  "tag": "div",
+  "attrs": {
+   "role": [
+    "list"
+   ]
+  },
+  "variants": {
+   "": "group/item-group w-full flex-col has-data-[size=sm]:gap-2.5 has-data-[size=xs]:gap-2 grid grid-cols-3 gap-4"
+  },
+  "sets": {
+   "": [
+    "group/item-group flex w-full flex-col has-data-[size=sm]:gap-2.5 has-data-[size=xs]:gap-2 gap-4",
+    "group/item-group flex w-full flex-col gap-4 has-data-[size=sm]:gap-2.5 has-data-[size=xs]:gap-2 max-w-sm",
+    "group/item-group w-full flex-col has-data-[size=sm]:gap-2.5 has-data-[size=xs]:gap-2 grid grid-cols-3 gap-4"
+   ]
+  }
+ },
+ "item-header": {
+  "tag": "div",
+  "attrs": {},
+  "variants": {
+   "": "flex basis-full items-center justify-between gap-2"
+  },
+  "sets": {
+   "": [
+    "flex basis-full items-center justify-between gap-2"
+   ]
+  }
+ }
+}

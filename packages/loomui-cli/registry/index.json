@@ -1,0 +1,1061 @@
+{
+  "version": "0.1.0",
+  "components": [
+    {
+      "name": "accordion",
+      "description": "Stacked sections that expand and collapse.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "accordion.manual.ts",
+        "accordion.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "alert",
+      "description": "Callout for important messages.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "alert.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "description": "Modal that demands a decision.",
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "alert-dialog.manual.ts",
+        "alert-dialog.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "description": "Keep content at a fixed ratio.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "aspect-ratio.manual.ts",
+        "aspect-ratio.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "attachment",
+      "description": "File chip with actions and states.",
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "attachment.manual.ts",
+        "attachment.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "avatar",
+      "description": "Image with graceful fallback.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "avatar.manual.ts",
+        "avatar.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "badge",
+      "description": "Small status or label pill.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "badge.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "description": "Where you are in the hierarchy.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "breadcrumb.manual.ts",
+        "breadcrumb.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "bubble",
+      "description": "Message bubbles with variants.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "bubble.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "button",
+      "description": "Six variants, many sizes.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "button-variants.ts",
+        "button.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "button-group",
+      "description": "Join buttons into one control.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "button-group.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "calendar",
+      "description": "Pick a day, many days or a range.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "calendar.classes.ts",
+        "calendar.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "card",
+      "description": "Container with header, content, footer.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "card.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "carousel",
+      "description": "Swipeable slides powered by Embla.",
+      "registryDependencies": [
+        "button",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "embla-carousel": "^8.6.0"
+      },
+      "files": [
+        "carousel.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "chart",
+      "description": "Bar, line and pie charts.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "chart.js": "^4.5.1"
+      },
+      "files": [
+        "chart.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "checkbox",
+      "description": "Tri-state checkbox.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "checkbox.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "collapsible",
+      "description": "One region that shows or hides.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "collapsible.manual.ts",
+        "collapsible.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "combobox",
+      "description": "Searchable select.",
+      "registryDependencies": [
+        "button",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "combobox.manual.ts",
+        "combobox.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "command",
+      "description": "Fast, filterable command list.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "command.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "context-menu",
+      "description": "Right-click menu at the pointer.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "context-menu.manual.ts",
+        "context-menu.shared.ts",
+        "context-menu.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "data-table",
+      "description": "Sort, filter, page — TanStack Table.",
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@tanstack/angular-table": "^9.2.8"
+      },
+      "files": [
+        "data-table.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "date-picker",
+      "description": "Popover calendar with a field.",
+      "registryDependencies": [
+        "button",
+        "calendar",
+        "icon",
+        "popover",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "date-picker.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "dialog",
+      "description": "Modal window with focus trap.",
+      "registryDependencies": [
+        "button",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "dialog.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "direction",
+      "description": "Scope LTR / RTL to a subtree.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "direction.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "drawer",
+      "description": "Drag-to-dismiss bottom sheet.",
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "drawer.manual.ts",
+        "drawer.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "description": "Menu with items, checks, sub-menus.",
+      "registryDependencies": [
+        "context-menu",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "dropdown-menu.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "empty",
+      "description": "Friendly empty state.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "empty.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "field",
+      "description": "Label, control, hint and error.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "field.manual.ts",
+        "field.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "hover-card",
+      "description": "Preview on hover or focus.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "hover-card.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "icon",
+      "description": "",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/platform-browser": "^22.2.0",
+        "lucide": "^1.55.0"
+      },
+      "files": [
+        "icon.ts",
+        "index.ts"
+      ]
+    },
+    {
+      "name": "input",
+      "description": "Styled native input.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "input.ts"
+      ]
+    },
+    {
+      "name": "input-group",
+      "description": "Input with addons and buttons.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "index.ts",
+        "input-group.manual.ts",
+        "input-group.ts"
+      ]
+    },
+    {
+      "name": "input-otp",
+      "description": "One-time code entry.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "input-otp.manual.ts",
+        "input-otp.ts"
+      ]
+    },
+    {
+      "name": "item",
+      "description": "Flexible list row.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "index.ts",
+        "item.ts"
+      ]
+    },
+    {
+      "name": "kbd",
+      "description": "Keyboard key chips.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "kbd.ts"
+      ]
+    },
+    {
+      "name": "label",
+      "description": "Accessible form label.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "label.ts"
+      ]
+    },
+    {
+      "name": "marker",
+      "description": "Dividers for chat timelines.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "index.ts",
+        "marker.ts"
+      ]
+    },
+    {
+      "name": "menubar",
+      "description": "Desktop-style menu bar.",
+      "registryDependencies": [
+        "context-menu",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "menubar.manual.ts",
+        "menubar.shared.ts",
+        "menubar.ts"
+      ]
+    },
+    {
+      "name": "message",
+      "description": "Message row with avatar and meta.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "index.ts",
+        "message.ts"
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "description": "Sticks to the newest message.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "message-scroller.manual.ts",
+        "message-scroller.ts"
+      ]
+    },
+    {
+      "name": "native-select",
+      "description": "Styled native select.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "native-select.manual.ts",
+        "native-select.ts"
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "description": "Site navigation with panels.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "navigation-menu.manual.ts",
+        "navigation-menu.ts"
+      ]
+    },
+    {
+      "name": "pagination",
+      "description": "Page links with prev / next.",
+      "registryDependencies": [
+        "button",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "pagination.manual.ts",
+        "pagination.ts"
+      ]
+    },
+    {
+      "name": "popover",
+      "description": "Floating panel anchored to a trigger.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "popover.ts"
+      ]
+    },
+    {
+      "name": "progress",
+      "description": "Determinate progress bar.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "progress.manual.ts"
+      ]
+    },
+    {
+      "name": "questionnaire",
+      "description": "Step-by-step question flow.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "questionnaire.manual.ts",
+        "questionnaire.ts"
+      ]
+    },
+    {
+      "name": "radio-group",
+      "description": "Pick exactly one option.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "radio-group.manual.ts",
+        "radio-group.ts"
+      ]
+    },
+    {
+      "name": "resizable",
+      "description": "Drag or key to resize panels.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "resizable.manual.ts",
+        "resizable.ts"
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "description": "Custom scrollbars.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "scroll-area.manual.ts",
+        "scroll-area.ts"
+      ]
+    },
+    {
+      "name": "select",
+      "description": "Custom select with keyboard support.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "select.ts"
+      ]
+    },
+    {
+      "name": "separator",
+      "description": "Thin divider line.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "separator.ts"
+      ]
+    },
+    {
+      "name": "sheet",
+      "description": "Side panel overlay.",
+      "registryDependencies": [
+        "button",
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "sheet.ts"
+      ]
+    },
+    {
+      "name": "sidebar",
+      "description": "Collapsible app sidebar.",
+      "registryDependencies": [
+        "button",
+        "icon",
+        "sheet",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/common": "^22.2.0",
+        "@angular/core": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "index.ts",
+        "sidebar.ts"
+      ]
+    },
+    {
+      "name": "skeleton",
+      "description": "Pulsing loading placeholder.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "skeleton.ts"
+      ]
+    },
+    {
+      "name": "slider",
+      "description": "Single or range slider.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "slider.manual.ts",
+        "slider.ts"
+      ]
+    },
+    {
+      "name": "spinner",
+      "description": "Loading indicator.",
+      "registryDependencies": [
+        "icon",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "spinner.manual.ts"
+      ]
+    },
+    {
+      "name": "switch",
+      "description": "On / off toggle.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "switch.ts"
+      ]
+    },
+    {
+      "name": "table",
+      "description": "Styled table primitives.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "table.ts"
+      ]
+    },
+    {
+      "name": "tabs",
+      "description": "Switch between views.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "tabs.ts"
+      ]
+    },
+    {
+      "name": "textarea",
+      "description": "Auto-growing text area.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "textarea.manual.ts",
+        "textarea.ts"
+      ]
+    },
+    {
+      "name": "toast",
+      "description": "Sonner-style notifications.",
+      "registryDependencies": [
+        "icon"
+      ],
+      "dependencies": {
+        "@angular/common": "^22.2.0",
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "toast.css",
+        "toast.ts"
+      ]
+    },
+    {
+      "name": "toggle",
+      "description": "Pressed / not pressed button.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0",
+        "class-variance-authority": "^0.7.1"
+      },
+      "files": [
+        "index.ts",
+        "toggle.ts"
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "description": "Group of toggles.",
+      "registryDependencies": [
+        "toggle",
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "toggle-group.manual.ts",
+        "toggle-group.ts"
+      ]
+    },
+    {
+      "name": "tooltip",
+      "description": "Hint on hover or focus.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "tooltip.ts"
+      ]
+    },
+    {
+      "name": "typography",
+      "description": "Headings, text and lists.",
+      "registryDependencies": [
+        "utils"
+      ],
+      "dependencies": {
+        "@angular/core": "^22.2.0"
+      },
+      "files": [
+        "index.ts",
+        "typography.ts"
+      ]
+    },
+    {
+      "name": "utils",
+      "description": "",
+      "registryDependencies": [],
+      "dependencies": {
+        "@angular/cdk": "^22.2.2",
+        "@angular/core": "^22.2.0",
+        "@angular/forms": "^22.2.0",
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^3.7.0"
+      },
+      "files": [
+        "cn.ts",
+        "element-host.ts",
+        "elements.ts",
+        "index.ts",
+        "layer.ts",
+        "menu.ts",
+        "modal.ts",
+        "native-control.ts",
+        "overlay-helpers.ts",
+        "popper.ts"
+      ]
+    }
+  ]
+}

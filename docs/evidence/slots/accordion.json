@@ -1,0 +1,153 @@
+{
+ "accordion": {
+  "tag": "div",
+  "attrs": {
+   "data-orientation": [
+    "vertical"
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "flex w-full flex-col max-w-lg rounded-lg border"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "flex w-full flex-col max-w-lg",
+    "flex flex-col w-full",
+    "flex w-full flex-col max-w-lg rounded-lg border",
+    "flex w-full flex-col",
+    "flex w-full flex-col max-w-md"
+   ]
+  }
+ },
+ "accordion-item": {
+  "tag": "div",
+  "attrs": {
+   "data-state": [
+    "open",
+    "closed"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "not-last:border-b border-b px-4 last:border-b-0"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "not-last:border-b",
+    "not-last:border-b border-b px-4 last:border-b-0"
+   ]
+  }
+ },
+ "accordion-trigger": {
+  "tag": "button",
+  "attrs": {
+   "type": [
+    "button"
+   ],
+   "aria-expanded": [
+    "true",
+    "false"
+   ],
+   "data-state": [
+    "open",
+    "closed"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "data-radix-collection-item": [
+    ""
+   ],
+   "data-disabled": [
+    ""
+   ],
+   "disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "group/accordion-trigger relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 text-start text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ms-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "group/accordion-trigger relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground",
+    "group/accordion-trigger relative flex flex-1 items-start justify-between rounded-lg border border-transparent py-2.5 text-start text-sm font-medium transition-all outline-none hover:underline focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:after:border-ring disabled:pointer-events-none disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ms-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground"
+   ]
+  }
+ },
+ "accordion-trigger-icon": {
+  "tag": "svg",
+  "attrs": {
+   "xmlns": [
+    "http://www.w3.org/2000/svg"
+   ],
+   "width": [
+    "24"
+   ],
+   "height": [
+    "24"
+   ],
+   "viewBox": [
+    "0 0 24 24"
+   ],
+   "fill": [
+    "none"
+   ],
+   "stroke": [
+    "currentColor"
+   ],
+   "stroke-width": [
+    "2"
+   ],
+   "stroke-linecap": [
+    "round"
+   ],
+   "stroke-linejoin": [
+    "round"
+   ]
+  },
+  "variants": {
+   "": "lucide lucide-chevron-up pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline"
+  },
+  "sets": {
+   "": [
+    "lucide lucide-chevron-down pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden",
+    "lucide lucide-chevron-up pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline"
+   ]
+  }
+ },
+ "accordion-content": {
+  "tag": "div",
+  "attrs": {
+   "data-state": [
+    "open",
+    "closed"
+   ],
+   "role": [
+    "region"
+   ],
+   "data-orientation": [
+    "vertical"
+   ],
+   "hidden": [
+    ""
+   ],
+   "data-disabled": [
+    ""
+   ]
+  },
+  "variants": {
+   "data-orientation=vertical": "overflow-hidden text-sm data-open:animate-accordion-down data-closed:animate-accordion-up"
+  },
+  "sets": {
+   "data-orientation=vertical": [
+    "overflow-hidden text-sm data-open:animate-accordion-down data-closed:animate-accordion-up"
+   ]
+  }
+ }
+}
