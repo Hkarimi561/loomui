@@ -4,7 +4,7 @@
 //   npx @loomui-ng/cli add button dialog    copy components (and their dependencies) into your project
 //   npx @loomui-ng/cli add --all
 //   npx @loomui-ng/cli list
-// Options: --dir <path> (default src/app/ui)  --css <path> (default src/styles.css)  --overwrite  --install  --yes
+// Options: --dir <path> (default src/app/ui)  --css <path> (default src/styles.css)  --overwrite  --no-install
 //          --registry <dir|url>  (or env LOOMUI_REGISTRY)
 import fs from 'node:fs';
 import path from 'node:path';
@@ -76,17 +76,25 @@ function rewriteImports(content, fileDir, uiDir) {
   });
 }
 
+/** Installs the npm packages the copied code imports (skips ones already in the project's package.json). */
 function install(deps) {
-  const list = Object.entries(deps).map(([p, v]) => `${p}@${v}`);
+  let have = {};
+  try {
+    const pkg = JSON.parse(fs.readFileSync(path.join(cwd, 'package.json'), 'utf8'));
+    have = { ...pkg.dependencies, ...pkg.devDependencies };
+  } catch {}
+  const list = Object.entries(deps)
+    .filter(([p]) => !(p in have))
+    .map(([p, v]) => `${p}@${v}`);
   if (!list.length) return;
-  if (flags.install) {
-    info(`npm install ${list.join(' ')}`);
-    const r = spawnSync('npm', ['install', ...list], { stdio: 'inherit', shell: true, cwd });
-    if (r.status !== 0) warn('npm install failed — run it manually.');
-  } else {
+  if (flags['no-install']) {
     info('Install the npm dependencies:');
     console.log(`    npm install ${list.join(' ')}`);
+    return;
   }
+  info(`npm install ${list.join(' ')}`);
+  const r = spawnSync('npm', ['install', ...list], { stdio: 'inherit', shell: true, cwd });
+  if (r.status !== 0) warn(`npm install failed — run it manually:  npm install ${list.join(' ')}`);
 }
 
 // ---------- commands ----------
@@ -181,9 +189,10 @@ const help = () =>
   console.log(`Loom UI — copy accessible Angular components into your project
 
   loomui init [--dir src/app/ui] [--css src/styles.css]
-  loomui add <component...> [--all] [--overwrite] [--install]
+  loomui add <component...> [--all] [--overwrite] [--no-install]
   loomui list
 
+  --no-install           print the npm packages instead of installing them
   --registry <dir|url>   use another registry (or env LOOMUI_REGISTRY)`);
 
 try {

@@ -62,5 +62,5 @@ for (const name of fs.readdirSync(lib).sort()) {
 // Theme (tokens, variants, toast css) — built by tools/build-theme-css.mjs
 const theme = fs.readFileSync(path.join(lib, 'styles/loomui.css'), 'utf8');
 fs.writeFileSync(path.join(out, 'theme.json'), JSON.stringify({ name: 'theme', files: [{ path: 'loomui.css', content: theme }], dependencies: { 'tw-animate-css': versions['tw-animate-css'], '@angular/cdk': versions['@angular/cdk'], tailwindcss: versions['tailwindcss'] ?? '^4.0.0' } }));
-fs.writeFileSync(path.join(out, 'index.json'), JSON.stringify({ version: '0.1.1', components: index }, null, 2));
+fs.writeFileSync(path.join(out, 'index.json'), JSON.stringify({ version: '0.1.2', components: index }, null, 2));
 console.log('registry:', index.length, 'items →', path.relative(root, out));
