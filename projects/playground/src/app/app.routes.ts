@@ -29,6 +29,11 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'get-started',
+    title: 'Get started — Loom UI',
+    loadComponent: () => import('./pages/get-started').then((m) => m.GetStartedPage),
+  },
+  {
     path: 'themes',
     title: 'Themes — Loom UI',
     loadComponent: () => import('./pages/themes-page').then((m) => m.ThemesPage),

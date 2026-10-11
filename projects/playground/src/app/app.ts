@@ -36,6 +36,7 @@ import { Palette } from './palette';
 
           <nav aria-label="Main" class="hidden items-center gap-1 md:flex">
             <a routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="!text-foreground bg-muted" class="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">Home</a>
+            <a routerLink="/get-started" routerLinkActive="!text-foreground bg-muted" class="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">Get started</a>
             <a routerLink="/components" routerLinkActive="!text-foreground bg-muted" class="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">Components</a>
             <a routerLink="/elements" routerLinkActive="!text-foreground bg-muted" class="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">Elements</a>
             <a routerLink="/themes" routerLinkActive="!text-foreground bg-muted" class="rounded-md px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">Themes</a>
@@ -100,6 +101,7 @@ import { Palette } from './palette';
         @if (menuOpen()) {
           <nav id="mobile-menu" aria-label="Mobile" class="rise flex flex-col border-t p-2 md:hidden">
             <a routerLink="/" class="rounded-md px-3 py-2 text-sm hover:bg-muted">Home</a>
+            <a routerLink="/get-started" class="rounded-md px-3 py-2 text-sm hover:bg-muted">Get started</a>
             <a routerLink="/components" class="rounded-md px-3 py-2 text-sm hover:bg-muted">Components</a>
             <a routerLink="/elements" class="rounded-md px-3 py-2 text-sm hover:bg-muted">Elements</a>
             <a routerLink="/themes" class="rounded-md px-3 py-2 text-sm hover:bg-muted">Themes</a>

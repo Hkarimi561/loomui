@@ -32,6 +32,7 @@ import { CATEGORIES, COMPONENTS } from './components.data';
               <div uiCommandEmpty>No component found.</div>
               <div uiCommandGroup heading="Pages">
                 <div uiCommandItem value="Home landing" (select)="go('/')">Home</div>
+                <div uiCommandItem value="Get started install guide" [keywords]="['install', 'setup', 'cli', 'npm']" (select)="go('/get-started')">Get started</div>
                 <div uiCommandItem value="All components gallery" (select)="go('/components')">All components</div>
                 <div uiCommandItem value="Themes accent colors" [keywords]="['theme', 'accent', 'color']" (select)="go('/themes')">Themes</div>
                 <div uiCommandItem value="Custom elements" [keywords]="['element', 'ui-button', 'web component']" (select)="go('/elements')">Custom elements</div>
