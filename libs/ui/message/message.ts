@@ -2,8 +2,8 @@
 // Change tools/ui-specs.mjs and regenerate; hand-written parts live in ./message.manual.ts.
 import { Directive, computed, input } from '@angular/core';
 import { cva } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export const messageVariants = cva('group/message relative flex w-full min-w-0 gap-2 text-sm data-[align=end]:flex-row-reverse', {
   variants: {

@@ -36,8 +36,8 @@ for (const name of fs.readdirSync(lib).sort()) {
     for (const m of f.content.matchAll(/from\s+'([^']+)'/g)) {
       const spec = m[1];
       if (spec.startsWith('.')) continue;
-      if (spec.startsWith('@loomui/ui/')) {
-        const dep = spec.slice('@loomui/ui/'.length).split('/')[0];
+      if (spec.startsWith('@loomui-ng/ui/')) {
+        const dep = spec.slice('@loomui-ng/ui/'.length).split('/')[0];
         if (dep !== name) reg.add(dep);
         continue;
       }

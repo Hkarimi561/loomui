@@ -10,12 +10,12 @@ import {
   signal,
   untracked,
 } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UI_MENU_CTX, UI_MENU_ITEM, UiMenuContentBase, UiMenuItemBase, UiMenuRootBase } from '@loomui/ui/utils';
-import { type Align } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UI_MENU_CTX, UI_MENU_ITEM, UiMenuContentBase, UiMenuItemBase, UiMenuRootBase } from '@loomui-ng/ui/utils';
+import { type Align } from '@loomui-ng/ui/utils';
 import { menubarClass, menubarContentClass, menubarTriggerClass } from './menubar';
 import { MENUBAR_SHARED } from './menubar.shared';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiMenubar class="w-72">

@@ -13,9 +13,9 @@ import {
   signal,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { sliderClass, sliderRangeClass, sliderThumbClass, sliderTrackClass } from './slider';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <span uiSlider [(value)]="v" [min]="0" [max]="100" [step]="1"></span>   v: number[] (one entry per thumb)

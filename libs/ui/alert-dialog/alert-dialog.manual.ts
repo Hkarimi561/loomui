@@ -1,7 +1,7 @@
 import { computed, Directive, ElementRef, inject, input, booleanAttribute } from '@angular/core';
-import { buttonVariants } from '@loomui/ui/button';
-import { cn } from '@loomui/ui/utils';
-import { UiModalContentBase, UiModalRoot, type ModalContentConfig } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiModalContentBase, UiModalRoot, type ModalContentConfig } from '@loomui-ng/ui/utils';
 import {
   alertDialogContentClass,
   alertDialogDescriptionClass,
@@ -10,7 +10,7 @@ import {
   alertDialogOverlayClass,
   alertDialogTitleClass,
 } from './alert-dialog';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiAlertDialog class="contents">

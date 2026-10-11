@@ -1,8 +1,8 @@
 import { computed, Directive, ElementRef, inject, input, signal, ChangeDetectionStrategy, Component } from '@angular/core';
 import { cva } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { UI_AVATAR_GENERATED } from './avatar';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 const AVATAR_CLASS =
   'group/avatar relative flex size-8 shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten';

@@ -133,7 +133,7 @@ function readme(c, d) {
   return `# ${d.title}
 
 \`\`\`ts
-import { ${cn ?? 'Ui' + d.title.replace(/\s/g, '')} } from '@loomui/ui/${c}';
+import { ${cn ?? 'Ui' + d.title.replace(/\s/g, '')} } from '@loomui-ng/ui/${c}';
 // add to the component \`imports\` array
 \`\`\`
 

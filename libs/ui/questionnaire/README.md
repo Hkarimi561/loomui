@@ -1,7 +1,7 @@
 # Questionnaire
 
 ```ts
-import { UI_QUESTIONNAIRE } from '@loomui/ui/questionnaire';
+import { UI_QUESTIONNAIRE } from '@loomui-ng/ui/questionnaire';
 // add to the component `imports` array
 ```
 

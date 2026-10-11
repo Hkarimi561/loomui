@@ -1,18 +1,18 @@
 import { Component, computed, DestroyRef, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UI_AVATAR } from '@loomui/ui/avatar';
-import { UiBadge } from '@loomui/ui/badge';
-import { UiButton } from '@loomui/ui/button';
-import { UI_CALENDAR } from '@loomui/ui/calendar';
-import { UI_CARD } from '@loomui/ui/card';
-import { UI_CHART, type ChartConfig } from '@loomui/ui/chart';
-import { UiCheckbox } from '@loomui/ui/checkbox';
-import { UI_DIALOG } from '@loomui/ui/dialog';
-import { UiInput } from '@loomui/ui/input';
-import { UiProgress } from '@loomui/ui/progress';
-import { UI_SLIDER } from '@loomui/ui/slider';
-import { UiSwitch } from '@loomui/ui/switch';
-import { UiToastService } from '@loomui/ui/toast';
+import { UI_AVATAR } from '@loomui-ng/ui/avatar';
+import { UiBadge } from '@loomui-ng/ui/badge';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_CALENDAR } from '@loomui-ng/ui/calendar';
+import { UI_CARD } from '@loomui-ng/ui/card';
+import { UI_CHART, type ChartConfig } from '@loomui-ng/ui/chart';
+import { UiCheckbox } from '@loomui-ng/ui/checkbox';
+import { UI_DIALOG } from '@loomui-ng/ui/dialog';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UiProgress } from '@loomui-ng/ui/progress';
+import { UI_SLIDER } from '@loomui-ng/ui/slider';
+import { UiSwitch } from '@loomui-ng/ui/switch';
+import { UiToastService } from '@loomui-ng/ui/toast';
 import '../icons';
 import { AppState } from '../app-state';
 import { CATEGORIES, COMPONENTS, type Category } from '../components.data';
@@ -22,7 +22,7 @@ import { CompareSlider } from './compare-slider';
 import { FormBuilder } from './form-builder';
 import { LayersStack } from './layers-stack';
 import { TypedCode } from './typed-code';
-import { UiIcon } from '@loomui/ui/icon';
+import { UiIcon } from '@loomui-ng/ui/icon';
 
 @Component({
   selector: 'app-landing',

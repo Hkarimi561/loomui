@@ -1,8 +1,8 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
 import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
-import { UiToastService } from '@loomui/ui/toast';
+import { UiToastService } from '@loomui-ng/ui/toast';
 import '../icons';
-import { UiIcon } from '@loomui/ui/icon';
+import { UiIcon } from '@loomui-ng/ui/icon';
 
 export interface CodeTab {
   label: string;

@@ -11,7 +11,7 @@ import {
   viewChild,
 } from '@angular/core';
 import { Chart, registerables, type ChartOptions, type ChartType } from 'chart.js';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 
 Chart.register(...registerables);
 

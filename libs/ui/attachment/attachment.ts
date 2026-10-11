@@ -2,8 +2,8 @@
 // Change tools/ui-specs.mjs and regenerate; hand-written parts live in ./attachment.manual.ts.
 import { Directive, computed, input } from '@angular/core';
 import { cva } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 @Directive({
   selector: '[uiAttachmentGroup], ui-attachment-group', hostDirectives: [UiElementHost],

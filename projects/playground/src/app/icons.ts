@@ -54,7 +54,7 @@ import {
   VolumeX,
   X,
 } from 'lucide';
-import { registerIcons } from '@loomui/ui/icon';
+import { registerIcons } from '@loomui-ng/ui/icon';
 
 registerIcons({
   AlignLeft, ArrowLeft, ArrowRight, ArrowUp, BadgeCheck, Bell, Blocks, ChartColumn, Check, ChevronRight, CircleAlert, CircleDot,

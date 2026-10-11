@@ -18,11 +18,11 @@ import {
   type ColumnDef,
   type ColumnFiltersState,
 } from '@tanstack/angular-table';
-import { UiButton } from '@loomui/ui/button';
-import { UiCheckbox } from '@loomui/ui/checkbox';
-import { UI_DATA_TABLE } from '@loomui/ui/data-table';
-import { UiInput } from '@loomui/ui/input';
-import { UI_TABLE } from '@loomui/ui/table';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UiCheckbox } from '@loomui-ng/ui/checkbox';
+import { UI_DATA_TABLE } from '@loomui-ng/ui/data-table';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UI_TABLE } from '@loomui-ng/ui/table';
 
 type Payment = { id: string; amount: number; status: 'pending' | 'processing' | 'success' | 'failed'; email: string };
 

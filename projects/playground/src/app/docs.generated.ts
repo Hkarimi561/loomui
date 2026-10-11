@@ -8,7 +8,7 @@ export interface ComponentDocs {
 
 export const DOCS: Record<string, ComponentDocs> = {
   "accordion": {
-    "importLine": "import { UI_ACCORDION } from '@loomui/ui/accordion';",
+    "importLine": "import { UI_ACCORDION } from '@loomui-ng/ui/accordion';",
     "usage": "<div uiAccordion type=\"single\" [collapsible]=\"true\">\n  <div uiAccordionItem value=\"a\">\n    <button uiAccordionTrigger>Is it accessible?</button>\n    <div uiAccordionContent>Yes.</div>\n  </div>\n</div>",
     "api": [
       [
@@ -45,7 +45,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "alert": {
-    "importLine": "import { UI_ALERT_GENERATED } from '@loomui/ui/alert';",
+    "importLine": "import { UI_ALERT_GENERATED } from '@loomui-ng/ui/alert';",
     "usage": "<div uiAlert variant=\"destructive\">\n  <svg …></svg>\n  <div uiAlertTitle>Error</div>\n  <div uiAlertDescription>Your session expired.</div>\n</div>",
     "api": [
       [
@@ -62,7 +62,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "alert-dialog": {
-    "importLine": "import { UI_ALERT_DIALOG } from '@loomui/ui/alert-dialog';",
+    "importLine": "import { UI_ALERT_DIALOG } from '@loomui-ng/ui/alert-dialog';",
     "usage": "<div uiAlertDialog>\n  <button uiButton uiAlertDialogTrigger>Delete</button>\n  <div uiAlertDialogContent>\n    <div uiAlertDialogHeader><h2 uiAlertDialogTitle>Are you sure?</h2><p uiAlertDialogDescription>This cannot be undone.</p></div>\n    <div uiAlertDialogFooter><button uiAlertDialogCancel>Cancel</button><button uiAlertDialogAction>Continue</button></div>\n  </div>\n</div>",
     "api": [
       [
@@ -89,7 +89,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "aspect-ratio": {
-    "importLine": "import { UI_ASPECT_RATIO } from '@loomui/ui/aspect-ratio';",
+    "importLine": "import { UI_ASPECT_RATIO } from '@loomui-ng/ui/aspect-ratio';",
     "usage": "<div uiAspectRatio [ratio]=\"16 / 9\" class=\"rounded-lg bg-muted\">…</div>",
     "api": [
       [
@@ -103,7 +103,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "attachment": {
-    "importLine": "import { UI_ATTACHMENT } from '@loomui/ui/attachment';",
+    "importLine": "import { UI_ATTACHMENT } from '@loomui-ng/ui/attachment';",
     "usage": "<div uiAttachmentGroup>\n  <div uiAttachment>\n    <a uiAttachmentTrigger href=\"/files/a.png\" aria-label=\"Open a.png\"></a>\n    <div uiAttachmentContent><span uiAttachmentTitle>a.png</span><span uiAttachmentDescription>24 KB</span></div>\n    <button uiAttachmentAction aria-label=\"Remove a.png\">×</button>\n  </div>\n</div>",
     "api": [
       [
@@ -145,7 +145,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "avatar": {
-    "importLine": "import { UI_AVATAR } from '@loomui/ui/avatar';",
+    "importLine": "import { UI_AVATAR } from '@loomui-ng/ui/avatar';",
     "usage": "<span uiAvatar>\n  <img uiAvatarImage src=\"/me.png\" alt=\"Me\" />\n  <span uiAvatarFallback>CN</span>\n</span>",
     "api": [
       [
@@ -185,7 +185,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "badge": {
-    "importLine": "import { UiBadge } from '@loomui/ui/badge';",
+    "importLine": "import { UiBadge } from '@loomui-ng/ui/badge';",
     "usage": "<span uiBadge>New</span>\n<span uiBadge variant=\"secondary\">Beta</span>\n<a uiBadge variant=\"outline\" href=\"/changelog\">v1.2</a>",
     "api": [
       [
@@ -202,7 +202,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "breadcrumb": {
-    "importLine": "import { UI_BREADCRUMB } from '@loomui/ui/breadcrumb';",
+    "importLine": "import { UI_BREADCRUMB } from '@loomui-ng/ui/breadcrumb';",
     "usage": "<nav uiBreadcrumb>\n  <ol uiBreadcrumbList>\n    <li uiBreadcrumbItem><a uiBreadcrumbLink href=\"/\">Home</a></li>\n    <li uiBreadcrumbSeparator></li>\n    <li uiBreadcrumbItem><span uiBreadcrumbPage>Components</span></li>\n  </ol>\n</nav>",
     "api": [],
     "parts": [
@@ -216,7 +216,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "bubble": {
-    "importLine": "import { UI_BUBBLE_GENERATED } from '@loomui/ui/bubble';",
+    "importLine": "import { UI_BUBBLE_GENERATED } from '@loomui-ng/ui/bubble';",
     "usage": "<div uiBubbleGroup>\n  <div uiBubble variant=\"muted\"><div uiBubbleContent>Hello!</div></div>\n  <div uiBubble align=\"end\"><div uiBubbleContent>Hi.</div></div>\n</div>",
     "api": [
       [
@@ -243,8 +243,8 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "button": {
-    "importLine": "import { UiButton } from '@loomui/ui/button';",
-    "usage": "import { UiButton } from '@loomui/ui/button';\n\n@Component({\n  imports: [UiButton],\n  template: `\n    <button uiButton>Default</button>\n    <button uiButton variant=\"outline\" size=\"sm\">Outline</button>\n    <button uiButton variant=\"destructive\" disabled>Delete</button>\n    <a uiButton variant=\"link\" href=\"/docs\">Docs</a>\n  `,\n})\nexport class Demo {}",
+    "importLine": "import { UiButton } from '@loomui-ng/ui/button';",
+    "usage": "import { UiButton } from '@loomui-ng/ui/button';\n\n@Component({\n  imports: [UiButton],\n  template: `\n    <button uiButton>Default</button>\n    <button uiButton variant=\"outline\" size=\"sm\">Outline</button>\n    <button uiButton variant=\"destructive\" disabled>Delete</button>\n    <a uiButton variant=\"link\" href=\"/docs\">Docs</a>\n  `,\n})\nexport class Demo {}",
     "api": [
       [
         "variant",
@@ -265,7 +265,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "button-group": {
-    "importLine": "import { UI_BUTTON_GROUP_GENERATED } from '@loomui/ui/button-group';",
+    "importLine": "import { UI_BUTTON_GROUP_GENERATED } from '@loomui-ng/ui/button-group';",
     "usage": "<div uiButtonGroup>\n  <button uiButton variant=\"outline\">Left</button>\n  <button uiButton variant=\"outline\">Right</button>\n</div>",
     "api": [
       [
@@ -280,7 +280,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "calendar": {
-    "importLine": "import { UI_CALENDAR } from '@loomui/ui/calendar';",
+    "importLine": "import { UI_CALENDAR } from '@loomui-ng/ui/calendar';",
     "usage": "<div uiCalendar mode=\"single\" [(selected)]=\"date\" class=\"rounded-lg border\"></div>\n<div uiCalendar mode=\"range\" [(selected)]=\"range\" [numberOfMonths]=\"2\"></div>",
     "api": [
       [
@@ -339,7 +339,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "card": {
-    "importLine": "import { UI_CARD } from '@loomui/ui/card';",
+    "importLine": "import { UI_CARD } from '@loomui-ng/ui/card';",
     "usage": "<div uiCard size=\"sm\">\n  <div uiCardHeader>\n    <div uiCardTitle>Title</div>\n    <div uiCardDescription>Description</div>\n    <div uiCardAction><button uiButton variant=\"link\">Action</button></div>\n  </div>\n  <div uiCardContent>…</div>\n  <div uiCardFooter>…</div>\n</div>",
     "api": [
       [
@@ -356,7 +356,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "carousel": {
-    "importLine": "import { UI_CAROUSEL } from '@loomui/ui/carousel';",
+    "importLine": "import { UI_CAROUSEL } from '@loomui-ng/ui/carousel';",
     "usage": "<div uiCarousel class=\"mx-auto w-full max-w-xs\">\n  <div uiCarouselContent>\n    <div uiCarouselItem>1</div>\n    <div uiCarouselItem>2</div>\n  </div>\n  <button uiCarouselPrevious></button>\n  <button uiCarouselNext></button>\n</div>",
     "api": [
       [
@@ -389,7 +389,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "chart": {
-    "importLine": "import { UI_CHART } from '@loomui/ui/chart';",
+    "importLine": "import { UI_CHART } from '@loomui-ng/ui/chart';",
     "usage": "<ui-chart type=\"bar\" [data]=\"rows\" xKey=\"month\" [config]=\"config\" class=\"h-64 w-full\" label=\"Visitors\" />",
     "api": [
       [
@@ -438,7 +438,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "checkbox": {
-    "importLine": "import { UiCheckbox } from '@loomui/ui/checkbox';",
+    "importLine": "import { UiCheckbox } from '@loomui-ng/ui/checkbox';",
     "usage": "<button uiCheckbox [(checked)]=\"accepted\"></button>\n<button uiCheckbox [formControl]=\"ctrl\"></button>\n<button uiCheckbox [indeterminate]=\"true\"></button>",
     "api": [
       [
@@ -465,7 +465,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "collapsible": {
-    "importLine": "import { UI_COLLAPSIBLE } from '@loomui/ui/collapsible';",
+    "importLine": "import { UI_COLLAPSIBLE } from '@loomui-ng/ui/collapsible';",
     "usage": "<div uiCollapsible [(open)]=\"open\">\n  <button uiCollapsibleTrigger>Toggle</button>\n  <div uiCollapsibleContent>…</div>\n</div>",
     "api": [
       [
@@ -486,7 +486,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "combobox": {
-    "importLine": "import { UI_COMBOBOX } from '@loomui/ui/combobox';",
+    "importLine": "import { UI_COMBOBOX } from '@loomui-ng/ui/combobox';",
     "usage": "<div uiCombobox [(value)]=\"fw\" class=\"contents\">\n  <button uiComboboxTrigger><span uiComboboxValue placeholder=\"Select framework…\"></span></button>\n  <div uiComboboxContent>\n    <input uiComboboxInput placeholder=\"Search…\" />\n    <div uiComboboxList>\n      <div uiComboboxEmpty>No results.</div>\n      <div uiComboboxItem value=\"next\">Next.js</div>\n    </div>\n  </div>\n</div>",
     "api": [
       [
@@ -533,7 +533,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "command": {
-    "importLine": "import { UI_COMMAND } from '@loomui/ui/command';",
+    "importLine": "import { UI_COMMAND } from '@loomui-ng/ui/command';",
     "usage": "<div uiCommand class=\"max-w-sm rounded-lg border\">\n  <div uiCommandInputWrapper><input uiCommandInput placeholder=\"Search...\" /></div>\n  <div uiCommandList>\n    <div uiCommandEmpty>No results found.</div>\n    <div uiCommandGroup heading=\"Suggestions\">\n      <div uiCommandItem value=\"Calendar\" (select)=\"open()\">Calendar</div>\n    </div>\n  </div>\n</div>",
     "api": [
       [
@@ -565,7 +565,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "context-menu": {
-    "importLine": "import { UI_CONTEXT_MENU } from '@loomui/ui/context-menu';",
+    "importLine": "import { UI_CONTEXT_MENU } from '@loomui-ng/ui/context-menu';",
     "usage": "<div uiContextMenu>\n  <div uiContextMenuTrigger class=\"h-32 w-64 border\">Right click</div>\n  <div uiContextMenuContent><div uiContextMenuItem>Back</div></div>\n</div>",
     "api": [
       [
@@ -622,7 +622,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "data-table": {
-    "importLine": "import { UI_DATA_TABLE } from '@loomui/ui/data-table';",
+    "importLine": "import { UI_DATA_TABLE } from '@loomui-ng/ui/data-table';",
     "usage": "const features = tableFeatures({ rowSortingFeature, rowPaginationFeature, columnFilteringFeature, columnVisibilityFeature, rowSelectionFeature,\n  sortedRowModel: createSortedRowModel(), filteredRowModel: createFilteredRowModel(), paginatedRowModel: createPaginatedRowModel() });\ntable = injectTable(() => ({ features, columns, data: DATA, getRowId: (r) => r.id }));\n\n<ui-data-table-view-options [table]=\"table\" />\n<table uiTable> … @for (row of table.getRowModel().rows; track row.id) … </table>\n<ui-data-table-pagination [table]=\"table\" />",
     "api": [
       [
@@ -653,7 +653,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "date-picker": {
-    "importLine": "import { UiDatePicker } from '@loomui/ui/date-picker';",
+    "importLine": "import { UiDatePicker } from '@loomui-ng/ui/date-picker';",
     "usage": "<ui-date-picker [(value)]=\"date\" placeholder=\"Pick a date\" />\n<ui-date-picker [formControl]=\"ctrl\" />",
     "api": [
       [
@@ -687,7 +687,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "dialog": {
-    "importLine": "import { UI_DIALOG } from '@loomui/ui/dialog';",
+    "importLine": "import { UI_DIALOG } from '@loomui-ng/ui/dialog';",
     "usage": "<div uiDialog [(open)]=\"open\" class=\"contents\">\n  <button uiButton variant=\"outline\" uiDialogTrigger>Open Dialog</button>\n  <div uiDialogContent>\n    <div uiDialogHeader>\n      <h2 uiDialogTitle>Edit profile</h2>\n      <p uiDialogDescription>Make changes here.</p>\n    </div>\n    <input uiInput value=\"Pedro\" />\n    <div uiDialogFooter>\n      <button uiButton variant=\"outline\" uiDialogClose>Cancel</button>\n      <button uiButton uiDialogClose>Save</button>\n    </div>\n  </div>\n</div>",
     "api": [
       [
@@ -709,7 +709,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "direction": {
-    "importLine": "import { UI_DIRECTION } from '@loomui/ui/direction';",
+    "importLine": "import { UI_DIRECTION } from '@loomui-ng/ui/direction';",
     "usage": "<div [uiDirection]=\"'rtl'\">…components…</div>",
     "api": [
       [
@@ -728,7 +728,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "drawer": {
-    "importLine": "import { UI_DRAWER } from '@loomui/ui/drawer';",
+    "importLine": "import { UI_DRAWER } from '@loomui-ng/ui/drawer';",
     "usage": "<div uiDrawer>\n  <button uiButton uiDrawerTrigger>Open</button>\n  <div uiDrawerContent>\n    <div uiDrawerHeader><h2 uiDrawerTitle>Move goal</h2></div>\n    <div uiDrawerFooter><button uiDrawerClose>Cancel</button></div>\n  </div>\n</div>",
     "api": [
       [
@@ -754,7 +754,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "dropdown-menu": {
-    "importLine": "import { UI_DROPDOWN_MENU } from '@loomui/ui/dropdown-menu';",
+    "importLine": "import { UI_DROPDOWN_MENU } from '@loomui-ng/ui/dropdown-menu';",
     "usage": "<div uiDropdownMenu class=\"contents\">\n  <button uiButton variant=\"outline\" uiDropdownMenuTrigger>Open</button>\n  <div uiDropdownMenuContent class=\"w-56\">\n    <div uiDropdownMenuLabel>My Account</div>\n    <div uiDropdownMenuItem (select)=\"go()\">Profile <span uiDropdownMenuShortcut>Ctrl+P</span></div>\n    <div uiDropdownMenuCheckboxItem [(checked)]=\"bar\">Status Bar</div>\n    <div uiDropdownMenuSeparator></div>\n    <div uiDropdownMenuItem variant=\"destructive\">Log out</div>\n  </div>\n</div>",
     "api": [
       [
@@ -786,7 +786,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "empty": {
-    "importLine": "import { UI_EMPTY_GENERATED } from '@loomui/ui/empty';",
+    "importLine": "import { UI_EMPTY_GENERATED } from '@loomui-ng/ui/empty';",
     "usage": "<div uiEmpty>\n  <div uiEmptyHeader>\n    <div uiEmptyIcon>…</div>\n    <div uiEmptyTitle>No projects</div>\n    <p uiEmptyDescription>Create one to get started.</p>\n  </div>\n  <div uiEmptyContent><button uiButton>New project</button></div>\n</div>",
     "api": [
       [
@@ -805,7 +805,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "field": {
-    "importLine": "import { UI_FIELD } from '@loomui/ui/field';",
+    "importLine": "import { UI_FIELD } from '@loomui-ng/ui/field';",
     "usage": "<fieldset uiFieldSet>\n  <legend uiFieldLegend>Profile</legend>\n  <div uiFieldGroup>\n    <div uiField>\n      <label uiFieldLabel for=\"n\">Name</label>\n      <input uiInput id=\"n\" />\n      <p uiFieldDescription>Public display name.</p>\n    </div>\n  </div>\n</fieldset>",
     "api": [
       [
@@ -832,7 +832,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "hover-card": {
-    "importLine": "import { UI_HOVER_CARD } from '@loomui/ui/hover-card';",
+    "importLine": "import { UI_HOVER_CARD } from '@loomui-ng/ui/hover-card';",
     "usage": "<div uiHoverCard>\n  <a uiHoverCardTrigger href=\"#\">&#64;nextjs</a>\n  <div uiHoverCardContent>…</div>\n</div>",
     "api": [
       [
@@ -895,7 +895,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "input": {
-    "importLine": "import { UiInput } from '@loomui/ui/input';",
+    "importLine": "import { UiInput } from '@loomui-ng/ui/input';",
     "usage": "<input uiInput placeholder=\"Email\" [formControl]=\"email\" />\n<input uiInput [(ngModel)]=\"name\" aria-invalid=\"true\" />",
     "api": [
       [
@@ -907,7 +907,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "input-group": {
-    "importLine": "import { UI_INPUT_GROUP } from '@loomui/ui/input-group';",
+    "importLine": "import { UI_INPUT_GROUP } from '@loomui-ng/ui/input-group';",
     "usage": "<div uiInputGroup>\n  <div uiInputGroupAddon>https://</div>\n  <input uiInputGroupControl placeholder=\"example.com\" />\n</div>",
     "api": [
       [
@@ -974,7 +974,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "input-otp": {
-    "importLine": "import { UI_INPUT_OTP } from '@loomui/ui/input-otp';",
+    "importLine": "import { UI_INPUT_OTP } from '@loomui-ng/ui/input-otp';",
     "usage": "<div uiInputOtp [maxLength]=\"6\" [(value)]=\"code\" (complete)=\"verify($event)\">\n  <div uiInputOtpGroup><div uiInputOtpSlot [index]=\"0\"></div>…</div>\n</div>",
     "api": [
       [
@@ -1026,7 +1026,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "item": {
-    "importLine": "import { UI_ITEM_GENERATED } from '@loomui/ui/item';",
+    "importLine": "import { UI_ITEM_GENERATED } from '@loomui-ng/ui/item';",
     "usage": "<div uiItem variant=\"outline\">\n  <div uiItemMedia>…</div>\n  <div uiItemContent><div uiItemTitle>Title</div><p uiItemDescription>Description</p></div>\n  <div uiItemActions><button uiButton size=\"sm\">Open</button></div>\n</div>",
     "api": [
       [
@@ -1052,7 +1052,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "kbd": {
-    "importLine": "import { UI_KBD_GENERATED } from '@loomui/ui/kbd';",
+    "importLine": "import { UI_KBD_GENERATED } from '@loomui-ng/ui/kbd';",
     "usage": "<kbd uiKbdGroup><kbd uiKbd>Ctrl</kbd><kbd uiKbd>K</kbd></kbd>",
     "api": [],
     "parts": [
@@ -1061,7 +1061,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "label": {
-    "importLine": "import { UiLabel } from '@loomui/ui/label';",
+    "importLine": "import { UiLabel } from '@loomui-ng/ui/label';",
     "usage": "<label uiLabel for=\"email\">Email</label>",
     "api": [
       [
@@ -1073,7 +1073,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "marker": {
-    "importLine": "import { UI_MARKER_GENERATED } from '@loomui/ui/marker';",
+    "importLine": "import { UI_MARKER_GENERATED } from '@loomui-ng/ui/marker';",
     "usage": "<div uiMarker variant=\"separator\"><span uiMarkerContent>New messages</span></div>",
     "api": [
       [
@@ -1089,7 +1089,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "menubar": {
-    "importLine": "import { UI_MENUBAR } from '@loomui/ui/menubar';",
+    "importLine": "import { UI_MENUBAR } from '@loomui-ng/ui/menubar';",
     "usage": "<div uiMenubar>\n  <div uiMenubarMenu>\n    <button uiMenubarTrigger>File</button>\n    <div uiMenubarContent><div uiMenubarItem>New</div></div>\n  </div>\n</div>",
     "api": [
       [
@@ -1147,7 +1147,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "message": {
-    "importLine": "import { UI_MESSAGE_GENERATED } from '@loomui/ui/message';",
+    "importLine": "import { UI_MESSAGE_GENERATED } from '@loomui-ng/ui/message';",
     "usage": "<div uiMessageGroup>\n  <div uiMessage>\n    <div uiMessageContent><div uiMessageHeader>Assistant</div><div uiBubble>…</div><div uiMessageFooter>10:42</div></div>\n  </div>\n</div>",
     "api": [
       [
@@ -1166,7 +1166,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "message-scroller": {
-    "importLine": "import { UI_MESSAGE_SCROLLER } from '@loomui/ui/message-scroller';",
+    "importLine": "import { UI_MESSAGE_SCROLLER } from '@loomui-ng/ui/message-scroller';",
     "usage": "<div uiMessageScroller class=\"h-80\">\n  <div uiMessageScrollerViewport>\n    <div uiMessageScrollerContent>\n      <div uiMessageScrollerItem messageId=\"m1\">…</div>\n    </div>\n  </div>\n  <button uiMessageScrollerButton aria-label=\"Scroll to latest\"></button>\n</div>",
     "api": [
       [
@@ -1194,7 +1194,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "native-select": {
-    "importLine": "import { UI_NATIVE_SELECT } from '@loomui/ui/native-select';",
+    "importLine": "import { UI_NATIVE_SELECT } from '@loomui-ng/ui/native-select';",
     "usage": "<div uiNativeSelectWrapper>\n  <select uiNativeSelect><option value=\"a\">A</option></select>\n</div>",
     "api": [
       [
@@ -1212,7 +1212,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "navigation-menu": {
-    "importLine": "import { UI_NAVIGATION_MENU } from '@loomui/ui/navigation-menu';",
+    "importLine": "import { UI_NAVIGATION_MENU } from '@loomui-ng/ui/navigation-menu';",
     "usage": "<nav uiNavigationMenu>\n  <ul uiNavigationMenuList>\n    <li uiNavigationMenuItem>\n      <button uiNavigationMenuTrigger>Getting started</button>\n      <div uiNavigationMenuContent>…</div>\n    </li>\n  </ul>\n</nav>",
     "api": [
       [
@@ -1236,7 +1236,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "pagination": {
-    "importLine": "import { UI_PAGINATION } from '@loomui/ui/pagination';",
+    "importLine": "import { UI_PAGINATION } from '@loomui-ng/ui/pagination';",
     "usage": "<nav uiPagination>\n  <ul uiPaginationContent>\n    <li uiPaginationItem><a uiPaginationPrevious href=\"#\"></a></li>\n    <li uiPaginationItem><a uiPaginationLink href=\"#\" [isActive]=\"true\">1</a></li>\n    <li uiPaginationItem><a uiPaginationNext href=\"#\"></a></li>\n  </ul>\n</nav>",
     "api": [
       [
@@ -1261,7 +1261,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "popover": {
-    "importLine": "import { UI_POPOVER } from '@loomui/ui/popover';",
+    "importLine": "import { UI_POPOVER } from '@loomui-ng/ui/popover';",
     "usage": "<div uiPopover class=\"contents\">\n  <button uiButton uiPopoverTrigger>Open</button>\n  <div uiPopoverContent side=\"bottom\" align=\"center\">\n    <div uiPopoverHeader><div uiPopoverTitle>Title</div><p uiPopoverDescription>Text</p></div>\n  </div>\n</div>",
     "api": [
       [
@@ -1288,7 +1288,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "progress": {
-    "importLine": "import { UI_PROGRESS } from '@loomui/ui/progress';",
+    "importLine": "import { UI_PROGRESS } from '@loomui-ng/ui/progress';",
     "usage": "<div uiProgress [value]=\"60\"></div>",
     "api": [
       [
@@ -1307,7 +1307,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "questionnaire": {
-    "importLine": "import { UI_QUESTIONNAIRE } from '@loomui/ui/questionnaire';",
+    "importLine": "import { UI_QUESTIONNAIRE } from '@loomui-ng/ui/questionnaire';",
     "usage": "<form uiQuestionnaire #q=\"uiQuestionnaire\" (submitted)=\"save($event)\">\n  <div uiQuestionnaireProgress></div>\n  <fieldset uiQuestionnaireItem name=\"plan\" required>\n    <legend uiQuestionnaireTitle>Pick a plan</legend>\n    <div uiQuestionnaireChoices><label uiQuestionnaireChoice value=\"free\">Free</label></div>\n  </fieldset>\n  <div uiQuestionnaireActions>\n    <button type=\"button\" (click)=\"q.previous()\">Back</button>\n    <button type=\"button\" (click)=\"q.next()\">Next</button>\n  </div>\n</form>",
     "api": [
       [
@@ -1369,7 +1369,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "radio-group": {
-    "importLine": "import { UI_RADIO_GROUP } from '@loomui/ui/radio-group';",
+    "importLine": "import { UI_RADIO_GROUP } from '@loomui-ng/ui/radio-group';",
     "usage": "<div uiRadioGroup [(value)]=\"plan\">\n  <button uiRadioGroupItem value=\"a\" id=\"a\"></button><label uiLabel for=\"a\">A</label>\n</div>",
     "api": [
       [
@@ -1409,7 +1409,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "resizable": {
-    "importLine": "import { UI_RESIZABLE } from '@loomui/ui/resizable';",
+    "importLine": "import { UI_RESIZABLE } from '@loomui-ng/ui/resizable';",
     "usage": "<div uiResizablePanelGroup direction=\"horizontal\" class=\"h-40 rounded-lg border\">\n  <div uiResizablePanel [defaultSize]=\"50\">A</div>\n  <div uiResizableHandle [withHandle]=\"true\"></div>\n  <div uiResizablePanel [defaultSize]=\"50\">B</div>\n</div>",
     "api": [
       [
@@ -1450,7 +1450,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "scroll-area": {
-    "importLine": "import { UI_SCROLL_AREA } from '@loomui/ui/scroll-area';",
+    "importLine": "import { UI_SCROLL_AREA } from '@loomui-ng/ui/scroll-area';",
     "usage": "<div uiScrollArea class=\"h-48 w-64\">\n  <div uiScrollAreaViewport>…long content…</div>\n</div>",
     "api": [],
     "parts": [
@@ -1459,7 +1459,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "select": {
-    "importLine": "import { UI_SELECT } from '@loomui/ui/select';",
+    "importLine": "import { UI_SELECT } from '@loomui-ng/ui/select';",
     "usage": "<div uiSelect [(value)]=\"fruit\" class=\"contents\">\n  <button uiSelectTrigger class=\"w-[180px]\"><span uiSelectValue placeholder=\"Select a fruit\"></span></button>\n  <div uiSelectContent>\n    <div uiSelectGroup>\n      <div uiSelectLabel>Fruits</div>\n      <div uiSelectItem value=\"apple\">Apple</div>\n      <div uiSelectItem value=\"grapes\" disabled>Grapes</div>\n    </div>\n  </div>\n</div>",
     "api": [
       [
@@ -1486,7 +1486,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "separator": {
-    "importLine": "import { UiSeparator } from '@loomui/ui/separator';",
+    "importLine": "import { UiSeparator } from '@loomui-ng/ui/separator';",
     "usage": "<div uiSeparator></div>\n<div uiSeparator orientation=\"vertical\"></div>",
     "api": [
       [
@@ -1508,7 +1508,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "sheet": {
-    "importLine": "import { UI_SHEET } from '@loomui/ui/sheet';",
+    "importLine": "import { UI_SHEET } from '@loomui-ng/ui/sheet';",
     "usage": "<div uiSheet class=\"contents\">\n  <button uiButton uiSheetTrigger>Open</button>\n  <div uiSheetContent side=\"right\">\n    <div uiSheetHeader><h2 uiSheetTitle>Title</h2><p uiSheetDescription>Description</p></div>\n    <div uiSheetFooter><button uiButton uiSheetClose>Close</button></div>\n  </div>\n</div>",
     "api": [
       [
@@ -1530,7 +1530,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "sidebar": {
-    "importLine": "import { UI_SIDEBAR } from '@loomui/ui/sidebar';",
+    "importLine": "import { UI_SIDEBAR } from '@loomui-ng/ui/sidebar';",
     "usage": "<div uiSidebarProvider>\n  <aside uiSidebar collapsible=\"icon\">\n    <div uiSidebarContent>\n      <div uiSidebarGroup>\n        <div uiSidebarGroupLabel>Platform</div>\n        <ul uiSidebarMenu>\n          <li uiSidebarMenuItem><a uiSidebarMenuButton [isActive]=\"true\" href=\"#\">Home</a></li>\n        </ul>\n      </div>\n    </div>\n    <button uiSidebarRail></button>\n  </aside>\n  <main uiSidebarInset><button uiSidebarTrigger></button>…</main>\n</div>",
     "api": [
       [
@@ -1614,7 +1614,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "skeleton": {
-    "importLine": "import { UI_SKELETON_GENERATED } from '@loomui/ui/skeleton';",
+    "importLine": "import { UI_SKELETON_GENERATED } from '@loomui-ng/ui/skeleton';",
     "usage": "<div uiSkeleton class=\"h-4 w-40\"></div>",
     "api": [],
     "parts": [
@@ -1622,7 +1622,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "slider": {
-    "importLine": "import { UI_SLIDER } from '@loomui/ui/slider';",
+    "importLine": "import { UI_SLIDER } from '@loomui-ng/ui/slider';",
     "usage": "<span uiSlider [(value)]=\"v\" [min]=\"0\" [max]=\"100\" [step]=\"5\"></span>  <!-- v: number[], e.g. [25] -->",
     "api": [
       [
@@ -1661,7 +1661,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "spinner": {
-    "importLine": "import { UI_SPINNER } from '@loomui/ui/spinner';",
+    "importLine": "import { UI_SPINNER } from '@loomui-ng/ui/spinner';",
     "usage": "<ui-spinner class=\"size-6\" />",
     "api": [],
     "parts": [
@@ -1669,7 +1669,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "switch": {
-    "importLine": "import { UiSwitch } from '@loomui/ui/switch';",
+    "importLine": "import { UiSwitch } from '@loomui-ng/ui/switch';",
     "usage": "<button uiSwitch [(checked)]=\"on\"></button>\n<button uiSwitch size=\"sm\" [formControl]=\"ctrl\"></button>",
     "api": [
       [
@@ -1696,7 +1696,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "table": {
-    "importLine": "import { UI_TABLE_GENERATED } from '@loomui/ui/table';",
+    "importLine": "import { UI_TABLE_GENERATED } from '@loomui-ng/ui/table';",
     "usage": "<div uiTableContainer>\n  <table uiTable>\n    <thead uiTableHeader><tr uiTableRow><th uiTableHead>Name</th></tr></thead>\n    <tbody uiTableBody><tr uiTableRow><td uiTableCell>Ada</td></tr></tbody>\n  </table>\n</div>",
     "api": [],
     "parts": [
@@ -1712,7 +1712,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "tabs": {
-    "importLine": "import { UI_TABS } from '@loomui/ui/tabs';",
+    "importLine": "import { UI_TABS } from '@loomui-ng/ui/tabs';",
     "usage": "<div uiTabs [(value)]=\"tab\">\n  <div uiTabsList variant=\"line\">\n    <button uiTabsTrigger value=\"a\">A</button>\n    <button uiTabsTrigger value=\"b\" disabled>B</button>\n  </div>\n  <div uiTabsContent value=\"a\">…</div>\n  <div uiTabsContent value=\"b\">…</div>\n</div>",
     "api": [
       [
@@ -1744,7 +1744,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "textarea": {
-    "importLine": "import { UI_TEXTAREA } from '@loomui/ui/textarea';",
+    "importLine": "import { UI_TEXTAREA } from '@loomui-ng/ui/textarea';",
     "usage": "<textarea uiTextarea placeholder=\"Type here\"></textarea>",
     "api": [
       [
@@ -1779,7 +1779,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "toast": {
-    "importLine": "import { UiToaster, UiToastService } from '@loomui/ui/toast';",
+    "importLine": "import { UiToaster, UiToastService } from '@loomui-ng/ui/toast';",
     "usage": "// app root template\n<ui-toaster position=\"bottom-right\" />\n\n// anywhere\nprivate toast = inject(UiToastService);\nthis.toast.show('Event has been created', { description: 'Sunday', action: { label: 'Undo', onClick: () => {} } });\nthis.toast.success('Saved');",
     "api": [
       [
@@ -1806,7 +1806,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "toggle": {
-    "importLine": "import { UI_TOGGLE } from '@loomui/ui/toggle';",
+    "importLine": "import { UI_TOGGLE } from '@loomui-ng/ui/toggle';",
     "usage": "<button uiToggle [(pressed)]=\"bold\" aria-label=\"Bold\">B</button>",
     "api": [
       [
@@ -1835,7 +1835,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "toggle-group": {
-    "importLine": "import { UI_TOGGLE_GROUP } from '@loomui/ui/toggle-group';",
+    "importLine": "import { UI_TOGGLE_GROUP } from '@loomui-ng/ui/toggle-group';",
     "usage": "<div uiToggleGroup type=\"multiple\" [(value)]=\"v\">\n  <button uiToggleGroupItem value=\"bold\">B</button>\n  <button uiToggleGroupItem value=\"italic\">I</button>\n</div>",
     "api": [
       [
@@ -1885,7 +1885,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     ]
   },
   "tooltip": {
-    "importLine": "import { UI_TOOLTIP } from '@loomui/ui/tooltip';",
+    "importLine": "import { UI_TOOLTIP } from '@loomui-ng/ui/tooltip';",
     "usage": "<div uiTooltip [delay]=\"0\" class=\"contents\">\n  <button uiButton uiTooltipTrigger>Hover</button>\n  <div uiTooltipContent side=\"top\">Add to library</div>\n</div>",
     "api": [
       [
@@ -1902,7 +1902,7 @@ export const DOCS: Record<string, ComponentDocs> = {
     "parts": []
   },
   "typography": {
-    "importLine": "import { UI_TYPOGRAPHY } from '@loomui/ui/typography';",
+    "importLine": "import { UI_TYPOGRAPHY } from '@loomui-ng/ui/typography';",
     "usage": "<h1 uiTypography=\"h1\">Title</h1>\n<p uiTypography=\"lead\">Intro</p>\n<code uiTypography=\"code\">npm i</code>",
     "api": [
       [

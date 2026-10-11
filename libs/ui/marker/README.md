@@ -1,7 +1,7 @@
 # Marker
 
 ```ts
-import { UI_MARKER_GENERATED } from '@loomui/ui/marker';
+import { UI_MARKER_GENERATED } from '@loomui-ng/ui/marker';
 // add to the component `imports` array
 ```
 

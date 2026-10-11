@@ -1,7 +1,7 @@
 # Context Menu
 
 ```ts
-import { UI_CONTEXT_MENU } from '@loomui/ui/context-menu';
+import { UI_CONTEXT_MENU } from '@loomui-ng/ui/context-menu';
 // add to the component `imports` array
 ```
 

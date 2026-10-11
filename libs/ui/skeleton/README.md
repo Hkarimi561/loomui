@@ -1,7 +1,7 @@
 # Skeleton
 
 ```ts
-import { UI_SKELETON_GENERATED } from '@loomui/ui/skeleton';
+import { UI_SKELETON_GENERATED } from '@loomui-ng/ui/skeleton';
 // add to the component `imports` array
 ```
 

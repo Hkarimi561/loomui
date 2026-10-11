@@ -15,10 +15,10 @@ import {
   signal,
   untracked,
 } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { resizableHandleClass, resizablePanelGroupClass } from './resizable';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiResizablePanelGroup direction="horizontal" class="max-w-sm rounded-lg border">

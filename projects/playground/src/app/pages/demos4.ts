@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { UI_ASPECT_RATIO } from '@loomui/ui/aspect-ratio';
-import { UI_INPUT_OTP } from '@loomui/ui/input-otp';
-import { UI_RESIZABLE } from '@loomui/ui/resizable';
-import { UI_SCROLL_AREA } from '@loomui/ui/scroll-area';
+import { UI_ASPECT_RATIO } from '@loomui-ng/ui/aspect-ratio';
+import { UI_INPUT_OTP } from '@loomui-ng/ui/input-otp';
+import { UI_RESIZABLE } from '@loomui-ng/ui/resizable';
+import { UI_SCROLL_AREA } from '@loomui-ng/ui/scroll-area';
 
 @Component({
   selector: 'app-aspect-ratio-page',

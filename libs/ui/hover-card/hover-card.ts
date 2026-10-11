@@ -1,8 +1,8 @@
 import { computed, DestroyRef, Directive, ElementRef, inject, input, numberAttribute } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UiLayerRoot } from '@loomui/ui/utils';
-import { UiPopperContentBase } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiLayerRoot } from '@loomui-ng/ui/utils';
+import { UiPopperContentBase } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 // Observed live (hover on the demo trigger): content has data-side/data-align/data-state and NO role; width comes from the demo (w-64).
 const CONTENT_CLASS =

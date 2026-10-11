@@ -1,7 +1,7 @@
 # Toggle
 
 ```ts
-import { UI_TOGGLE } from '@loomui/ui/toggle';
+import { UI_TOGGLE } from '@loomui-ng/ui/toggle';
 // add to the component `imports` array
 ```
 

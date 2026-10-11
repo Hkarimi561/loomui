@@ -1,6 +1,6 @@
 import { computed, Directive, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export type TypographyVariant = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'blockquote' | 'list' | 'code' | 'lead' | 'large' | 'small' | 'muted';
 

@@ -1,7 +1,7 @@
 # Pagination
 
 ```ts
-import { UI_PAGINATION } from '@loomui/ui/pagination';
+import { UI_PAGINATION } from '@loomui-ng/ui/pagination';
 // add to the component `imports` array
 ```
 

@@ -10,10 +10,10 @@ import {
   signal,
   untracked,
 } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { nextId, whenAnimationDone } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { nextId, whenAnimationDone } from '@loomui-ng/ui/utils';
 import { collapsibleClass, collapsibleContentClass } from './collapsible';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiCollapsible [(open)]="o">

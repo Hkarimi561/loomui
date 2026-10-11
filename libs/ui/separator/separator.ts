@@ -1,6 +1,6 @@
 import { booleanAttribute, computed, Directive, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiSeparator></div>  /  <div uiSeparator orientation="vertical"></div>

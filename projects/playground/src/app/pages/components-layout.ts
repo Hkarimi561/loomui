@@ -2,17 +2,17 @@ import { embedUrl } from '../embed-url';
 import { afterNextRender, Component, computed, DestroyRef, ElementRef, HostListener, inject, signal, viewChild } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { UiSkeleton } from '@loomui/ui/skeleton';
+import { UiSkeleton } from '@loomui-ng/ui/skeleton';
 import { filter } from 'rxjs';
-import { UiInput } from '@loomui/ui/input';
-import { UI_TABS } from '@loomui/ui/tabs';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UI_TABS } from '@loomui-ng/ui/tabs';
 import { CATEGORIES, COMPONENTS, type Category } from '../components.data';
 import '../icons';
 import { DOCS } from '../docs.generated';
 import { toElements } from '../to-elements';
 import { CodeCard, type CodeTab } from './code-card';
 import { Playground, PLAYGROUNDS } from './playgrounds';
-import { UiIcon } from '@loomui/ui/icon';
+import { UiIcon } from '@loomui-ng/ui/icon';
 
 const ICONS: Record<Category, string> = {
   'Forms & input': 'pencil-line',
@@ -340,7 +340,7 @@ export class ComponentsLayout {
     tabs.push({
       label: 'Install',
       file: 'terminal',
-      code: `# copy the source into your project (you own the code)\nnpx loomui add ${slug}\n\n# or use the package\nnpm install @loomui/ui`,
+      code: `# copy the source into your project (you own the code)\nnpx loomui add ${slug}\n\n# or use the package\nnpm install @loomui-ng/ui`,
     });
     return tabs;
   });

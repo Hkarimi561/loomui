@@ -3,14 +3,14 @@ import { afterNextRender, Component, DestroyRef, effect, ElementRef, HostListene
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { filter, map, startWith } from 'rxjs';
-import { UiButton } from '@loomui/ui/button';
-import { UI_DROPDOWN_MENU } from '@loomui/ui/dropdown-menu';
-import { UiToaster } from '@loomui/ui/toast';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_DROPDOWN_MENU } from '@loomui-ng/ui/dropdown-menu';
+import { UiToaster } from '@loomui-ng/ui/toast';
 import './icons';
-import { UiIcon } from '@loomui/ui/icon';
+import { UiIcon } from '@loomui-ng/ui/icon';
 import { AppState } from './app-state';
 import { SoundService } from './sound';
-import { UiToastService } from '@loomui/ui/toast';
+import { UiToastService } from '@loomui-ng/ui/toast';
 import { Palette } from './palette';
 
 @Component({

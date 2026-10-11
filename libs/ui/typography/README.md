@@ -1,7 +1,7 @@
 # Typography
 
 ```ts
-import { UI_TYPOGRAPHY } from '@loomui/ui/typography';
+import { UI_TYPOGRAPHY } from '@loomui-ng/ui/typography';
 // add to the component `imports` array
 ```
 

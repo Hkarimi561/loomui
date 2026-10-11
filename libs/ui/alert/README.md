@@ -1,7 +1,7 @@
 # Alert
 
 ```ts
-import { UI_ALERT_GENERATED } from '@loomui/ui/alert';
+import { UI_ALERT_GENERATED } from '@loomui-ng/ui/alert';
 // add to the component `imports` array
 ```
 

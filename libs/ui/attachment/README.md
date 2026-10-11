@@ -1,7 +1,7 @@
 # Attachment
 
 ```ts
-import { UI_ATTACHMENT } from '@loomui/ui/attachment';
+import { UI_ATTACHMENT } from '@loomui-ng/ui/attachment';
 // add to the component `imports` array
 ```
 

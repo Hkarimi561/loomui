@@ -1,8 +1,8 @@
-# @loomui/ui — Loom UI
+# @loomui-ng/ui — Loom UI
 
 Directive-first Angular 22 components (also available as custom elements) with Radix-style behavior, built on the CDK and Tailwind v4. Inspired by shadcn/ui. Each component folder has its own README; behavior specs are in `docs/behavior-specs/`, manual checklists in `docs/manual-tests/`.
 
-Import per component: `import { UiButton } from '@loomui/ui/button'` (path alias in `tsconfig.json`; secondary entry points are prepared with an `ng-package.json` per folder, but the library has not been built/published with ng-packagr yet).
+Import per component: `import { UiButton } from '@loomui-ng/ui/button'` (path alias in `tsconfig.json`; secondary entry points are prepared with an `ng-package.json` per folder, but the library has not been built/published with ng-packagr yet).
 
 ## Install
 
@@ -13,10 +13,10 @@ npx loomui add button dialog data-table
 ```
 See `packages/loomui-cli/README.md`. All 64 components were verified to compile standalone (`ngc`, strict templates) after being copied this way.
 
-**Option B — npm package:** `ng build ui` produces `dist/ui` (`@loomui/ui`, one secondary entry point per component, partial-Ivy). In the consumer:
+**Option B — npm package:** `ng build ui` produces `dist/ui` (`@loomui-ng/ui`, one secondary entry point per component, partial-Ivy). In the consumer:
 ```css
 @import 'tailwindcss';
-@import '@loomui/ui/styles/loomui.css';   /* tokens, variants, toast css, accent presets, @source for the package */
+@import '@loomui-ng/ui/styles/loomui.css';   /* tokens, variants, toast css, accent presets, @source for the package */
 ```
 Optional peers: `embla-carousel` (Carousel), `chart.js` (Chart), `@tanstack/angular-table` (Data Table recipe). Not published to a registry yet.
 

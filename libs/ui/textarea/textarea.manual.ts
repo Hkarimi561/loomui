@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, forwardRef, input } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { UiNativeControl } from '@loomui/ui/utils';
+import { UiNativeControl } from '@loomui-ng/ui/utils';
 import { UI_TEXTAREA_GENERATED, UiTextarea } from './textarea';
 
 /** <ui-textarea rows="4" [(ngModel)]="bio" /> — custom-element form of `<textarea uiTextarea>` (a real textarea lives inside). */

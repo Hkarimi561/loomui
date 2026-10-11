@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { UiButton } from '@loomui/ui/button';
-import { UI_DIRECTION } from '@loomui/ui/direction';
-import { UI_DROPDOWN_MENU } from '@loomui/ui/dropdown-menu';
-import { UI_TABS } from '@loomui/ui/tabs';
-import { UI_TYPOGRAPHY } from '@loomui/ui/typography';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_DIRECTION } from '@loomui-ng/ui/direction';
+import { UI_DROPDOWN_MENU } from '@loomui-ng/ui/dropdown-menu';
+import { UI_TABS } from '@loomui-ng/ui/tabs';
+import { UI_TYPOGRAPHY } from '@loomui-ng/ui/typography';
 
 @Component({
   selector: 'app-typography-page',

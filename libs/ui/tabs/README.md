@@ -1,7 +1,7 @@
 # uiTabs
 
 ```ts
-import { UI_TABS } from '@loomui/ui/tabs';
+import { UI_TABS } from '@loomui-ng/ui/tabs';
 // add to the component imports array
 ```
 

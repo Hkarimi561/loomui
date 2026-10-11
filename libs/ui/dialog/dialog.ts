@@ -1,9 +1,9 @@
 import { computed, Directive, ElementRef, inject, input, booleanAttribute } from '@angular/core';
-import { buttonVariants } from '@loomui/ui/button';
-import { cn } from '@loomui/ui/utils';
-import { UiModalContentBase, UiModalRoot, type ModalContentConfig } from '@loomui/ui/utils';
-import { iconToSvg, LIB_ICONS } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiModalContentBase, UiModalRoot, type ModalContentConfig } from '@loomui-ng/ui/utils';
+import { iconToSvg, LIB_ICONS } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 const OVERLAY_CLASS =
   'fixed inset-0 isolate z-50 bg-black/10 duration-100 supports-backdrop-filter:backdrop-blur-xs data-open:animate-in data-open:fade-in-0 data-closed:animate-out data-closed:fade-out-0';

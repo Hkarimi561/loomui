@@ -1,7 +1,7 @@
 # uiInput
 
 ```ts
-import { UiInput } from '@loomui/ui/input';
+import { UiInput } from '@loomui-ng/ui/input';
 // add to the component imports array
 ```
 

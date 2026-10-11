@@ -1,7 +1,7 @@
 import { computed, Directive, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { UI_FIELD_GENERATED } from './field';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiFieldSeparator><span>or</span></div>

@@ -2,8 +2,8 @@
 // Change tools/ui-specs.mjs and regenerate; hand-written parts live in ./marker.manual.ts.
 import { Directive, computed, input } from '@angular/core';
 import { cva } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export const markerVariants = cva('group/marker relative flex min-h-4 w-full items-center gap-2 text-start text-sm text-muted-foreground [&_svg:not([class*=\'size-\'])]:size-4 [a]:underline [a]:underline-offset-3 [a]:hover:text-foreground', {
   variants: {

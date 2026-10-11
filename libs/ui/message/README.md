@@ -1,7 +1,7 @@
 # Message
 
 ```ts
-import { UI_MESSAGE_GENERATED } from '@loomui/ui/message';
+import { UI_MESSAGE_GENERATED } from '@loomui-ng/ui/message';
 // add to the component `imports` array
 ```
 

@@ -14,8 +14,8 @@ import {
   numberAttribute,
   signal,
 } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { nextId } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { nextId } from '@loomui-ng/ui/utils';
 import {
   navigationMenuClass,
   navigationMenuContentClass,
@@ -24,8 +24,8 @@ import {
   navigationMenuListClass,
   navigationMenuTriggerClass,
 } from './navigation-menu';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <nav uiNavigationMenu>

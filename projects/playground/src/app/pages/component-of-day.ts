@@ -2,7 +2,7 @@ import { embedUrl } from '../embed-url';
 import { afterNextRender, Component, computed, DestroyRef, ElementRef, inject, signal } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
-import { UiIcon } from '@loomui/ui/icon';
+import { UiIcon } from '@loomui-ng/ui/icon';
 import '../icons';
 import { COMPONENTS } from '../components.data';
 

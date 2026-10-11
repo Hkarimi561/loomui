@@ -1,7 +1,7 @@
 # Toggle Group
 
 ```ts
-import { UI_TOGGLE_GROUP } from '@loomui/ui/toggle-group';
+import { UI_TOGGLE_GROUP } from '@loomui-ng/ui/toggle-group';
 // add to the component `imports` array
 ```
 

@@ -1,7 +1,7 @@
 # Table
 
 ```ts
-import { UI_TABLE_GENERATED } from '@loomui/ui/table';
+import { UI_TABLE_GENERATED } from '@loomui-ng/ui/table';
 // add to the component `imports` array
 ```
 
@@ -28,4 +28,4 @@ Same thing as custom elements (identical inputs; directives keep working):
 
 Parts (selectors): `[uiTableContainer], ui-table-container`, `table[uiTable], ui-table`, `caption[uiTableCaption], ui-table-caption`, `thead[uiTableHeader], ui-table-header`, `tbody[uiTableBody], ui-table-body`, `tfoot[uiTableFooter], ui-table-footer`, `tr[uiTableRow], ui-table-row`, `th[uiTableHead], ui-table-head`, `td[uiTableCell], ui-table-cell`.
 
-For sorting/filtering/pagination use the Data Table recipe (`@loomui/ui/data-table` + TanStack Table). Spec: `docs/behavior-specs/table.md` · Manual test: `docs/manual-tests/table.md`
+For sorting/filtering/pagination use the Data Table recipe (`@loomui-ng/ui/data-table` + TanStack Table). Spec: `docs/behavior-specs/table.md` · Manual test: `docs/manual-tests/table.md`

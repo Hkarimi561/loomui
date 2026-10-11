@@ -1,7 +1,7 @@
 # Item
 
 ```ts
-import { UI_ITEM_GENERATED } from '@loomui/ui/item';
+import { UI_ITEM_GENERATED } from '@loomui-ng/ui/item';
 // add to the component `imports` array
 ```
 

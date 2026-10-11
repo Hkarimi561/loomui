@@ -2,8 +2,8 @@
 // Change tools/ui-specs.mjs and regenerate; hand-written parts live in ./input-group.manual.ts.
 import { Directive, ElementRef, computed, inject, input } from '@angular/core';
 import { cva } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 @Directive({
   selector: '[uiInputGroup], ui-input-group', hostDirectives: [UiElementHost],

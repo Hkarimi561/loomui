@@ -1,7 +1,7 @@
 # Menubar
 
 ```ts
-import { UI_MENUBAR } from '@loomui/ui/menubar';
+import { UI_MENUBAR } from '@loomui-ng/ui/menubar';
 // add to the component `imports` array
 ```
 

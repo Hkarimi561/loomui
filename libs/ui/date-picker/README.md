@@ -1,7 +1,7 @@
 # Date Picker
 
 ```ts
-import { UiDatePicker } from '@loomui/ui/date-picker';
+import { UiDatePicker } from '@loomui-ng/ui/date-picker';
 // add to the component `imports` array
 ```
 

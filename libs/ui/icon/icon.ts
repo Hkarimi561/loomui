@@ -28,7 +28,7 @@ import {
   TriangleAlert,
   X,
 } from 'lucide';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 
 /** Lucide's icon node format: a list of [tag, attributes] pairs describing the SVG children. */
 export type IconNode = [tag: string, attrs: Record<string, string | number | undefined>][];

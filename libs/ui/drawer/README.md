@@ -1,7 +1,7 @@
 # Drawer
 
 ```ts
-import { UI_DRAWER } from '@loomui/ui/drawer';
+import { UI_DRAWER } from '@loomui-ng/ui/drawer';
 // add to the component `imports` array
 ```
 

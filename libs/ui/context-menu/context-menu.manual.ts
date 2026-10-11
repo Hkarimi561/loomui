@@ -1,11 +1,11 @@
 import { Directionality } from '@angular/cdk/bidi';
 import { computed, contentChildren, Directive, ElementRef, forwardRef, inject, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UI_MENU_CTX, UI_MENU_ITEM, UiMenuContentBase, UiMenuItemBase, UiMenuRootBase } from '@loomui/ui/utils';
-import { type Align, type Side } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UI_MENU_CTX, UI_MENU_ITEM, UiMenuContentBase, UiMenuItemBase, UiMenuRootBase } from '@loomui-ng/ui/utils';
+import { type Align, type Side } from '@loomui-ng/ui/utils';
 import { contextMenuContentClass } from './context-menu';
 import { CONTEXT_MENU_SHARED } from './context-menu.shared';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiContextMenu class="contents">

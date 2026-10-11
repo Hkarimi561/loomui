@@ -1,5 +1,5 @@
 import { computed, Directive, input, ChangeDetectionStrategy, Component, forwardRef, booleanAttribute } from '@angular/core';
-import { cn, UiNativeControl } from '@loomui/ui/utils';
+import { cn, UiNativeControl } from '@loomui-ng/ui/utils';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
 export const inputClasses =

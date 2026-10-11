@@ -14,10 +14,10 @@ import {
   signal,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { cn } from '@loomui/ui/utils';
-import { toggleVariants } from '@loomui/ui/toggle';
+import { cn } from '@loomui-ng/ui/utils';
+import { toggleVariants } from '@loomui-ng/ui/toggle';
 import { toggleGroupClass, toggleGroupItemClass } from './toggle-group';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiToggleGroup type="multiple" variant="outline" [(value)]="v">

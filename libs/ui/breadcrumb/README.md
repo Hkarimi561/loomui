@@ -1,7 +1,7 @@
 # Breadcrumb
 
 ```ts
-import { UI_BREADCRUMB } from '@loomui/ui/breadcrumb';
+import { UI_BREADCRUMB } from '@loomui-ng/ui/breadcrumb';
 // add to the component `imports` array
 ```
 

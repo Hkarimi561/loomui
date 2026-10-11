@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input, numberAttribute } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiProgress [value]="60"></div>

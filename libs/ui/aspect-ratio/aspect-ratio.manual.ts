@@ -1,7 +1,7 @@
 import { computed, Directive, input, numberAttribute } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { aspectRatioClass } from './aspect-ratio';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiAspectRatio [ratio]="16 / 9"><img class="size-full object-cover" … /></div>

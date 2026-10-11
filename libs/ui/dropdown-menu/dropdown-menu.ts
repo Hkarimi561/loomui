@@ -20,8 +20,8 @@ import {
   contextMenuSeparatorClass,
   contextMenuShortcutClass,
   contextMenuSubTriggerClass,
-} from '@loomui/ui/context-menu';
-import { cn } from '@loomui/ui/utils';
+} from '@loomui-ng/ui/context-menu';
+import { cn } from '@loomui-ng/ui/utils';
 import {
   UI_MENU_CTX,
   UI_MENU_ITEM,
@@ -32,10 +32,10 @@ import {
   UiMenuSelectEvent,
   UiMenuSubBase,
   UiMenuSubTriggerBase,
-} from '@loomui/ui/utils';
-import { type Align } from '@loomui/ui/utils';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+} from '@loomui-ng/ui/utils';
+import { type Align } from '@loomui-ng/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export { UiMenuSelectEvent };
 

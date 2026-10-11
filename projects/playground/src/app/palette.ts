@@ -2,9 +2,9 @@ import { embedUrl } from './embed-url';
 import { Component, computed, effect, inject, model, signal } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { UI_COMMAND } from '@loomui/ui/command';
-import { UI_DIALOG } from '@loomui/ui/dialog';
-import { UiIcon } from '@loomui/ui/icon';
+import { UI_COMMAND } from '@loomui-ng/ui/command';
+import { UI_DIALOG } from '@loomui-ng/ui/dialog';
+import { UiIcon } from '@loomui-ng/ui/icon';
 import './icons';
 import { CATEGORIES, COMPONENTS } from './components.data';
 

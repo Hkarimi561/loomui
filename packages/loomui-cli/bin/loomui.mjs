@@ -67,9 +67,9 @@ function writeFile(target, content, { overwrite }) {
   return 'written';
 }
 
-/** `@loomui/ui/<x>` → relative path from the file's folder to <uiDir>/<x>. */
+/** `@loomui-ng/ui/<x>` → relative path from the file's folder to <uiDir>/<x>. */
 function rewriteImports(content, fileDir, uiDir) {
-  return content.replace(/from\s+'@loomui\/ui\/([\w-]+)'/g, (_, dep) => {
+  return content.replace(/from\s+'@loomui-ng\/ui\/([\w-]+)'/g, (_, dep) => {
     let rel = toPosix(path.relative(fileDir, path.join(uiDir, dep)));
     if (!rel.startsWith('.')) rel = './' + rel;
     return `from '${rel}'`;

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
-import { UiIconSvg } from '@loomui/ui/icon';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
 
 /**
  * <ui-spinner /> — Observed: <svg role="status" aria-label="Loading" class="lucide lucide-loader-circle size-4 animate-spin">.

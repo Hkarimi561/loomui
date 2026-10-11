@@ -1,12 +1,12 @@
 import { Component, computed, input, signal, Type } from '@angular/core';
 import { NgComponentOutlet } from '@angular/common';
-import { UI_ALERT } from '@loomui/ui/alert';
-import { UiBadge } from '@loomui/ui/badge';
-import { UiButton } from '@loomui/ui/button';
-import { UiInput } from '@loomui/ui/input';
-import { UiProgress } from '@loomui/ui/progress';
-import { UiSwitch } from '@loomui/ui/switch';
-import { UiToggle } from '@loomui/ui/toggle';
+import { UI_ALERT } from '@loomui-ng/ui/alert';
+import { UiBadge } from '@loomui-ng/ui/badge';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UiProgress } from '@loomui-ng/ui/progress';
+import { UiSwitch } from '@loomui-ng/ui/switch';
+import { UiToggle } from '@loomui-ng/ui/toggle';
 import { CodeCard } from './code-card';
 
 export type KnobValue = string | number | boolean;

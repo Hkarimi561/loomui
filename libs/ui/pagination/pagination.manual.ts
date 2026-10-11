@@ -1,9 +1,9 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { buttonVariants } from '@loomui/ui/button';
-import { cn } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { cn } from '@loomui-ng/ui/utils';
 import { UI_PAGINATION_GENERATED } from './pagination';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 type LinkSize = 'default' | 'icon' | 'sm' | 'lg' | 'xs' | 'icon-xs' | 'icon-sm' | 'icon-lg';
 

@@ -1,8 +1,8 @@
 import { afterNextRender, Component, computed, DestroyRef, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
-import { iconChildren, iconToSvg, toPascal, UiIcon, type IconNode } from '@loomui/ui/icon';
-import { UiInput } from '@loomui/ui/input';
-import { UiToastService } from '@loomui/ui/toast';
+import { iconChildren, iconToSvg, toPascal, UiIcon, type IconNode } from '@loomui-ng/ui/icon';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UiToastService } from '@loomui-ng/ui/toast';
 import '../icons';
 import { CodeCard, type CodeTab } from './code-card';
 
@@ -350,9 +350,9 @@ export class IconsPage {
       {
         label: 'Component',
         file: 'component.ts',
-        code: `import { Component } from '@angular/core';\nimport { ${P} } from 'lucide';\nimport { UiIcon } from '@loomui/ui/icon';\n\n@Component({\n  selector: 'app-example',\n  imports: [UiIcon],\n  template: \`<ui-icon [icon]="${P}"${opts}${col} />\`,\n})\nexport class Example {\n  readonly ${P} = ${P};\n}`,
+        code: `import { Component } from '@angular/core';\nimport { ${P} } from 'lucide';\nimport { UiIcon } from '@loomui-ng/ui/icon';\n\n@Component({\n  selector: 'app-example',\n  imports: [UiIcon],\n  template: \`<ui-icon [icon]="${P}"${opts}${col} />\`,\n})\nexport class Example {\n  readonly ${P} = ${P};\n}`,
       },
-      { label: 'Register', file: 'main.ts', code: `import { ${P} } from 'lucide';\nimport { registerIcons } from '@loomui/ui/icon';\n\nregisterIcons({ ${P} });\n// then anywhere:  <ui-icon name="${name}" />` },
+      { label: 'Register', file: 'main.ts', code: `import { ${P} } from 'lucide';\nimport { registerIcons } from '@loomui-ng/ui/icon';\n\nregisterIcons({ ${P} });\n// then anywhere:  <ui-icon name="${name}" />` },
       { label: 'SVG', file: `${name}.svg`, code: this.svgCode() },
       { label: 'Install', file: 'terminal', code: `# icons come from the lucide package\nnpm install lucide\n\n# the <ui-icon> component\nnpx loomui add icon` },
     ];

@@ -1,13 +1,13 @@
 import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { UiButton } from '@loomui/ui/button';
-import { UiCheckbox } from '@loomui/ui/checkbox';
-import { UiIcon } from '@loomui/ui/icon';
-import { UI_INPUT } from '@loomui/ui/input';
-import { UI_NATIVE_SELECT } from '@loomui/ui/native-select';
-import { UI_RADIO_GROUP } from '@loomui/ui/radio-group';
-import { UiSwitch } from '@loomui/ui/switch';
-import { UI_TEXTAREA } from '@loomui/ui/textarea';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UiCheckbox } from '@loomui-ng/ui/checkbox';
+import { UiIcon } from '@loomui-ng/ui/icon';
+import { UI_INPUT } from '@loomui-ng/ui/input';
+import { UI_NATIVE_SELECT } from '@loomui-ng/ui/native-select';
+import { UI_RADIO_GROUP } from '@loomui-ng/ui/radio-group';
+import { UiSwitch } from '@loomui-ng/ui/switch';
+import { UI_TEXTAREA } from '@loomui-ng/ui/textarea';
 import '../icons';
 import { CodeCard, type CodeTab } from './code-card';
 

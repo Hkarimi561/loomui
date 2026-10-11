@@ -1,10 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { UiBadge } from '@loomui/ui/badge';
-import { UiButton } from '@loomui/ui/button';
-import { UiIcon } from '@loomui/ui/icon';
-import { UI_INPUT } from '@loomui/ui/input';
-import { UiProgress } from '@loomui/ui/progress';
-import { UiSwitch } from '@loomui/ui/switch';
+import { UiBadge } from '@loomui-ng/ui/badge';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UiIcon } from '@loomui-ng/ui/icon';
+import { UI_INPUT } from '@loomui-ng/ui/input';
+import { UiProgress } from '@loomui-ng/ui/progress';
+import { UiSwitch } from '@loomui-ng/ui/switch';
 import '../icons';
 import { AppState } from '../app-state';
 

@@ -1,7 +1,7 @@
 # Radio Group
 
 ```ts
-import { UI_RADIO_GROUP } from '@loomui/ui/radio-group';
+import { UI_RADIO_GROUP } from '@loomui-ng/ui/radio-group';
 // add to the component `imports` array
 ```
 

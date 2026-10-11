@@ -4,7 +4,7 @@ Lucide icons as an Angular component (`<ui-icon>`) and as a directive on a real 
 
 ```ts
 import { Search } from 'lucide';
-import { UiIcon } from '@loomui/ui/icon';   // or: npx loomui add icon
+import { UiIcon } from '@loomui-ng/ui/icon';   // or: npx loomui add icon
 ```
 
 ```html
@@ -22,7 +22,7 @@ import { UiIcon } from '@loomui/ui/icon';   // or: npx loomui add icon
 
 ```ts
 import { Search, Moon } from 'lucide';
-import { registerIcons } from '@loomui/ui/icon';
+import { registerIcons } from '@loomui-ng/ui/icon';
 
 registerIcons({ Search, Moon });   // PascalCase or kebab-case keys
 ```

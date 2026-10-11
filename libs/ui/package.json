@@ -1,5 +1,5 @@
 {
-  "name": "@loomui/ui",
+  "name": "@loomui-ng/ui",
   "version": "0.1.0",
   "description": "Accessible, signal-based Angular components on the CDK — copy them in or install the package. Directives and custom elements.",
   "license": "MIT",

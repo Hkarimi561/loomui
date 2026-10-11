@@ -1,7 +1,7 @@
 # Bubble
 
 ```ts
-import { UI_BUBBLE_GENERATED } from '@loomui/ui/bubble';
+import { UI_BUBBLE_GENERATED } from '@loomui-ng/ui/bubble';
 // add to the component `imports` array
 ```
 

@@ -1,8 +1,8 @@
 import { booleanAttribute, computed, Directive, forwardRef, input, model, signal } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /** Classes derived from the live Toggle (docs/behavior-specs/toggle.md); pl/pr → ps/pe for RTL. */
 export const toggleVariants = cva(

@@ -1,7 +1,7 @@
 # Input OTP
 
 ```ts
-import { UI_INPUT_OTP } from '@loomui/ui/input-otp';
+import { UI_INPUT_OTP } from '@loomui-ng/ui/input-otp';
 // add to the component `imports` array
 ```
 

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { UI_BREADCRUMB_GENERATED } from './breadcrumb';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /** <li uiBreadcrumbSeparator></li> — renders a chevron (mirrored in RTL). Pass custom content to replace it. */
 @Component({

@@ -192,7 +192,7 @@ export default {
     behavior: ['Container gives horizontal scroll; rows hover-highlight and `data-state="selected"` highlights.', 'Checkbox cells get tighter padding via `[role=checkbox]` selectors.'],
     keyboard: std(),
     usage: `<div uiTableContainer>\n  <table uiTable>\n    <thead uiTableHeader><tr uiTableRow><th uiTableHead>Name</th></tr></thead>\n    <tbody uiTableBody><tr uiTableRow><td uiTableCell>Ada</td></tr></tbody>\n  </table>\n</div>`,
-    readmeNote: 'For sorting/filtering/pagination use the Data Table recipe (`@loomui/ui/data-table` + TanStack Table). ',
+    readmeNote: 'For sorting/filtering/pagination use the Data Table recipe (`@loomui-ng/ui/data-table` + TanStack Table). ',
     tests: { Visual: [['Table with header, body, footer and caption.', 'Header text muted/medium; row dividers; caption below.'], ['Hover a row; set `data-state="selected"`.', 'Hover and selected backgrounds.']] },
   },
   textarea: {

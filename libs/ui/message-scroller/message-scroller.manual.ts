@@ -10,7 +10,7 @@ import {
   input,
   signal,
 } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import {
   messageScrollerButtonClass,
   messageScrollerClass,
@@ -18,8 +18,8 @@ import {
   messageScrollerItemClass,
   messageScrollerViewportClass,
 } from './message-scroller';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * Chat viewport that sticks to the newest message.

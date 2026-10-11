@@ -1,6 +1,6 @@
 import { Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UiButton } from '@loomui/ui/button';
+import { UiButton } from '@loomui-ng/ui/button';
 import { COMPONENTS } from '../components.data';
 
 @Component({

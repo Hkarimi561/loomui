@@ -1,7 +1,7 @@
 import { computed, Directive, ElementRef, inject, input, booleanAttribute } from '@angular/core';
-import { buttonVariants } from '@loomui/ui/button';
-import { cn } from '@loomui/ui/utils';
-import { UiModalContentBase, UiModalRoot, type ModalContentConfig } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiModalContentBase, UiModalRoot, type ModalContentConfig } from '@loomui-ng/ui/utils';
 import {
   drawerContentClass,
   drawerDescriptionClass,
@@ -10,7 +10,7 @@ import {
   drawerOverlayClass,
   drawerTitleClass,
 } from './drawer';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 type Direction = 'top' | 'bottom' | 'left' | 'right';
 

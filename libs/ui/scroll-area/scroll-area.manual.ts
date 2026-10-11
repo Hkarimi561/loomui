@@ -1,7 +1,7 @@
 import { computed, Directive, input } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import { scrollAreaClass, scrollAreaViewportClass } from './scroll-area';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiScrollArea class="h-72 w-48 rounded-md border"><div uiScrollAreaViewport>…long content…</div></div>

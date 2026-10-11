@@ -1,8 +1,8 @@
 import { computed, Directive, input, booleanAttribute } from '@angular/core';
-import { buttonVariants } from '@loomui/ui/button';
-import { cn } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { cn } from '@loomui-ng/ui/utils';
 import { attachmentTriggerClass, UI_ATTACHMENT_GENERATED } from './attachment';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * Overlay link/button that makes the whole attachment clickable (observed on <a target=_blank> and <button aria-haspopup=dialog>):

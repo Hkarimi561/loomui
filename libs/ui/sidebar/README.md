@@ -1,7 +1,7 @@
 # Sidebar
 
 ```ts
-import { UI_SIDEBAR } from '@loomui/ui/sidebar';
+import { UI_SIDEBAR } from '@loomui-ng/ui/sidebar';
 // add to the component `imports` array
 ```
 

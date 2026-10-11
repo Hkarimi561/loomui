@@ -1,7 +1,7 @@
 # uiPopover
 
 ```ts
-import { UI_POPOVER } from '@loomui/ui/popover';
+import { UI_POPOVER } from '@loomui-ng/ui/popover';
 // add to the component imports array
 ```
 

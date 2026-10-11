@@ -1,7 +1,7 @@
 # Spinner
 
 ```ts
-import { UI_SPINNER } from '@loomui/ui/spinner';
+import { UI_SPINNER } from '@loomui-ng/ui/spinner';
 // add to the component `imports` array
 ```
 

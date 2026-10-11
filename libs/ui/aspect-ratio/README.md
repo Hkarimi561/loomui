@@ -1,7 +1,7 @@
 # Aspect Ratio
 
 ```ts
-import { UI_ASPECT_RATIO } from '@loomui/ui/aspect-ratio';
+import { UI_ASPECT_RATIO } from '@loomui-ng/ui/aspect-ratio';
 // add to the component `imports` array
 ```
 

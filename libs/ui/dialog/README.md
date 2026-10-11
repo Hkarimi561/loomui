@@ -1,7 +1,7 @@
 # uiDialog
 
 ```ts
-import { UI_DIALOG } from '@loomui/ui/dialog';
+import { UI_DIALOG } from '@loomui-ng/ui/dialog';
 // add to the component imports array
 ```
 

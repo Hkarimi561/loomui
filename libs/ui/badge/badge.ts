@@ -1,7 +1,7 @@
 import { computed, Directive, input } from '@angular/core';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /** Classes copied from live shadcn Badge (docs/behavior-specs/badge.md); pl/pr → ps/pe for RTL. */
 export const badgeVariants = cva(

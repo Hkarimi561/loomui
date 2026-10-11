@@ -1,7 +1,7 @@
 # Field
 
 ```ts
-import { UI_FIELD } from '@loomui/ui/field';
+import { UI_FIELD } from '@loomui-ng/ui/field';
 // add to the component `imports` array
 ```
 

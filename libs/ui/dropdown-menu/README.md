@@ -1,7 +1,7 @@
 # uiDropdownMenu
 
 ```ts
-import { UI_DROPDOWN_MENU } from '@loomui/ui/dropdown-menu';
+import { UI_DROPDOWN_MENU } from '@loomui-ng/ui/dropdown-menu';
 // add to the component imports array
 ```
 

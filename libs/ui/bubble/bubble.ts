@@ -2,8 +2,8 @@
 // Change tools/ui-specs.mjs and regenerate; hand-written parts live in ./bubble.manual.ts.
 import { Directive, computed, input } from '@angular/core';
 import { cva } from 'class-variance-authority';
-import { cn } from '@loomui/ui/utils';
-import { UiElementHost } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export const bubbleVariants = cva('group/bubble relative flex w-fit max-w-[80%] min-w-0 flex-col gap-1 group-data-[align=end]/message:self-end data-[align=end]:self-end data-[variant=ghost]:max-w-full', {
   variants: {

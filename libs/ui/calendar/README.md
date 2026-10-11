@@ -1,7 +1,7 @@
 # Calendar
 
 ```ts
-import { UI_CALENDAR } from '@loomui/ui/calendar';
+import { UI_CALENDAR } from '@loomui-ng/ui/calendar';
 // add to the component `imports` array
 ```
 

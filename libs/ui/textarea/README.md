@@ -1,7 +1,7 @@
 # Textarea
 
 ```ts
-import { UI_TEXTAREA } from '@loomui/ui/textarea';
+import { UI_TEXTAREA } from '@loomui-ng/ui/textarea';
 // add to the component `imports` array
 ```
 

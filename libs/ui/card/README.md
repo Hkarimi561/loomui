@@ -1,7 +1,7 @@
 # uiCard
 
 ```ts
-import { UI_CARD } from '@loomui/ui/card';
+import { UI_CARD } from '@loomui-ng/ui/card';
 // add to the component imports array
 ```
 

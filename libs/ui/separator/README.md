@@ -1,7 +1,7 @@
 # uiSeparator
 
 ```ts
-import { UiSeparator } from '@loomui/ui/separator';
+import { UiSeparator } from '@loomui-ng/ui/separator';
 // add to the component imports array
 ```
 

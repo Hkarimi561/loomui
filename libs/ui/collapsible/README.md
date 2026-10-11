@@ -1,7 +1,7 @@
 # Collapsible
 
 ```ts
-import { UI_COLLAPSIBLE } from '@loomui/ui/collapsible';
+import { UI_COLLAPSIBLE } from '@loomui-ng/ui/collapsible';
 // add to the component `imports` array
 ```
 

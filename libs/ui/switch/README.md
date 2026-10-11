@@ -1,7 +1,7 @@
 # uiSwitch
 
 ```ts
-import { UiSwitch } from '@loomui/ui/switch';
+import { UiSwitch } from '@loomui-ng/ui/switch';
 // add to the component imports array
 ```
 

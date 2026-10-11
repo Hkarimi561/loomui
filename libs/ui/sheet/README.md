@@ -1,7 +1,7 @@
 # uiSheet
 
 ```ts
-import { UI_SHEET } from '@loomui/ui/sheet';
+import { UI_SHEET } from '@loomui-ng/ui/sheet';
 // add to the component imports array
 ```
 

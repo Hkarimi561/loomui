@@ -1,7 +1,7 @@
 # Slider
 
 ```ts
-import { UI_SLIDER } from '@loomui/ui/slider';
+import { UI_SLIDER } from '@loomui-ng/ui/slider';
 // add to the component `imports` array
 ```
 

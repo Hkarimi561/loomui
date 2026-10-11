@@ -1,7 +1,7 @@
 # Button Group
 
 ```ts
-import { UI_BUTTON_GROUP_GENERATED } from '@loomui/ui/button-group';
+import { UI_BUTTON_GROUP_GENERATED } from '@loomui-ng/ui/button-group';
 // add to the component `imports` array
 ```
 

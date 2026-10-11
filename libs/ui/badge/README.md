@@ -1,7 +1,7 @@
 # uiBadge
 
 ```ts
-import { UiBadge } from '@loomui/ui/badge';
+import { UiBadge } from '@loomui-ng/ui/badge';
 // add to the component imports array
 ```
 

@@ -11,11 +11,11 @@ import {
   viewChild,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { buttonVariants } from '@loomui/ui/button';
-import { UiCalendar } from '@loomui/ui/calendar';
-import { UI_POPOVER, UiPopover } from '@loomui/ui/popover';
-import { cn } from '@loomui/ui/utils';
-import { UiIconSvg } from '@loomui/ui/icon';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { UiCalendar } from '@loomui-ng/ui/calendar';
+import { UI_POPOVER, UiPopover } from '@loomui-ng/ui/popover';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
 
 /**
  * shadcn's "Date Picker" is a recipe: Popover + Calendar + outline Button (`data-empty` while no date, muted text).

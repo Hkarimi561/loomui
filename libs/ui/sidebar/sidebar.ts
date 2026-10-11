@@ -14,11 +14,11 @@ import {
 } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { cva } from 'class-variance-authority';
-import { buttonVariants } from '@loomui/ui/button';
-import { UI_SHEET } from '@loomui/ui/sheet';
-import { cn } from '@loomui/ui/utils';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { UI_SHEET } from '@loomui-ng/ui/sheet';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * Composable sidebar (shadcn structure): SidebarProvider > Sidebar (+ Inset) with Header/Content/Footer, Groups and Menus.

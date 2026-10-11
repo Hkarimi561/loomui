@@ -85,12 +85,12 @@ for (const file of walk(lib).filter((f) => f.endsWith('.ts') && !/index\.ts$|\.c
 
   s = iconTwins(s);
 
-  if (usedHost && !/\bUiElementHost\b[^;]*from '@loomui\/ui\/utils'/.test(s)) {
+  if (usedHost && !/\bUiElementHost\b[^;]*from '@loomui-ng\/ui\/utils'/.test(s)) {
     const re = /^import[\s\S]*?from\s+'[^']+';\n/gm;
     let m;
     let end = 0;
     while ((m = re.exec(s))) end = m.index + m[0].length;
-    s = s.slice(0, end) + "import { UiElementHost } from '@loomui/ui/utils';\n" + s.slice(end);
+    s = s.slice(0, end) + "import { UiElementHost } from '@loomui-ng/ui/utils';\n" + s.slice(end);
   }
   if (s !== before) {
     fs.writeFileSync(file, s);

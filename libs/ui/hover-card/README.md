@@ -1,7 +1,7 @@
 # Hover Card
 
 ```ts
-import { UI_HOVER_CARD } from '@loomui/ui/hover-card';
+import { UI_HOVER_CARD } from '@loomui-ng/ui/hover-card';
 // add to the component `imports` array
 ```
 

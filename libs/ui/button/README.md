@@ -3,7 +3,7 @@
 Directive that turns a native `<button>` or `<a>` into a shadcn/ui Button.
 
 ```ts
-import { UiButton } from '@loomui/ui/button';
+import { UiButton } from '@loomui-ng/ui/button';
 
 @Component({
   imports: [UiButton],

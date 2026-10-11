@@ -1,14 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { UiBadge } from '@loomui/ui/badge';
-import { UiButton } from '@loomui/ui/button';
-import { UI_CARD } from '@loomui/ui/card';
-import { UiCheckbox } from '@loomui/ui/checkbox';
-import { UiInput } from '@loomui/ui/input';
-import { UiLabel } from '@loomui/ui/label';
-import { UiSeparator } from '@loomui/ui/separator';
-import { UiSwitch } from '@loomui/ui/switch';
-import { UI_TABS } from '@loomui/ui/tabs';
+import { UiBadge } from '@loomui-ng/ui/badge';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_CARD } from '@loomui-ng/ui/card';
+import { UiCheckbox } from '@loomui-ng/ui/checkbox';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UiLabel } from '@loomui-ng/ui/label';
+import { UiSeparator } from '@loomui-ng/ui/separator';
+import { UiSwitch } from '@loomui-ng/ui/switch';
+import { UI_TABS } from '@loomui-ng/ui/tabs';
 
 @Component({
   selector: 'app-badge-page',

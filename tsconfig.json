@@ -15,7 +15,7 @@
     "target": "ES2022",
     "module": "preserve",
     "paths": {
-      "@loomui/ui/*": ["./libs/ui/*"]
+      "@loomui-ng/ui/*": ["./libs/ui/*"]
     }
   },
   "angularCompilerOptions": {

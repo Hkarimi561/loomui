@@ -1,7 +1,7 @@
 # Progress
 
 ```ts
-import { UI_PROGRESS } from '@loomui/ui/progress';
+import { UI_PROGRESS } from '@loomui-ng/ui/progress';
 // add to the component `imports` array
 ```
 

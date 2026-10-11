@@ -158,7 +158,7 @@ for (const name of process.argv.slice(2)) {
     `// Change tools/ui-specs.mjs and regenerate; hand-written parts live in ./${name}.manual.ts.${NL}` +
     `import { ${[...new Set(['computed', 'Directive', 'input', ...spec.parts.flatMap((p) => p.imports ?? [])])].sort().join(', ')} } from '@angular/core';${NL}` +
     `${parts.some((p) => p.hasCva) ? `import { cva } from 'class-variance-authority';${NL}` : ''}` +
-    `import { cn } from '@loomui/ui/utils';${NL}${NL}`;
+    `import { cn } from '@loomui-ng/ui/utils';${NL}${NL}`;
   const names = parts.map((p) => p.cls).filter(Boolean);
   const dir = path.join(root, 'libs/ui', name);
   fs.mkdirSync(dir, { recursive: true });

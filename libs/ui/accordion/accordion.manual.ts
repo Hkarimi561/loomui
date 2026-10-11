@@ -16,16 +16,16 @@ import {
   viewChild,
 } from '@angular/core';
 import { Directionality } from '@angular/cdk/bidi';
-import { cn } from '@loomui/ui/utils';
-import { nextId, whenAnimationDone } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
+import { nextId, whenAnimationDone } from '@loomui-ng/ui/utils';
 import {
   accordionClass,
   accordionContentClass,
   accordionItemClass,
   accordionTriggerClass,
 } from './accordion';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * <div uiAccordion type="single" [(value)]="open" class="rounded-lg border">

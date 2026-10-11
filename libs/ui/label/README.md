@@ -1,7 +1,7 @@
 # uiLabel
 
 ```ts
-import { UiLabel } from '@loomui/ui/label';
+import { UiLabel } from '@loomui-ng/ui/label';
 // add to the component imports array
 ```
 

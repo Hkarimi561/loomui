@@ -1,7 +1,7 @@
 # Resizable
 
 ```ts
-import { UI_RESIZABLE } from '@loomui/ui/resizable';
+import { UI_RESIZABLE } from '@loomui-ng/ui/resizable';
 // add to the component `imports` array
 ```
 

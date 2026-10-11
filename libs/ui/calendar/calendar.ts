@@ -13,7 +13,7 @@ import {
   signal,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import {
   calendarCalendarClass,
   calendarCaptionClass,
@@ -29,8 +29,8 @@ import {
   calendarWeekdayClass,
   calendarWeekdaysClass,
 } from './calendar.classes';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export interface DateRange {
   from?: Date;

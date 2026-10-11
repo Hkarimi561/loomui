@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { UI_ALERT } from '@loomui/ui/alert';
-import { UiBadge } from '@loomui/ui/badge';
-import { UiButton } from '@loomui/ui/button';
-import { UI_CARD } from '@loomui/ui/card';
-import { UiIcon } from '@loomui/ui/icon';
-import { UiSwitch } from '@loomui/ui/switch';
+import { UI_ALERT } from '@loomui-ng/ui/alert';
+import { UiBadge } from '@loomui-ng/ui/badge';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_CARD } from '@loomui-ng/ui/card';
+import { UiIcon } from '@loomui-ng/ui/icon';
+import { UiSwitch } from '@loomui-ng/ui/switch';
 import '../icons';
 
 /** Dialog, menu and toast stacked in 3D; the layers fan out on hover or focus. Built from the real components. */

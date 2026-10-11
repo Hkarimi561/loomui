@@ -1,6 +1,6 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, forwardRef, input } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { UiNativeControl } from '@loomui/ui/utils';
+import { UiNativeControl } from '@loomui-ng/ui/utils';
 import { UI_INPUT_GROUP_GENERATED, UiInputGroupControl } from './input-group';
 
 /**

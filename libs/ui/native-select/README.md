@@ -1,7 +1,7 @@
 # Native Select
 
 ```ts
-import { UI_NATIVE_SELECT } from '@loomui/ui/native-select';
+import { UI_NATIVE_SELECT } from '@loomui-ng/ui/native-select';
 // add to the component `imports` array
 ```
 

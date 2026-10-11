@@ -1,6 +1,6 @@
 import { Directionality, type Direction } from '@angular/cdk/bidi';
 import { computed, Directive, effect, ElementRef, EventEmitter, forwardRef, inject, input, OnDestroy } from '@angular/core';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * shadcn's DirectionProvider (Radix) sets `dir` for a subtree so every primitive resolves layout/keyboard direction from it.

@@ -1,7 +1,7 @@
 # Scroll Area
 
 ```ts
-import { UI_SCROLL_AREA } from '@loomui/ui/scroll-area';
+import { UI_SCROLL_AREA } from '@loomui-ng/ui/scroll-area';
 // add to the component `imports` array
 ```
 

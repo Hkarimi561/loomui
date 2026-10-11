@@ -14,14 +14,14 @@ import {
   signal,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { buttonVariants } from '@loomui/ui/button';
-import { cn } from '@loomui/ui/utils';
-import { UiLayerRoot } from '@loomui/ui/utils';
-import { nextId } from '@loomui/ui/utils';
-import { UiPopperContentBase } from '@loomui/ui/utils';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiLayerRoot } from '@loomui-ng/ui/utils';
+import { nextId } from '@loomui-ng/ui/utils';
+import { UiPopperContentBase } from '@loomui-ng/ui/utils';
 import { comboboxContentClass, comboboxEmptyClass, comboboxItemClass, comboboxListClass } from './combobox';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 /**
  * Searchable single-select (shadcn "Combobox").

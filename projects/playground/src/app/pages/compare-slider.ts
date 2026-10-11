@@ -1,11 +1,11 @@
 import { Component, ElementRef, inject, signal } from '@angular/core';
-import { UI_AVATAR } from '@loomui/ui/avatar';
-import { UiBadge } from '@loomui/ui/badge';
-import { UiButton } from '@loomui/ui/button';
-import { UI_CARD } from '@loomui/ui/card';
-import { UI_INPUT } from '@loomui/ui/input';
-import { UiProgress } from '@loomui/ui/progress';
-import { UiSwitch } from '@loomui/ui/switch';
+import { UI_AVATAR } from '@loomui-ng/ui/avatar';
+import { UiBadge } from '@loomui-ng/ui/badge';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_CARD } from '@loomui-ng/ui/card';
+import { UI_INPUT } from '@loomui-ng/ui/input';
+import { UiProgress } from '@loomui-ng/ui/progress';
+import { UiSwitch } from '@loomui-ng/ui/switch';
 import '../icons';
 
 /** The same UI, rendered twice with real components: once forced light, once forced dark. */

@@ -1,7 +1,7 @@
 # Kbd
 
 ```ts
-import { UI_KBD_GENERATED } from '@loomui/ui/kbd';
+import { UI_KBD_GENERATED } from '@loomui-ng/ui/kbd';
 // add to the component `imports` array
 ```
 

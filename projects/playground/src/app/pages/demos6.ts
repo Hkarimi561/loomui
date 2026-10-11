@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { UI_ATTACHMENT } from '@loomui/ui/attachment';
-import { UI_BUBBLE } from '@loomui/ui/bubble';
-import { UiButton } from '@loomui/ui/button';
-import { UI_CALENDAR, DateRange } from '@loomui/ui/calendar';
-import { UI_MARKER } from '@loomui/ui/marker';
-import { UI_MESSAGE } from '@loomui/ui/message';
-import { UI_MESSAGE_SCROLLER } from '@loomui/ui/message-scroller';
-import { UI_QUESTIONNAIRE } from '@loomui/ui/questionnaire';
+import { UI_ATTACHMENT } from '@loomui-ng/ui/attachment';
+import { UI_BUBBLE } from '@loomui-ng/ui/bubble';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_CALENDAR, DateRange } from '@loomui-ng/ui/calendar';
+import { UI_MARKER } from '@loomui-ng/ui/marker';
+import { UI_MESSAGE } from '@loomui-ng/ui/message';
+import { UI_MESSAGE_SCROLLER } from '@loomui-ng/ui/message-scroller';
+import { UI_QUESTIONNAIRE } from '@loomui-ng/ui/questionnaire';
 
 @Component({
   selector: 'app-bubble-page',

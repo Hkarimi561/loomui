@@ -1,7 +1,7 @@
 # Carousel
 
 ```ts
-import { UI_CAROUSEL } from '@loomui/ui/carousel';
+import { UI_CAROUSEL } from '@loomui-ng/ui/carousel';
 // add to the component `imports` array
 ```
 

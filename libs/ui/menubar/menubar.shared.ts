@@ -10,7 +10,7 @@ import {
   input,
   model,
 } from '@angular/core';
-import { cn } from '@loomui/ui/utils';
+import { cn } from '@loomui-ng/ui/utils';
 import {
   UI_MENU_CTX,
   UI_MENU_ITEM,
@@ -20,13 +20,13 @@ import {
   UiMenuSubTriggerBase,
   UiMenuContentBase,
   UiMenuSelectEvent,
-} from '@loomui/ui/utils';
-import { type Align } from '@loomui/ui/utils';
+} from '@loomui-ng/ui/utils';
+import { type Align } from '@loomui-ng/ui/utils';
 import { contentChildren } from '@angular/core';
-import { UiIconSvg } from '@loomui/ui/icon';
-import { contextMenuCheckboxItemClass, contextMenuLabelClass, contextMenuRadioItemClass, contextMenuContentClass } from '@loomui/ui/context-menu';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
+import { contextMenuCheckboxItemClass, contextMenuLabelClass, contextMenuRadioItemClass, contextMenuContentClass } from '@loomui-ng/ui/context-menu';
 import { menubarItemClass, menubarSubTriggerClass, menubarSeparatorClass, menubarShortcutClass, menubarContentClass } from './menubar';
-import { UiElementHost } from '@loomui/ui/utils';
+import { UiElementHost } from '@loomui-ng/ui/utils';
 
 export { UiMenuSelectEvent };
 

@@ -1,7 +1,7 @@
 # uiToast
 
 ```ts
-import { UiToaster, UiToastService } from '@loomui/ui/toast';
+import { UiToaster, UiToastService } from '@loomui-ng/ui/toast';
 // add to the component imports array
 ```
 

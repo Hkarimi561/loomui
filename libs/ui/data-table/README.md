@@ -1,7 +1,7 @@
 # Data Table
 
 ```ts
-import { UI_DATA_TABLE } from '@loomui/ui/data-table';
+import { UI_DATA_TABLE } from '@loomui-ng/ui/data-table';
 // add to the component `imports` array
 ```
 

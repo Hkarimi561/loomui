@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { UI_ALERT_DIALOG } from '@loomui/ui/alert-dialog';
-import { UiButton } from '@loomui/ui/button';
-import { UI_COMBOBOX } from '@loomui/ui/combobox';
-import { UI_CONTEXT_MENU } from '@loomui/ui/context-menu';
-import { UI_DRAWER } from '@loomui/ui/drawer';
-import { UI_HOVER_CARD } from '@loomui/ui/hover-card';
-import { UI_MENUBAR } from '@loomui/ui/menubar';
-import { UI_NAVIGATION_MENU } from '@loomui/ui/navigation-menu';
+import { UI_ALERT_DIALOG } from '@loomui-ng/ui/alert-dialog';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_COMBOBOX } from '@loomui-ng/ui/combobox';
+import { UI_CONTEXT_MENU } from '@loomui-ng/ui/context-menu';
+import { UI_DRAWER } from '@loomui-ng/ui/drawer';
+import { UI_HOVER_CARD } from '@loomui-ng/ui/hover-card';
+import { UI_MENUBAR } from '@loomui-ng/ui/menubar';
+import { UI_NAVIGATION_MENU } from '@loomui-ng/ui/navigation-menu';
 
 @Component({
   selector: 'app-alert-dialog-page',

@@ -1,7 +1,7 @@
 # Avatar
 
 ```ts
-import { UI_AVATAR } from '@loomui/ui/avatar';
+import { UI_AVATAR } from '@loomui-ng/ui/avatar';
 // add to the component `imports` array
 ```
 

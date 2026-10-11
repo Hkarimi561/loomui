@@ -1,7 +1,7 @@
 # Chart
 
 ```ts
-import { UI_CHART } from '@loomui/ui/chart';
+import { UI_CHART } from '@loomui-ng/ui/chart';
 // add to the component `imports` array
 ```
 

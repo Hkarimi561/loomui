@@ -14,7 +14,7 @@ import {
   untracked,
   viewChildren,
 } from '@angular/core';
-import { iconChildren, LIB_ICONS } from '@loomui/ui/icon';
+import { iconChildren, LIB_ICONS } from '@loomui-ng/ui/icon';
 
 export type ToastType = 'normal' | 'success' | 'error' | 'info' | 'warning' | 'loading';
 export type ToastPosition =

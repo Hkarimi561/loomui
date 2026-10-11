@@ -1,7 +1,7 @@
 # uiTooltip
 
 ```ts
-import { UI_TOOLTIP } from '@loomui/ui/tooltip';
+import { UI_TOOLTIP } from '@loomui-ng/ui/tooltip';
 // add to the component imports array
 ```
 

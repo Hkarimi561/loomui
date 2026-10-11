@@ -1,16 +1,16 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { UiButton } from '@loomui/ui/button';
-import { UI_COMMAND } from '@loomui/ui/command';
-import { UI_DIALOG } from '@loomui/ui/dialog';
-import { UI_DROPDOWN_MENU } from '@loomui/ui/dropdown-menu';
-import { UiInput } from '@loomui/ui/input';
-import { UiLabel } from '@loomui/ui/label';
-import { UI_POPOVER } from '@loomui/ui/popover';
-import { UI_SELECT } from '@loomui/ui/select';
-import { UI_SHEET } from '@loomui/ui/sheet';
-import { UiToastService } from '@loomui/ui/toast';
-import { UI_TOOLTIP } from '@loomui/ui/tooltip';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_COMMAND } from '@loomui-ng/ui/command';
+import { UI_DIALOG } from '@loomui-ng/ui/dialog';
+import { UI_DROPDOWN_MENU } from '@loomui-ng/ui/dropdown-menu';
+import { UiInput } from '@loomui-ng/ui/input';
+import { UiLabel } from '@loomui-ng/ui/label';
+import { UI_POPOVER } from '@loomui-ng/ui/popover';
+import { UI_SELECT } from '@loomui-ng/ui/select';
+import { UI_SHEET } from '@loomui-ng/ui/sheet';
+import { UiToastService } from '@loomui-ng/ui/toast';
+import { UI_TOOLTIP } from '@loomui-ng/ui/tooltip';
 
 @Component({
   selector: 'app-dialog-page',

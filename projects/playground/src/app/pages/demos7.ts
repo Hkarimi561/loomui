@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { UI_CAROUSEL } from '@loomui/ui/carousel';
-import { UI_CHART, type ChartConfig } from '@loomui/ui/chart';
-import { UiDatePicker } from '@loomui/ui/date-picker';
-import { UI_SIDEBAR } from '@loomui/ui/sidebar';
-import { UI_CARD } from '@loomui/ui/card';
+import { UI_CAROUSEL } from '@loomui-ng/ui/carousel';
+import { UI_CHART, type ChartConfig } from '@loomui-ng/ui/chart';
+import { UiDatePicker } from '@loomui-ng/ui/date-picker';
+import { UI_SIDEBAR } from '@loomui-ng/ui/sidebar';
+import { UI_CARD } from '@loomui-ng/ui/card';
 
 @Component({
   selector: 'app-carousel-page',

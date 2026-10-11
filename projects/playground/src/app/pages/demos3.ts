@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { UiButton } from '@loomui/ui/button';
-import { UI_ACCORDION } from '@loomui/ui/accordion';
-import { UI_COLLAPSIBLE } from '@loomui/ui/collapsible';
-import { UiLabel } from '@loomui/ui/label';
-import { UI_RADIO_GROUP } from '@loomui/ui/radio-group';
-import { UI_SLIDER } from '@loomui/ui/slider';
-import { UiToggle } from '@loomui/ui/toggle';
-import { UI_TOGGLE_GROUP } from '@loomui/ui/toggle-group';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_ACCORDION } from '@loomui-ng/ui/accordion';
+import { UI_COLLAPSIBLE } from '@loomui-ng/ui/collapsible';
+import { UiLabel } from '@loomui-ng/ui/label';
+import { UI_RADIO_GROUP } from '@loomui-ng/ui/radio-group';
+import { UI_SLIDER } from '@loomui-ng/ui/slider';
+import { UiToggle } from '@loomui-ng/ui/toggle';
+import { UI_TOGGLE_GROUP } from '@loomui-ng/ui/toggle-group';
 
 @Component({
   selector: 'app-accordion-page',

@@ -1,7 +1,7 @@
 # Combobox
 
 ```ts
-import { UI_COMBOBOX } from '@loomui/ui/combobox';
+import { UI_COMBOBOX } from '@loomui-ng/ui/combobox';
 // add to the component `imports` array
 ```
 

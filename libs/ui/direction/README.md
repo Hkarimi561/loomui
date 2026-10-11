@@ -1,7 +1,7 @@
 # Direction
 
 ```ts
-import { UI_DIRECTION } from '@loomui/ui/direction';
+import { UI_DIRECTION } from '@loomui-ng/ui/direction';
 // add to the component `imports` array
 ```
 

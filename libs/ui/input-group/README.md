@@ -1,7 +1,7 @@
 # Input Group
 
 ```ts
-import { UI_INPUT_GROUP } from '@loomui/ui/input-group';
+import { UI_INPUT_GROUP } from '@loomui-ng/ui/input-group';
 // add to the component `imports` array
 ```
 

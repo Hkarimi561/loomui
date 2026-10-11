@@ -1,7 +1,7 @@
 # Navigation Menu
 
 ```ts
-import { UI_NAVIGATION_MENU } from '@loomui/ui/navigation-menu';
+import { UI_NAVIGATION_MENU } from '@loomui-ng/ui/navigation-menu';
 // add to the component `imports` array
 ```
 

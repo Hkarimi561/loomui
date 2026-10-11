@@ -14,7 +14,7 @@ npx loomui init
 npx loomui add button dialog data-table
 
 # or use the package
-npm install @loomui/ui lucide
+npm install @loomui-ng/ui lucide
 ```
 
 ```html
@@ -31,7 +31,7 @@ npm install @loomui/ui lucide
 ## Repository layout
 | Path | What |
 |---|---|
-| `libs/ui` | the library (`@loomui/ui`, one secondary entry point per component) — see its README |
+| `libs/ui` | the library (`@loomui-ng/ui`, one secondary entry point per component) — see its README |
 | `packages/loomui-cli` | the `loomui` copy-in CLI and its registry |
 | `projects/playground` | the showcase app (landing, component pages, icons, themes, elements) |
 | `docs` | behavior specs, manual test checklists, final report |

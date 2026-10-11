@@ -1,7 +1,7 @@
 # Alert Dialog
 
 ```ts
-import { UI_ALERT_DIALOG } from '@loomui/ui/alert-dialog';
+import { UI_ALERT_DIALOG } from '@loomui-ng/ui/alert-dialog';
 // add to the component `imports` array
 ```
 

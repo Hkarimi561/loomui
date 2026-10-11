@@ -1,7 +1,7 @@
 # uiSelect
 
 ```ts
-import { UI_SELECT } from '@loomui/ui/select';
+import { UI_SELECT } from '@loomui-ng/ui/select';
 // add to the component imports array
 ```
 

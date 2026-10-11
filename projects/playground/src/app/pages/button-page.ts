@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UiButton } from '@loomui/ui/button';
+import { UiButton } from '@loomui-ng/ui/button';
 
 @Component({
   selector: 'app-button-page',

@@ -1,7 +1,7 @@
 # Empty
 
 ```ts
-import { UI_EMPTY_GENERATED } from '@loomui/ui/empty';
+import { UI_EMPTY_GENERATED } from '@loomui-ng/ui/empty';
 // add to the component `imports` array
 ```
 

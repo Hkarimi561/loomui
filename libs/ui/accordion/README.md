@@ -1,7 +1,7 @@
 # Accordion
 
 ```ts
-import { UI_ACCORDION } from '@loomui/ui/accordion';
+import { UI_ACCORDION } from '@loomui-ng/ui/accordion';
 // add to the component `imports` array
 ```
 

@@ -1,7 +1,7 @@
 # Message Scroller
 
 ```ts
-import { UI_MESSAGE_SCROLLER } from '@loomui/ui/message-scroller';
+import { UI_MESSAGE_SCROLLER } from '@loomui-ng/ui/message-scroller';
 // add to the component `imports` array
 ```
 

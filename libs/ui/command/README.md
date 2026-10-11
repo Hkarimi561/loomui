@@ -1,7 +1,7 @@
 # uiCommand
 
 ```ts
-import { UI_COMMAND } from '@loomui/ui/command';
+import { UI_COMMAND } from '@loomui-ng/ui/command';
 // add to the component imports array
 ```
 

@@ -1,7 +1,7 @@
 # uiCheckbox
 
 ```ts
-import { UiCheckbox } from '@loomui/ui/checkbox';
+import { UiCheckbox } from '@loomui-ng/ui/checkbox';
 // add to the component imports array
 ```
 

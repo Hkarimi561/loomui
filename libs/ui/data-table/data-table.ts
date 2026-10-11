@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import { buttonVariants } from '@loomui/ui/button';
-import { UI_DROPDOWN_MENU } from '@loomui/ui/dropdown-menu';
-import { cn } from '@loomui/ui/utils';
-import { UiIconSvg } from '@loomui/ui/icon';
+import { buttonVariants } from '@loomui-ng/ui/button';
+import { UI_DROPDOWN_MENU } from '@loomui-ng/ui/dropdown-menu';
+import { cn } from '@loomui-ng/ui/utils';
+import { UiIconSvg } from '@loomui-ng/ui/icon';
 
 /**
  * shadcn's "Data Table" is a recipe, not a package component: TanStack Table (headless) + the Table primitives + a few
  * helpers (sortable column header, view options, pagination). This file ships those helpers for @tanstack/angular-table v9;
- * the table instance comes from `injectTable(...)` in your component, rendering uses `FlexRender` + `@loomui/ui/table`.
+ * the table instance comes from `injectTable(...)` in your component, rendering uses `FlexRender` + `@loomui-ng/ui/table`.
  * The helpers accept the (signal-reactive) table/column and only call TanStack APIs, so they work with any feature set
  * that registers rowSortingFeature / columnVisibilityFeature / rowPaginationFeature / rowSelectionFeature.
  */

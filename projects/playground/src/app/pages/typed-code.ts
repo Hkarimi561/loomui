@@ -1,8 +1,8 @@
 import { afterNextRender, Component, computed, DestroyRef, ElementRef, inject, signal } from '@angular/core';
 import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
-import { UiButton } from '@loomui/ui/button';
-import { UI_CARD } from '@loomui/ui/card';
-import { UI_INPUT } from '@loomui/ui/input';
+import { UiButton } from '@loomui-ng/ui/button';
+import { UI_CARD } from '@loomui-ng/ui/card';
+import { UI_INPUT } from '@loomui-ng/ui/input';
 import { highlight } from './code-card';
 
 const CODE = `<ui-card>
