@@ -26,6 +26,7 @@ for (let i = 0; i < argv.length; i++) {
 const [command, ...names] = positional;
 const cwd = process.cwd();
 const CONFIG = 'loomui.json';
+const PUBLIC_REGISTRY = 'https://registry.npmjs.org/';
 
 const c = (code, s) => (process.stdout.isTTY ? `\x1b[${code}m${s}\x1b[0m` : s);
 const ok = (s) => console.log(c(32, '✔'), s);
@@ -92,9 +93,13 @@ function install(deps) {
     console.log(`    npm install ${list.join(' ')}`);
     return;
   }
+  const run = (extra = []) => spawnSync('npm', ['install', ...extra, ...list], { stdio: 'inherit', shell: true, cwd }).status === 0;
   info(`npm install ${list.join(' ')}`);
-  const r = spawnSync('npm', ['install', ...list], { stdio: 'inherit', shell: true, cwd });
-  if (r.status !== 0) warn(`npm install failed — run it manually:  npm install ${list.join(' ')}`);
+  if (run()) return;
+  // A company mirror (Nexus/Artifactory) may not carry these packages (yet): retry once against the public registry.
+  warn(`npm install failed with your configured registry — retrying with ${PUBLIC_REGISTRY}`);
+  if (run([`--registry=${PUBLIC_REGISTRY}`])) return;
+  warn(`npm install failed — run it manually:  npm install --registry=${PUBLIC_REGISTRY} ${list.join(' ')}`);
 }
 
 // ---------- commands ----------
