@@ -185,9 +185,9 @@ import '../icons';
           <h2 id="e-nav" class="font-medium">Navigation</h2>
           <ui-breadcrumb>
             <ui-breadcrumb-list>
-              <ui-breadcrumb-item><ui-breadcrumb-link href="/">Home</ui-breadcrumb-link></ui-breadcrumb-item>
+              <ui-breadcrumb-item><ui-breadcrumb-link href="./">Home</ui-breadcrumb-link></ui-breadcrumb-item>
               <ui-breadcrumb-separator />
-              <ui-breadcrumb-item><ui-breadcrumb-link href="/components">Components</ui-breadcrumb-link></ui-breadcrumb-item>
+              <ui-breadcrumb-item><ui-breadcrumb-link href="components">Components</ui-breadcrumb-link></ui-breadcrumb-item>
               <ui-breadcrumb-separator />
               <ui-breadcrumb-item><ui-breadcrumb-page>Elements</ui-breadcrumb-page></ui-breadcrumb-item>
             </ui-breadcrumb-list>

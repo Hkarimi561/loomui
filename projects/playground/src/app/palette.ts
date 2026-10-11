@@ -1,3 +1,4 @@
+import { embedUrl } from './embed-url';
 import { Component, computed, effect, inject, model, signal } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -86,7 +87,7 @@ export class Palette {
   /** Slug of the highlighted command item once it has settled; drives the preview. */
   private readonly slug = signal<string | null>(null);
   readonly current = computed(() => COMPONENTS.find((c) => c.slug === this.slug()) ?? null);
-  readonly src = computed<SafeResourceUrl | null>(() => (this.slug() ? this.sanitizer.bypassSecurityTrustResourceUrl('/embed/' + this.slug()) : null));
+  readonly src = computed<SafeResourceUrl | null>(() => (this.slug() ? this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl(this.slug()!)) : null));
 
   constructor() {
     let observer: MutationObserver | null = null;

@@ -1,3 +1,4 @@
+import { embedUrl } from '../embed-url';
 import { afterNextRender, Component, computed, DestroyRef, ElementRef, HostListener, inject, signal, viewChild } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
@@ -148,7 +149,7 @@ const readViewed = (): string[] => {
               @if (width() !== null) {
                 <span class="font-mono text-xs text-muted-foreground tabular-nums" aria-live="polite">{{ width() }}px</span>
               }
-              <a [href]="'/embed/' + current()" target="_blank" rel="noreferrer" class="ms-auto text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline">Open standalone ↗︎</a>
+              <a [href]="embedHref()" target="_blank" rel="noreferrer" class="ms-auto text-xs text-muted-foreground underline-offset-2 hover:text-foreground hover:underline">Open standalone ↗︎</a>
             </div>
 
             <div #frame class="relative max-w-full" [style.width.px]="width()">
@@ -356,8 +357,9 @@ export class ComponentsLayout {
     return this.modes.find((m) => m.width === w)?.label ?? 'Custom';
   });
   readonly iframeH = signal(420);
+  readonly embedHref = computed(() => (this.current() ? embedUrl(this.current()!) : '#'));
   readonly embedSrc = computed<SafeResourceUrl | null>(() =>
-    this.current() ? this.sanitizer.bypassSecurityTrustResourceUrl('/embed/' + this.current()) : null,
+    this.current() ? this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl(this.current()!)) : null,
   );
   private drag: { x: number; w: number; sign: number; max: number } | null = null;
 

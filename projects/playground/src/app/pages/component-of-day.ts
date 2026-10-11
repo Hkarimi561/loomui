@@ -1,3 +1,4 @@
+import { embedUrl } from '../embed-url';
 import { afterNextRender, Component, computed, DestroyRef, ElementRef, inject, signal } from '@angular/core';
 import { DomSanitizer, type SafeResourceUrl } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
@@ -48,7 +49,7 @@ export class ComponentOfDay {
   readonly pick = computed(() => READY[Math.abs(this.index()) % READY.length]);
   /** Only load the iframe once the section is near the viewport (keeps the landing page light). */
   readonly visible = signal(false);
-  readonly src = computed<SafeResourceUrl | null>(() => this.sanitizer.bypassSecurityTrustResourceUrl('/embed/' + this.pick().slug));
+  readonly src = computed<SafeResourceUrl | null>(() => this.sanitizer.bypassSecurityTrustResourceUrl(embedUrl(this.pick().slug)));
 
   constructor() {
     afterNextRender(() => {

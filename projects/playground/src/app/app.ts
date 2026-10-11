@@ -1,3 +1,4 @@
+import { isEmbedLocation } from './embed-url';
 import { afterNextRender, Component, DestroyRef, effect, ElementRef, HostListener, inject, signal, viewChild } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -129,7 +130,7 @@ export class App {
     this.router.events.pipe(
       filter((e) => e instanceof NavigationEnd),
       map((e) => (e as NavigationEnd).urlAfterRedirects.startsWith('/embed/')),
-      startWith(typeof location !== 'undefined' && location.pathname.startsWith('/embed/')),
+      startWith(typeof location !== 'undefined' && isEmbedLocation()),
     ),
     { initialValue: false },
   );
