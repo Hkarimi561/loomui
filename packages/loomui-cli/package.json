@@ -25,11 +25,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hkarimi561/loomui.git",
+    "url": "git+https://github.com/Hkarimi561/loomui-ng.git",
     "directory": "packages/loomui-cli"
   },
-  "homepage": "https://hkarimi561.github.io/loomui/",
+  "homepage": "https://hkarimi561.github.io/loomui-ng/",
   "bugs": {
-    "url": "https://github.com/Hkarimi561/loomui/issues"
+    "url": "https://github.com/Hkarimi561/loomui-ng/issues"
   }
 }

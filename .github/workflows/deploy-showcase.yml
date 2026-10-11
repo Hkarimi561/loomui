@@ -1,6 +1,6 @@
 name: Deploy showcase
 
-# Publishes the showcase to GitHub Pages: https://hkarimi561.github.io/loomui/
+# Publishes the showcase to GitHub Pages: https://hkarimi561.github.io/loomui-ng/
 # One-time setup: repo Settings → Pages → Source: "GitHub Actions".
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build showcase
-        run: npx ng build playground --base-href /loomui/
+        run: npx ng build playground --base-href /loomui-ng/
       - name: SPA fallback (deep links on GitHub Pages)
         run: |
           cp dist/playground/browser/index.html dist/playground/browser/404.html
