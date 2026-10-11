@@ -1,6 +1,6 @@
 {
   "name": "@loomui-ng/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Copy-in CLI for Loom UI: add accessible Angular components to your project and own the code.",
   "type": "module",
   "bin": {
